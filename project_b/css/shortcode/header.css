@@ -1,0 +1,353 @@
+/* -----------------------------------
+Template Name: Dazimaxx Premium Multipurpose HTML Template
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.social-links>a {
+  color: #90939c;
+  font-size: 16px;
+  margin-left: 26px;
+}
+
+.social-links {
+  padding: 15px;
+  text-align: right;
+}
+
+.social-links>a:hover {
+  color: #ffffff;
+}
+
+.header-top {
+  border-bottom: 1px solid rgba(167, 167, 167, 0.1);
+}
+
+.header-top-left>span {
+  display: block;
+  padding: 20px 0 14px;
+  font-size: 14px;
+}
+
+.header-top-left {
+  padding: 15px 0;
+}
+
+.header-top-left>a {
+  color: #90939c;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.header-top-left>a:last-child {
+  margin-right: 0;
+}
+
+.header-top-left>a i {
+  margin-right: 7px;
+}
+
+.header-top-left>a:hover {
+  color: #fff;
+}
+
+
+
+.header-area,
+.header-full-area {
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  padding: 30px 0;
+}
+
+.logo a {
+  display: inline-block
+}
+
+.logo img {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.main-menu {
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.main-menu ul {
+  text-align: left;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+}
+
+.main-menu ul li a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 75px;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  letter-spacing: 1px;
+}
+
+.main-menu li a i {
+  font-size: 12px;
+  padding-left: 7px;
+}
+
+.main-menu>nav>ul>li:hover>a,
+.main-menu>nav>ul>li.active>a {
+  opacity: 0.5;
+}
+
+.main-menu ul li ul {
+  background: #ffffff none repeat scroll 0 0;
+  left: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  padding: 15px 20px;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 180px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  z-index: 999;
+}
+
+.main-menu ul li:hover>ul {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+}
+
+.main-menu ul li ul li a {}
+
+.main-menu ul li ul li {
+  display: block;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.main-menu ul li ul li a {
+  color: #555;
+  display: block;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.main-menu ul li ul li:hover>a {
+  color: #999;
+}
+
+.main-menu ul li ul li a:before {
+  display: none;
+}
+
+.main-menu ul li ul li>ul {
+  left: 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  top: 17%;
+  visibility: hidden;
+}
+
+.mobile-menu-area,
+.mean-container .mean-bar:after {
+  display: none
+}
+
+.mean-container .mean-bar {
+  background: transparent none repeat scroll 0 0;
+  min-height: 0;
+  padding: 0;
+}
+
+.mean-container a.meanmenu-reveal {
+  border: 0 none;
+  color: #fff;
+  margin-top: -90px;
+  padding: 2px 0px;
+  position: absolute;
+  padding: 12px;
+  background-color: rgb(255 255 255 / 10%);
+  border-radius: 2px;
+}
+
+.mean-container a.meanmenu-reveal span {
+  background-color: #fff;
+}
+
+.mean-container .mean-nav {
+  margin-top: 0;
+  position: absolute;
+}
+
+.header-sticky.sticky {
+  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  box-shadow: 0 0 9.9px 0.1px rgba(91, 91, 91, 0.2);
+  left: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.sticky .main-menu>nav>ul>li {
+  padding: 0;
+}
+
+.sticky .main-menu>nav>ul>li>a {
+  line-height: 70px;
+}
+
+.sticky .logo {
+  padding: 15px 0;
+}
+
+.sticky .logo img {
+  max-width: 150px;
+}
+
+.sticky .main-menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  margin-bottom: 0;
+}
+
+.sticky .header-btn {
+  padding: 14px 0;
+}
+
+.mainmenu-area .sticky {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+}
+
+.header-area .sticky .main-menu>nav>ul>li>a,
+.header-full-area .sticky .main-menu>nav>ul>li>a {
+  line-height: 65px;
+}
+
+.mobile-menu-area {
+  background-color: #fff;
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+.mobile-menu-area .menu-close {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #858585;
+  height: 40px;
+  padding: 0;
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+.mobile-menu-area .menu-close:hover {
+  color: #433a8b;
+  border-color: #433a8b;
+}
+
+.mobile-menu-area .menu-close i {
+  display: block;
+  font-size: 30px;
+  line-height: 30px;
+  padding-right: 2px;
+}
+
+.mean-container .mean-bar ul li a {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  color: #e51515;
+}
+
+.mean-nav ul li a i {
+  display: none;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  font-weight: 400;
+}
+
+.fixed {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 7
+}
+
+.search-form input {
+  border: 0 none;
+  color: #747881;
+  font-size: 16px;
+  height: 100%;
+  padding-left: 11px;
+  padding-right: 40px;
+}
+
+.search-form button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.search-form button:hover {
+  opacity: 0.5;
+}
+
+.search-form {
+  border-left: 1px solid #fff;
+  height: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.header-full-area .container-fluid {
+  padding: 0 60px;
+}
+
+.sticky .search-form {
+  display: none;
+}
+
+.sticky .main-menu ul li a {
+  font-size: 15px;
+}
