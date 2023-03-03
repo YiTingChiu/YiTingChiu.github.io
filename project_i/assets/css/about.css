@@ -1,0 +1,593 @@
+@charset "UTF-8";
+
+/*===================================================================
+
+about_6_1
+  大標題
+  內容文字
+  圖片
+
+about_6_2
+  大標題
+  內容文字
+
+about_6_3
+  大標題
+  內容文字
+  圖片
+
+about_6_4
+  企業沿革
+
+about_6_5
+  證書
+
+=====================================================================*/
+
+
+
+/*
+-----------------------------------------------------------------------
+    about_6_1
+-----------------------------------------------------------------------
+*/
+
+/*/////////////////大標題/////////////////*/
+.about_6_1__text {
+  padding-left: 30px;
+}
+
+.about_6_1__section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about_6_1__section-title-inner {
+  color: var(--color-primary);
+  font-size: var(--font-main1);
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  letter-spacing: 0.15em;
+  z-index: 2;
+  width: fit-content;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 8px;
+  text-underline-offset: -3px;
+  text-decoration-color: var(--color-fourth);
+  text-decoration-skip-ink: none; /* works in Firefox & Chrome, not in Safari */
+  text-decoration-skip: none; /* works in Safari, not in Firefox & Chrome */
+}
+
+
+@media (max-width: 991px) {
+  .about_6_1__text {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_6_1__section-title-inner {
+    font-size: 24px;
+  }
+}
+
+/*/////////////////圖片/////////////////*/
+.about_6_1__img-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.about_6_1__img.big>img {
+  position: relative;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.about_6_1__img.small {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  text-align: right;
+}
+
+.about_6_1__img.small>img {
+  position: relative;
+  border-radius: 10px;
+  width: 40%;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .about_6_1__img.big>img {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .about_6_1__img.small {
+    position: absolute;
+    bottom: -60px;
+    right: -25px;
+    text-align: right;
+  }
+}
+
+
+/*/////////////////內容文字/////////////////*/
+.about_6_1__disc {
+  margin-bottom: 30px;
+}
+
+.about_6_1__disc p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.about_6_1__disc ul {
+  padding-left: 37px;
+  list-style: disc;
+}
+
+.about_6_1__disc ul>li {
+  list-style: disc;
+}
+
+.about_6_1__about-page-wrap {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about_6_1__about-title {
+  position: relative;
+  color: var(--color-primary);
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.about_6_1__content-2 {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .about_6_1__content-2 {
+    margin-top: 0px;
+  }
+
+  .about_6_1__content-2 .about_6_1__text {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about_6_1__text {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about_6_1__img {
+    padding-left: 24px;
+  }
+
+  .about_6_1__disc p {
+    font-size: 16px;
+  }
+
+  .about_6_1__content-2 .about_6_1__disc {
+    margin-bottom: 0px;
+  }
+}
+
+/*
+-----------------------------------------------------------------------
+    about_6_2
+-----------------------------------------------------------------------
+*/
+
+.about_6_2 {
+  background-size: cover;
+}
+
+/*/////////////////大標題/////////////////*/
+.about_6_2__section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about_6_2__section-title-inner {
+  color: var(--color-primary);
+  font-size: var(--font-main1);
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  letter-spacing: 0.15em;
+  z-index: 2;
+  width: fit-content;
+  margin: 0 auto 10px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 8px;
+  text-underline-offset: -3px;
+  text-decoration-color: var(--color-fourth);
+  text-decoration-skip-ink: none; /* works in Firefox & Chrome, not in Safari */
+  text-decoration-skip: none; /* works in Safari, not in Firefox & Chrome */
+}
+
+/*/////////////////內容文字/////////////////*/
+.about_6_2__concept-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.about_6_2__concept-col{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about_6_2__concept-item {
+  font-size: 24px;
+  color: var(--color-white);
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+  padding: 32px 5px;
+  background-color: var(--color-primary);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_6_2__concept-col:first-child .about_6_2__concept-item{
+  border-radius: 20px 0 0 20px;
+}
+
+.about_6_2__concept-col:last-child .about_6_2__concept-item {
+  border-radius: 0 20px 20px 0;
+}
+
+.about_6_2__concept-item img {
+  margin-bottom: 10px;
+}
+
+.about_6_2__concept-item span {
+  display: block;
+}
+
+.about_6_2__concept-col:nth-child(even) .about_6_2__concept-item{
+  background-color: var(--color-secondary);
+}
+
+@media (max-width: 991px) {
+  .about_6_2__concept-item {
+    font-size: 20px
+  }
+}
+
+@media (max-width: 767px) {
+  .about_6_2__concept-col {
+    width: 50%;
+  }
+
+  .about_6_2__concept-item{
+    padding: 12px 5px;
+  }
+
+  .about_6_2__concept-col:first-child .about_6_2__concept-item{
+    border-radius: 20px 0 0 0;
+  }
+
+  .about_6_2__concept-col:nth-child(2) .about_6_2__concept-item {
+    border-radius: 0 20px 0 0;
+  }
+
+  .about_6_2__concept-col:nth-child(3) .about_6_2__concept-item {
+    border-radius: 0 0 0 20px;
+  }
+
+  .about_6_2__concept-col:last-child .about_6_2__concept-item {
+    border-radius: 0 0 20px 0;
+  }
+
+  .about_6_2__concept-col:nth-child(3) .about_6_2__concept-item {
+    background: var(--color-secondary);
+  }
+
+  .about_6_2__concept-col:nth-child(4) .about_6_2__concept-item {
+    background: var(--color-primary);
+  }
+
+  .about_6_2__concept-item img {
+    width: 42px;
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .about_6_2__concept-item {
+    font-size: 18px;
+  }
+}
+
+
+
+
+/*
+-----------------------------------------------------------------------
+    about_6_3
+-----------------------------------------------------------------------
+*/
+
+.about_6_3 {
+  text-align: center;
+  background-size: cover;
+}
+
+.about_6_3__content-wrapper {
+  padding-right: 30px;
+}
+
+/*/////////////////大標題/////////////////*/
+.about_6_3__section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about_6_3__section-title-inner {
+  color: var(--color-primary);
+  font-size: var(--font-main1);
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  letter-spacing: 0.15em;
+  z-index: 2;
+  width: fit-content;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 8px;
+  text-underline-offset: -3px;
+  text-decoration-color: var(--color-fourth);
+  text-decoration-skip-ink: none; /* works in Firefox & Chrome, not in Safari */
+  text-decoration-skip: none; /* works in Safari, not in Firefox & Chrome */
+}
+
+/*/////////////////內容文字/////////////////*/
+.about_6_3__disc {
+  margin-bottom: 30px;
+}
+
+.about_6_3__disc p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.about_6_3__disc ul {
+  padding-left: 37px;
+  list-style: disc;
+}
+
+.about_6_3__disc ul>li {
+  list-style: disc;
+}
+
+.about_6_3__about-page-wrap {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about_6_3__about-title {
+  position: relative;
+  color: var(--color-primary);
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1199px) {
+  .about_6_3__content-wrapper {
+    padding-right: 0px;
+  }
+
+  .about_6_3__content-col {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about_6_3__disc p {
+    font-size: 16px;
+  }
+}
+
+
+/*/////////////////圖片/////////////////*/
+.about_6_3__img {
+  position: relative;
+}
+
+.about_6_3__img::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: rgba(var(--color-primary-rgb), 0.4);
+}
+
+.about_6_3__img img {
+  border-radius: 10px;
+  position: relative;
+}
+
+@media only screen and (max-width: 1199px) {
+  .about_6_3__img{
+    margin-bottom: 40px;
+  }
+
+  .about_6_3__img img {
+    width: 50%;
+  }
+
+  .about_6_3__img::before {
+    bottom: -3%;
+    right: initial;
+    left: 53%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about_6_3__img img {
+    width: 70%;
+  }
+
+  .about_6_3__img::before {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about_6_3__img{
+    margin-bottom: 30px;
+  }
+
+  .about_6_3__img img {
+    width: 90%;
+  }
+
+  .about_6_3__img::before {
+    width: 90%;
+  }
+}
+
+
+/*
+-----------------------------------------------------------------------
+    about_6_4
+-----------------------------------------------------------------------
+*/
+
+.about_6_4__timeline-wrapper ul {
+  margin-bottom: 0;
+}
+
+.about_6_4__time-item:last-child {
+  margin-bottom: 0;
+}
+
+.about_6_4__time-item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.about_6_4__time-item::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 30%;
+  height: 1px;
+  background: var(--color-primary);
+}
+
+.about_6_4__time-year {
+  width: 20%;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 18px;
+  height: fit-content;
+}
+
+.about_6_4__time-txt {
+  position: relative;
+  margin-left: 10%;
+  width: 70%;
+  font-size: 18px;
+  padding: 10px 0px 10px 30px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .about_6_4__time-year {
+    width: 25%;
+  }
+
+  .about_6_4__time-txt {
+    width: 65%;
+    padding: 10px 0px 10px 20px;
+  }
+
+  .about_6_4__time-item::before {
+    top: 23px;
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about_6_4__time-year {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .about_6_4__time-item::before {
+    top: 17px;
+    width: 33%;
+  }
+
+  .about_6_4__time-txt {
+    font-size: 16px;
+    padding: 5px 0px 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about_6_4__time-year {
+    width: 100%;
+  }
+
+  .about_6_4__time-txt {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*
+-----------------------------------------------------------------------
+    about_6_5
+-----------------------------------------------------------------------
+*/
+
+.about_6_5__img-wrapper {
+  margin-bottom: 30px;
+}
+
+.about_6_5__img {
+  margin-bottom: 15px;
+}
+
+.about_6_5__name {
+  text-align: center;
+}

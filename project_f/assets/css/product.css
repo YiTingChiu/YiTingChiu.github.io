@@ -1,0 +1,1397 @@
+@charset "UTF-8";
+
+
+
+/*===================================================================
+product_3
+  產品頁
+
+product_3a
+  產品tab
+  餐點介紹
+  鴛鴦麻辣鍋
+  麻辣紅湯
+  養生白湯
+  原味湯
+  食材介紹
+  食材介紹卡片
+  食材介紹背景
+  門市菜單
+=====================================================================*/
+
+/*
+-----------------------------------------------------------------------
+  product_3
+-----------------------------------------------------------------------
+*/
+.product_3 {
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+}
+
+.product_3__list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.product_3__list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.product_3__list-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.product_3__list-title {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  color: #fff;
+  background-color: #DA3F13;
+  font-size: 20px;
+  padding: 15px 15px 0;
+  letter-spacing: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  text-align: center;
+  z-index: 2;
+  margin: 0;
+}
+
+.product_3__list-wrap:hover img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.product_3__list-wrap:hover .product_3__list:before {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+@media(max-width: 1199px) {
+  .product_3__list-title {
+    padding: 12px 12px 0;
+    letter-spacing: 12px;
+  }
+}
+
+@media(max-width: 991px) and (min-width: 576px) {
+  .product_3__list-title {
+    padding: 7px 7px 0;
+    letter-spacing: 7px;
+    font-size: 18px;
+  }
+}
+
+/*
+-----------------------------------------------------------------------
+  product_3a
+-----------------------------------------------------------------------
+*/
+
+.product_3a {
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+  background-size: auto;
+}
+
+.product_3a__side-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+@media (max-width: 991px) {
+  .product_3a__side-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .product_3a__side-padding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 580px) {
+  .product_3a__side-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .product_3a__side-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+
+/*/////////////////產品tab/////////////////*/
+
+.product_3a__product-tab-nav {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: -1px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.product_3a__product-tab-nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.product_3a__product-tab-nav li a {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 0 15px 0;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 767px) {
+  .product_3a__product-tab-nav li a {
+    font-size: 16px;
+  }
+}
+
+.product_3a__product-tab-nav li a.active {
+  border-bottom-color: #DA3F13;
+  color: #DA3F13;
+}
+
+.product_3a__product-tab-nav li a:hover {
+  border-bottom-color: #DA3F13;
+  color: #DA3F13;
+}
+
+.product_3a__product-tab-content {
+  background-color: #fff;
+  padding: 40px 30px 29px;
+}
+
+.product_3a__product-description ul {
+  margin-bottom: 0;
+}
+
+/*/////////////////餐點介紹/////////////////*/
+
+
+/*/////////////////鴛鴦麻辣鍋/////////////////*/
+
+.product_3a_1_1 {
+  position: relative;
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+  background-size: auto;
+}
+
+#taste_1 {
+  display: block;
+  top: -150px;
+  position: relative;
+  visibility: hidden;
+}
+
+#taste_2 {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}
+
+#taste_3 {
+  display: block;
+  top: -150px;
+  position: relative;
+  visibility: hidden;
+}
+
+#taste_4 {
+  display: block;
+  top: -150px;
+  position: relative;
+  visibility: hidden;
+}
+
+.product_3a_1_1__img {
+  position: relative;
+  width: 694px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.product_3a_1_1__img>img {
+  position: relative;
+  border-radius: 10px;
+}
+
+
+.product_3a_1_1__product-title,
+.product_3a_1_1__text {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.product_3a_1_1__product-title {
+  margin-bottom: 56px;
+  color: #000;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  letter-spacing: 0.2em;
+}
+
+.product_3a_1_1__product-title>.product-title-inner {
+  letter-spacing: 15px;
+  position: relative;
+}
+
+.product_3a_1_1__product-title .deco {
+  position: absolute;
+  top: -45px;
+  left: 25px;
+}
+
+.product_3a_1_1__product-title .txt-orange {
+  color: #DA3F13;
+}
+
+.product_3a_1_1__disc>p {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+
+.product_3a_1_1__product-img {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 1699px) {
+  .product_3a_1_1__intro-text {
+    width: 74%;
+    margin-left: 13%;
+    margin-bottom: 60px;
+  }
+
+  .product_3a_1_1__intro-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1499px) {
+  .product_3a_1_1__intro-text {
+    margin-bottom: 40px;
+    width: 78%;
+    margin-left: 11%;
+  }
+
+  .product_3a_1_1__product-title,
+  .product_3a_1_1__text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .product_3a_1_1__intro-text {
+    width: 84%;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .product_3a_1_1__intro-text {
+    width: 88%;
+    margin-left: 6%;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .product_3a_1_1__product-title .deco {
+    left: -40px;
+  }
+
+  .product_3a_1_1__text {
+    margin-bottom: 60px;
+  }
+
+  .product_3a_1_1__intro-text {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
+
+  .product_3a_1_1__product-title,
+  .product_3a_1_1__text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .product_3a_1_1__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .product_3a_1_1 {
+    padding-top: 80px !important;
+    padding-bottom: 100px;
+  }
+
+  .product_3a_1_1__product-title .deco {
+    width: 150px;
+    top: -50px;
+  }
+
+  .product_3a_1_1__product-title {
+    margin-bottom: 40px;
+    font-size: 50px;
+  }
+
+  .product_3a_1_1__text {
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .product_3a_1_1__product-title .deco {
+    width: 120px;
+    top: -35px;
+  }
+
+  .product_3a_1_1__text {
+    margin-bottom: 30px;
+  }
+
+  .product_3a_1_1__disc>p {
+    font-size: 16px;
+  }
+
+  .product_3a_1_1__product-intro {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .product_3a_1_1__product-title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .product_3a_1_1__product-title .deco {
+    top: -45px;
+  }
+
+}
+
+@media(max-width: 375px) {
+  .product_3a_1_1__product-title .deco {
+    left: -20px;
+  }
+
+}
+
+
+/*/////////////////麻辣紅湯/////////////////*/
+
+.product_3a_1_2 {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.product_3a_1_2__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.product_3a_1_2__bg:before {
+  content: '';
+  background-color: #000000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.product_3a_1_2__img {
+  position: relative;
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+.product_3a_1_2__img>img {
+  position: relative;
+  border-radius: 10px;
+}
+
+.product_3a_1_2__product-title,
+.product_3a_1_2__text {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.product_3a_1_2__product-title {
+  margin-bottom: 56px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+}
+
+.product_3a_1_2__product-title .deco {
+  position: absolute;
+  top: -45px;
+  left: 50px;
+}
+
+.product_3a_1_2__product-title .txt-orange {
+  color: #DA3F13;
+}
+
+.product_3a_1_2__disc>p {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-align: justify;
+  position: relative;
+  color: #ffffff;
+}
+
+.product_3a_1_2__product-img {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 1699px) {
+  .product_3a_1_2__intro-text {
+    width: 74%;
+    margin-left: 13%;
+    margin-bottom: 60px;
+  }
+
+  .product_3a_1_2__intro-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1499px) {
+  .product_3a_1_2__product-title .deco {
+    top: 6px;
+    left: 0;
+    width: 115px;
+  }
+
+  .product_3a_1_2__intro-text {
+    margin-bottom: 40px;
+    width: 78%;
+    margin-left: 11%;
+  }
+
+  .product_3a_1_2__product-title,
+  .product_3a_1_2__text {
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+
+  .product_3a_1_2__product-title {
+    padding-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .product_3a_1_2__text {
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 1399px) {
+  .product_3a_1_2__intro-text {
+    width: 84%;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .product_3a_1_2__intro-text {
+    width: 88%;
+    margin-left: 6%;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .product_3a_1_2__product-title .deco {
+    top: -40px;
+    left: -40px;
+    width: initial;
+  }
+
+  .product_3a_1_2__product-title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+
+  .product_3a_1_2__text {
+    margin-bottom: 60px;
+    padding-left: 0;
+  }
+
+  .product_3a_1_2__intro-text {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product_3a_1_2__product-title .deco {
+    width: 150px;
+    top: -30px;
+    left: -40px;
+  }
+
+  .product_3a_1_2__product-title {
+    margin-bottom: 40px;
+    font-size: 50px;
+  }
+
+  .product_3a_1_2__text {
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .product_3a_1_2__product-title .deco {
+    width: 120px;
+    top: -15px;
+  }
+
+  .product_3a_1_2__text {
+    margin-bottom: 30px;
+  }
+
+  .product_3a_1_2__disc>p {
+    font-size: 16px;
+  }
+
+  .product_3a_1_2__product-intro {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .product_3a_1_2__product-title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .product_3a_1_2__product-title .deco {
+    top: -25px;
+  }
+}
+
+@media(max-width: 375px) {
+
+  .product_3a_1_2__product-title .deco {
+    left: -20px;
+  }
+}
+
+
+/*/////////////////養生白湯/////////////////*/
+
+.product_3a_1_3 {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.product_3a_1_3__material-outer {
+  max-width: 100%;
+  width: 700px;
+  margin-bottom: -30px;
+  margin: 0 auto;
+}
+
+.product_3a_1_3__material {
+  margin-bottom: 30px;
+}
+
+.product_3a_1_3__material>img {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .product_3a_1_3__about-title:before {
+    transform: translate(-47px, calc(-50% - 13px));
+    width: 159px;
+    height: 133px;
+  }
+
+  .product_3a_1_3__about-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .product_3a_1_3__disc>p {
+    font-size: 16px;
+  }
+}
+
+.product_3a_1_3__product-title,
+.product_3a_1_3__text {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.product_3a_1_3__product-title {
+  margin-bottom: 56px;
+  color: #000;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+}
+
+.product_3a_1_3__product-title .deco {
+  position: absolute;
+  top: -56px;
+  left: 28px;
+}
+
+.product_3a_1_3__product-title .txt-orange {
+  color: #DA3F13;
+}
+
+.product_3a_1_3__disc>p {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+
+.product_3a_1_3__product-img {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 1699px) {
+  .product_3a_1_3__intro-text {
+    width: 74%;
+    margin-left: 13%;
+    margin-bottom: 60px;
+  }
+
+  .product_3a_1_3__intro-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1499px) {
+  .product_3a_1_3__intro-text {
+    margin-bottom: 40px;
+    width: 78%;
+    margin-left: 11%;
+  }
+
+  .product_3a_1_3__product-title,
+  .product_3a_1_3__text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .product_3a_1_3__intro-text {
+    width: 84%;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .product_3a_1_3__intro-text {
+    width: 88%;
+    margin-left: 6%;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .product_3a_1_3__product-title .deco {
+    left: -40px;
+  }
+
+  .product_3a_1_3__text {
+    margin-bottom: 60px;
+  }
+
+  .product_3a_1_3__intro-text {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product_3a_1_3__product-title {
+    margin-bottom: 40px;
+    font-size: 50px;
+  }
+
+  .product_3a_1_3__product-title .deco {
+    width: 150px;
+  }
+
+  .product_3a_1_3__text {
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .product_3a_1_3__product-title .deco {
+    width: 120px;
+    top: -30px;
+  }
+
+  .product_3a_1_3__text {
+    margin-bottom: 30px;
+  }
+
+  .product_3a_1_3__disc>p {
+    font-size: 16px;
+  }
+
+  .product_3a_1_3__product-intro {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .product_3a_1_3__product-title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .product_3a_1_3__product-title .deco {
+    top: -45px;
+  }
+
+}
+
+@media(max-width: 375px) {
+  .product_3a_1_3__product-title .deco {
+    left: -20px;
+  }
+
+}
+
+
+/*/////////////////原味湯/////////////////*/
+
+.product_3a_1_4 {
+  position: relative;
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+  background-size: auto;
+  overflow-y: hidden;
+}
+
+.product_3a_1_4__product-title,
+.product_3a_1_4__text {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.product_3a_1_4__product-title {
+  margin-bottom: 56px;
+  color: #000;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.product_3a_1_4__product-title .deco {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product_3a_1_4__product-title .txt-orange {
+  color: #DA3F13;
+}
+
+.product_3a_1_4__disc>p {
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+
+.product_3a_1_4__product-img {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 1699px) {
+  .product_3a_1_4__intro-text {
+    width: 74%;
+    margin-left: 13%;
+    margin-bottom: 60px;
+  }
+
+  .product_3a_1_4__intro-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1499px) {
+  .product_3a_1_4__intro-text {
+    margin-bottom: 40px;
+    width: 78%;
+    margin-left: 11%;
+  }
+
+}
+
+@media (max-width: 1399px) {
+  .product_3a_1_4__intro-text {
+    width: 84%;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .product_3a_1_4__intro-text {
+    width: 88%;
+    margin-left: 6%;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .product_3a_1_4 .product_3a__side-padding {
+    max-width: 100%;
+  }
+
+  .product_3a_1_4__product-title,
+  .product_3a_1_4__text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .product_3a_1_4__intro-text {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .product_3a_1_4__product-title {
+    margin-bottom: 40px;
+    font-size: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .product_3a_1_4__product-title .deco {
+    width: 150px;
+    top: -50px;
+  }
+
+  .product_3a_1_4__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .product_3a_1_4__product-title .deco {
+    width: 120px;
+    top: -30px;
+  }
+
+  .product_3a_1_4__disc>p {
+    font-size: 16px;
+  }
+
+  .product_3a_1_4__product-intro {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .product_3a_1_4__product-title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .product_3a_1_4__product-title .deco {
+    top: -50px;
+  }
+
+}
+
+@media(max-width: 375px) {}
+
+
+.product_3a_1_4__deco {
+  position: absolute;
+}
+
+.product_3a_1_4__deco.deco_1 {
+  left: -23px;
+  top: 3px;
+  width: 543px;
+}
+
+.product_3a_1_4__deco.deco_2 {
+  right: 0;
+  top: 351px;
+}
+
+.product_3a_1_4__deco.deco_3 {
+  right: 278px;
+  top: 120px;
+}
+
+.product_3a_1_4__deco.deco_4 {
+  left: 0;
+  bottom: 0;
+}
+
+.product_3a_1_4__deco.deco_5 {
+  right: 0;
+  bottom: 109px;
+}
+
+.product_3a_1_4__material-outer {
+  width: 1300px;
+  max-width: 100%;
+  justify-content: center;
+  margin: 70px auto 25px;
+}
+
+.product_3a_1_4__material {
+  position: relative;
+
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.product_3a_1_4__material>img {}
+
+.product_3a_1_4__material-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: linear-gradient(4.22deg, #000000 -10.12%, rgba(0, 0, 0, 0.561364) 33.13%, rgba(0, 0, 0, 0) 88.49%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_3a_1_4__material-text-inner {
+  color: #fff;
+  transform: translateY(2px);
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .product_3a_1_4__deco.deco_3 {
+    right: 3vw;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .product_3a_1_4__disc>p {
+    font-size: 16px;
+  }
+
+  .product_3a_1_4__deco.deco_1 {
+    width: 42vw;
+  }
+
+  .product_3a_1_4__deco.deco_2 {
+    width: 16vw;
+  }
+
+  .product_3a_1_4__deco.deco_3 {
+    width: 21vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product_3a_1_4__deco.deco_2 {
+    top: 7vw;
+  }
+}
+
+
+
+
+/*/////////////////食材介紹/////////////////*/
+
+.product_3a_2 {
+  position: relative;
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+  background-size: auto;
+}
+
+
+
+
+/*/////////////////食材介紹卡片/////////////////*/
+
+.product_3a_2__food-img-wrap {}
+
+.product_3a_2__food-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product_3a_2__food-box {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 7%);
+  background-color: rgb(255 255 255);
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.product_3a_2__food-box>.row {
+  align-items: center;
+}
+
+.product_3a_2__food-box-img {
+  max-width: 100%;
+}
+
+
+.product_3a_2__food-box-info {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.product_3a_2__food-box-title {
+  border-bottom: 1px solid #d9d5cd;
+  padding-bottom: 13px;
+  margin-bottom: 14px;
+  font-size: 31px;
+}
+
+.product_3a_2__food-box-sub {
+  font-size: 20px;
+  color: #DA3F13;
+  margin-bottom: 21px;
+}
+
+.product_3a_2__food-box-text p {}
+
+
+@media only screen and (max-width: 991px) {
+  .product_3a__food-box-info {
+    padding: 20px 15px;
+  }
+
+  .product_3a_2__food-box-info {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product_3a_2__food-box-title {
+    font-size: 26px;
+  }
+
+  .product_3a_2__food-box-sub {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+/*/////////////////食材介紹背景/////////////////*/
+
+.product_3a_2__text-bg-1 {
+  position: absolute;
+  right: -55px;
+  top: -80px;
+  width: 935px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.product_3a_2__text-bg-2 {
+  position: absolute;
+  left: -55px;
+  top: -80px;
+  width: 935px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.product_3a_2__text-bg-3 {
+  position: absolute;
+  left: 54.5%;
+  top: -202px;
+  width: 924px;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+
+.product_3a_2__text-bg-4 {
+  position: absolute;
+  right: 118px;
+  top: 86px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+
+.product_3a_2__text-bg-5 {
+  position: absolute;
+  left: -24px;
+  top: 68px;
+  pointer-events: none;
+  opacity: 0.8;
+  transform: rotateY(180deg);
+  width: 344px;
+}
+
+[class*="product_3a_2__text-bg-"] {
+  max-width: 100%;
+}
+
+[class*="product_3a_2__text-bg-"]>img {
+  width: 100%;
+  transform: translateY(-157px);
+}
+
+
+
+@media only screen and (max-width: 1600px) {
+
+  .product_3a_2__text-bg-1,
+  .product_3a_2__text-bg-2 {
+    width: 52vw;
+  }
+
+  .product_3a_2__text-bg-3 {
+    width: 52vw;
+  }
+
+  .product_3a_2__text-bg-4 {
+    width: 19vw;
+  }
+
+  .product_3a_2__text-bg-5 {
+    width: 26vw;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .product_3a_2__text-bg-4 {
+    right: 2vw;
+    top: 4vw;
+  }
+
+  .product_3a_2__text-bg-5 {
+    top: 3vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  [class*="product_3a_2__text-bg-"]>img {
+    width: 100%;
+    transform: translateY(-114px);
+  }
+}
+
+
+
+
+
+
+/*/////////////////門市菜單/////////////////*/
+
+.product_3a_3 {
+  position: relative;
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+  background-size: auto;
+}
+
+@media only screen and (max-width: 767px) {}
+
+.product_3a_3__text-bg-1 {
+  position: absolute;
+  right: -55px;
+  top: -80px;
+  width: 935px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.product_3a_3__text-bg-2 {
+  position: absolute;
+  left: -55px;
+  top: -80px;
+  width: 935px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.product_3a_3__text-bg-3 {
+  position: absolute;
+  left: 54.5%;
+  top: -202px;
+  width: 924px;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+
+.product_3a_3__text-bg-4 {
+  position: absolute;
+  right: 118px;
+  top: 86px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+
+.product_3a_3__text-bg-5 {
+  position: absolute;
+  left: -24px;
+  top: 68px;
+  pointer-events: none;
+  opacity: 0.8;
+  transform: rotateY(180deg);
+  width: 344px;
+}
+
+[class*="product_3a_3__text-bg-"] {
+  max-width: 100%;
+}
+
+[class*="product_3a_3__text-bg-"]>img {
+  width: 100%;
+  transform: translateY(-157px);
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+  .product_3a_3__text-bg-1,
+  .product_3a_3__text-bg-2 {
+    width: 52vw;
+  }
+
+  .product_3a_3__text-bg-3 {
+    width: 52vw;
+  }
+
+  .product_3a_3__text-bg-4 {
+    width: 19vw;
+  }
+
+  .product_3a_3__text-bg-5 {
+    width: 26vw;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .product_3a_3__text-bg-4 {
+    right: 2vw;
+    top: 4vw;
+  }
+
+  .product_3a_3__text-bg-5 {
+    top: 3vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  [class*="product_3a_3__text-bg-"]>img {
+    width: 100%;
+    transform: translateY(-114px);
+  }
+}
+
+
+.product_3a_3__wrap:nth-child(odd) .product_3a_3__menu{
+  text-align: right;
+}
+
+.product_3a_3__menu {
+  margin-bottom: 40px;
+  position: relative;
+}

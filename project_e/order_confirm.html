@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>訂單確認 | 嘉瑝洋酒</title>
+  <meta property="og:title" content="嘉瑝洋酒" />
+  <meta property="og:description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店" />
+  <meta property="og:url" content="網站網址" />
+  <meta property="og:image" content="代表縮圖" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店">
+  <!-- 網頁圖標 -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/192X192.png">
+  <!-- Css 公版css跟其他頁面不同-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/css/cart-all.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="cart__header">
+    <div class="container">
+      <div class="container-header align-center">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" class="img-fluid" alt="size_175X51">
+          </a>
+        </div>
+        <div class="cart__step-list">
+          <ul>
+            <li class="active"><span>1</span>購物車</li>
+            <li class="align-center active">
+              <div class="line"></div><span>2</span>結帳確認
+            </li>
+            <li class="align-center">
+              <div class="line"></div><span>3</span>完成
+            </li>
+          </ul>
+        </div>
+        <div class="shopping-btn">
+          <span class="user-name"><span><img src="assets/images/demo/user.png" alt="">bondlink@gmail.com</span></span>
+          <a href="product_list.html">
+            <i class="fa fa-angle-left"></i>繼續購物
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 手機板 footer -->
+  <div class="cart__footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="total">
+          <div><span>總計</span>$ 8,200</div>
+        </div>
+        <button type="submit" value="submit" id="submit" class="lezada-button lezada-button--medium total-checkout">
+          <a href="order_ok.html">
+            <div>前往結帳</div>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-cart__step-list">
+    <div class="container">
+      <div class="cart__step-list">
+        <ul>
+          <li class="active"><span>1</span>購物車</li>
+          <li class="align-center active">
+            <div class="line"></div><span>2</span>結帳確認
+          </li>
+          <li class="align-center">
+            <div class="line"></div><span>3</span>完成
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <main id="confirm__main">
+    <div class="container full-container">
+      <div class="row">
+        <!-- 八區塊 -->
+        <div class="col-lg-8">
+          <form>
+            <div class="confirm-warp">
+              <div class="title">
+                <div>訂購人資訊</div>
+                <div class="edit" data-toggle="modal" data-target="#edit-buyer-data"><i class="fa fa-pencil-square-o"></i>編輯資料</div>
+              </div>
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>訂購人資訊 請填寫完整
+              </div>
+              <div class="info">
+                <!-- <div class="subtitle">取件人資訊</div> -->
+                <div class="gray-block-warp">
+                  <div class="gray-block">
+                    <div class="w-100">
+                      <div>邦邦立</div>
+                      <div>0912345678</div>
+                      <div>bondlinkseo@gmail.com</div>
+                    </div>
+                  </div>
+                  <!-- ↓ 無資料：顯示預設文字&加上no-info的class -->
+                  <div class="gray-block">
+                    <div class="w-100">
+                      <div class="no-info">( 訂購人姓名 )</div>
+                      <div class="no-info">( 訂購人電話 )</div>
+                      <div class="no-info">( 訂購人E-mail )</div>
+                    </div>
+                  </div>
+                  <!-- ↑ 無資料 -->
+                  <div class="gray-block-btn" data-toggle="modal" data-target="#edit-buyer-data">
+                    <div class="w-100">
+                      <i class="fa fa-pencil-square-o"></i>
+                      <div>編輯資料</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="confirm-warp">
+              <div class="title">
+                <div>配送方式<span>門市自取付款</span></div>
+                <div class="edit" data-toggle="modal" data-target="#edit-data"><i class="fa fa-pencil-square-o"></i>編輯資料</div>
+              </div>
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>取件人資訊 請填寫完整
+              </div>
+              <div class="info">
+                <div class="subtitle">取件人資訊</div>
+                <div class="same-order">
+                  <input type="checkbox" id="order-copy" name="order-copy">
+                  <label for="order-copy"></label>
+                  <span>同訂購人</span>
+                </div>
+                <div class="gray-block-warp">
+                  <div class="gray-block">
+                    <div class="w-100">
+                      <div>邦邦立</div>
+                      <div>0912345678</div>
+                    </div>
+                  </div>
+                  <!-- ↓ 無資料：顯示預設文字&加上no-info的class -->
+                  <div class="gray-block">
+                    <div class="w-100">
+                      <div class="no-info">( 取件人姓名 )</div>
+                      <div class="no-info">( 取件人電話 )</div>
+                    </div>
+                  </div>
+                  <!-- ↑ 無資料 -->
+                  <div class="gray-block-btn" data-toggle="modal" data-target="#edit-data">
+                    <div class="w-100">
+                      <i class="fa fa-pencil-square-o"></i>
+                      <div>編輯資料</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="confirm-warp">
+              <div class="title">
+                <div>付款方式</div>
+              </div>
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>請選擇付款方式
+              </div>
+              <div class="info">
+                <div class="gray-block-warp">
+                  <input class="pay-checkbox" type="radio" name="pay" id="pay-1">
+                  <label class="for-pay-checkbox" for="pay-1">
+                    <div class="w-100">
+                      <img src="assets/images/demo/confirm-icon-4.png">
+                      <div>到店付款</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="confirm-warp">
+              <div class="title">
+                <div>發票選項<span>紙本發票</span></div>
+              </div>
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>請選擇發票選項
+              </div>
+              <div class="info">
+                <div class="select-warp">
+                  <select data-chose="" onchange="this.dataset.chose = this.value;">
+                    <option selected>請選擇發票選項</option>
+                    <option>個人</option>
+                    <option value="company">公司</option>
+                    <option value="donate">捐贈</option>
+                  </select>
+                  <div class="company-info">
+                    <input type="text" placeholder="統一編號">
+                    <input type="text" placeholder="發票抬頭">
+                  </div>
+                  <div class="donate-info">捐贈單位：社團法人中華民國保護動物協會</div>
+                </div>
+              </div>
+            </div>
+            <div class="confirm-warp">
+              <div class="title">
+                <div>備註事項</div>
+              </div>
+              <div class="info">
+                <textarea rows="3" placeholder="有任何特殊需求請讓我們知道，我們會盡力達成:)"></textarea>
+              </div>
+            </div>
+            <!-- 非會員才顯示(帳號自動帶入) -->
+            <div class="confirm-warp">
+              <div class="title title-2">
+                <input type="checkbox" id="check-registration" name="check-registration">
+                <label for="check-registration"></label>
+                <div><span>快速加入會員</span><span class="small-remark">依訂購人資訊直接加入會員,同時表示您已經詳閱我們的<a href="terms.html" target="_blank">會員條款</a></span></div>
+              </div>
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>請填寫會員密碼
+              </div>
+              <div class="info">
+                <div class="quick-registration">
+                  <div class="input-name">帳號*</div>
+                  <input type="text" placeholder="example@exampe.com.tw" value="bondlinkseo@gmail.com">
+                </div>
+                <div class="quick-registration">
+                  <div class="input-name">密碼*</div>
+                  <input type="password" placeholder="請輸入6碼以上的英文或數字">
+                </div>
+              </div>
+            </div>
+            <!-- 已註冊缺資料的會員才顯示 -->
+            <div class="confirm-warp">
+              <div class="title title-2">
+                <input type="checkbox" id="check-synchronize" name="check-synchronize">
+                <label for="check-synchronize"></label>
+                <div><span>訂購人資訊 同步至會員資料</span></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- 側欄 -->
+        <div class="col-lg-4">
+          <div class="cart-detail-container">
+            <div class="cart-detail">
+              <div class="item-list">
+                <div class="title">
+                  <div>購買清單<span class="gray-tx">共3項商品</span></div>
+                  <div class="toggle-btn"><i class="fa fa-angle-up"></i></div>
+                </div>
+                <div class="item-content purchase-list">
+                  <div class="product-list">
+                    <div class="product-pic">
+                      <a href="product_info.html">
+                        <img src="images/prodcut/wine_600x900.jpg" class="img-fluid" alt="size_600X900 / min_size_200X300">
+                      </a>
+                    </div>
+                    <div class="warp-3">
+                      <div class="product-info">
+                        <a href="product_info.html" class="product-name">麥卡倫限量系列</a>
+                        <div class="product-price">$2,800</div>
+                      </div>
+                      <div class="warp-4">
+                        <div class="product-quantity">x1</div>
+                        <div class="total-price">$2,800</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-list">
+                    <div class="product-pic">
+                      <a href="product_info.html">
+                        <img src="images/prodcut/fruit_600x900.jpg" class="img-fluid" alt="size_600X900 / min_size_200X300">
+                      </a>
+                    </div>
+                    <div class="warp-3">
+                      <div class="product-info">
+                        <a href="product_info.html" class="product-name">義大利檸檬甜酒</a>
+                        <div class="product-price">$2,800</div>
+                      </div>
+                      <div class="warp-4">
+                        <div class="product-quantity">x1</div>
+                        <div class="product-price">$2,800</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-list">
+                    <div class="product-pic">
+                      <a href="product_info.html">
+                        <img src="images/prodcut/champagne_600x900.jpg" class="img-fluid" alt="size_600X900 / min_size_200X300">
+                      </a>
+                    </div>
+                    <div class="warp-3">
+                      <div class="product-info">
+                        <a href="product_info.html" class="product-name">聖安妮香檳</a>
+                        <div class="product-price">$2,800</div>
+                      </div>
+                      <div class="warp-4">
+                        <div class="product-quantity">x1</div>
+                        <div class="product-price">$2,800</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-list">
+                <div class="title">結帳金額</div>
+                <div class="item-content">
+                  <div class="checkout">
+                    <div>商品小計</div>
+                    <div>$ 8,400</div>
+                  </div>
+                  <div class="checkout">
+                    <div>折價券</div>
+                    <div>$ -200</div>
+                  </div>
+                  <div class="total">
+                    <div><span>總計</span>$ 8,200</div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" value="submit" id="submit" class="lezada-button lezada-button--medium w-100 total-checkout">
+                <a href="order_ok.html">
+                  <div>前往結帳</div>
+                </a>
+              </button>
+            </div>
+            <a href="order_cart.html" class="back-cart">←返回購物車</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- 訂購人修改彈窗 -->
+  <div class="modal fade" id="edit-buyer-data" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form>
+            <div class="edit-list">
+              <div class="title">訂購人姓名*</div>
+              <input type="text" placeholder="請填寫真實姓名">
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>訂購人姓名 不能空白
+              </div>
+            </div>
+            <div class="edit-list">
+              <div class="title">聯絡電話*</div>
+              <input type="text" placeholder="0912345678">
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>聯絡電話 不能空白
+              </div>
+            </div>
+            <div class="edit-list">
+              <div class="title">信箱*</div>
+              <input type="text" placeholder="example@exampe.com.tw">
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>信箱 不能空白
+              </div>
+            </div>
+            <div class="btn-warp">
+              <button type="button" class="lezada-button lezada-button--medium cancle" data-dismiss="modal">取消</button>
+              <button type="submit" value="submit" id="submit" class="lezada-button lezada-button--medium">確定</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 取件人修改彈窗 -->
+  <div class="modal fade" id="edit-data" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form>
+            <div class="edit-list">
+              <div class="title">取件人姓名*</div>
+              <input type="text" placeholder="請填寫真實姓名">
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>取件人姓名 不能空白
+              </div>
+            </div>
+            <div class="edit-list">
+              <div class="title">聯絡電話*</div>
+              <input type="text" placeholder="0912345678">
+              <!-- notice-block加上show 就會出現提醒樣式 -->
+              <div class="notice-block show">
+                <i class="fa fa-exclamation-circle"></i>聯絡電話 不能空白
+              </div>
+            </div>
+            <div class="btn-warp">
+              <button type="button" class="lezada-button lezada-button--medium cancle" data-dismiss="modal">取消</button>
+              <button type="submit" value="submit" id="submit" class="lezada-button lezada-button--medium">確定</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="cart__copyright">
+    <div class="container">
+      <p>Copyright 嘉瑝洋酒 © - All Right Reserved. Designed by <a class="page_copyright__link" href="https://www.bondlink.com.tw/" target="_blank">Bondlink</a></p>
+    </div>
+  </div>
+  <a href="#" class="scroll-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- jQuery JS 公版js跟其他頁面不同-->
+  <script src="assets/js/vendor/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/cart-all.js"></script>
+</body>
+
+</html>

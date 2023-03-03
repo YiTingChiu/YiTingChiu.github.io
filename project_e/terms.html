@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>會員條款 | 嘉瑝洋酒</title>
+    <meta property="og:title" content="嘉瑝洋酒" />
+    <meta property="og:description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店" />
+    <meta property="og:url" content="網站網址" />
+    <meta property="og:image" content="代表縮圖" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店">
+    <!-- Css -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700%7CPinyon+Script" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/icofont.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link href="assets/css/cart-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- 網頁圖標 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/192X192.png">
+</head>
+
+<body>
+    <!-- main container of all the page elements -->
+    <div id="wrapper">
+        <!-- header of the page -->
+        <header id="header" class="v1">
+            <!-- header holder of the page -->
+            <div class="header-holder">
+                <div class="container-fluid">
+                    <div class="top__header">
+                        <!-- 會員/搜尋icon -->
+                        <ul class="list-unstyled widget-cart-wrap pull-right header__list">
+                            <li class="header__menu-dropdown">
+                                <a href="javascript:void(0);" class="nav-opener menu-toggle" id="menu-toggle">
+                                    <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                                    <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                                    <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+                                </a>
+                            </li>
+                            <li class="header__member"><a href="member.html" data-bs-toggle="modal" data-bs-target="#member-login" class="btn__member"><i class="icon-user"></i><span class="header-icon__title">會員登入/註冊</span></a></li>
+                            <li class="header__cart">
+                                <a href="order_cart.html" class="btn__order-cart"><img src="images/form-cart.png" alt="" class="cart-form"><span class="num round fontjosefin text-center">3</span><span class="header-icon__title">洽詢清單</span></a>
+                            </li>
+                            <li class="header__search"><a href="javascript:void(0);" class="search-opener"><i class="icon-search"></i></a></li>
+                        </ul>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="size_345X100" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 導覽列 -->
+            <div class="nav-holder container">
+                <!-- nav of the page -->
+                <nav id="nav">
+                    <ul class="list-unstyled text-center" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+                        <li class="n-logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="size_345X100" class="img-responsive">
+                            </a>
+                        </li>
+                        <li class="dropdown" itemprop="name" content="新品優惠">
+                            <a itemprop="url" href="news_list.html" class="main-link">新品優惠</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="news_list.html">限時優惠</a></li>
+                                <li itemprop="name"><a itemprop="url" href="news_list.html">獨家優惠</a></li>
+                                <li itemprop="name"><a itemprop="url" href="news_list.html">禮盒優惠</a></li>
+                            </ul>
+                        </li>
+                        <!-- dropdown of the page -->
+                        <li class="dropdown" itemprop="name" content="各式酒品">
+                            <a itemprop="url" href="product_type_list.html" class="main-link">各式酒品</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">威士忌</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">葡萄酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">香檳氣泡酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">烈酒/白蘭地</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">清酒/燒酎</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">果實酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">中式酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">啤酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">調酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">送禮專區</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" itemprop="name" content="酒品事典">
+                            <a itemprop="url" href="story_list.html" class="main-link">酒品事典</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">威士忌</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">葡萄酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">調酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">喝酒文化</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" itemprop="name" content="調酒靈感">
+                            <a itemprop="url" href="story_list2.html" class="main-link">調酒靈感</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">威士忌基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">白蘭地基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">琴酒基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">利口酒基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">伏特加基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">龍舌蘭基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">蘭姆酒基底</a></li>
+                            </ul>
+                        </li>
+                        <li itemprop="name">
+                            <a itemprop="url" href="faq.html">常見問題</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 搜尋列 -->
+            <div class="search-holder">
+                <!-- select form of the page -->
+                <form action="product_list.html" class="select-form">
+                    <fieldset>
+                        <input type="search" class="form-control fwNormal bdr" placeholder="搜尋產品...">
+                        <button type="submit" class="sub-btn"><i class="fa fa-search"></i></button>
+                    </fieldset>
+                </form>
+                <a href="javascript:void(0);" class="search-opener icon"><i class="fa fa-times"></i></a>
+            </div>
+        </header>
+        <!-- main of the page -->
+        <main id="main">
+            <!-- banner of the page -->
+            <!-- 分頁Banner圖片尺寸: size_1280x900 -->
+            <section class="banner bg-parallax breadcrumb-banner">
+                <div class="breadcrumb__lazyload" style="background-image:url(images/banner_1920x900-5.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center breadcrumb-txt__wrap">
+                            <h1 class="heading text-uppercase fwLight">會員專區</h1>
+                            <ul class="list-unstyled breadcrumbs">
+                                <li><a href="index.html">首頁</a></li>
+                                <li>/</li>
+                                <li class="active">會員條款</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog-sec container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="terms__text-padding">
+                            <!-- 前言 -->
+                            <div class="terms__list">
+                                <p class="terms__list-text">歡迎您成為「嘉瑝洋酒」的會員。
+                                    為確保您的權利，請務必於完成註冊前，詳閱關於會員與嘉瑝洋酒 (下稱：本公司)之權利義務，即本會員條款(下稱：本條款)；當您完成註 冊程序，成為「嘉瑝洋酒」的網站(下稱：本網站)會員後，即代表您知悉並 願遵循本條款所載之所有規定。</p>
+                            </div><!-- 前言 End -->
+                            <!-- 政策 1 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">一、會員服務條款</h6>
+                                <p class="terms__list-text">
+                                    1.本會員服務條款所稱之「會員」，為依照本站所定之加入會員程序加入完成並通過認證者。<br>
+                                    2.當您使用本站服務時，即表示您同意及遵守本服務條款的規定事項及相關法律之規定。<br>
+                                    3.本站保留有審核加入會員資格之權利，另外已加入會員者，本站亦保留有解除其會員資格之權利。<br>
+                                    4.本會員服務條款之修訂，適用於所有會員，當本站修訂本服務條款時，將於本站上公告。
+                                </p>
+                            </div><!-- 政策 1 End -->
+                            <!-- 政策 2 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">二、隱私權保護</h6>
+                                <p class="terms__list-text">尊重並依據本網站「隱私權保護聲明」保護您的隱私(請參閱「隱私權保護聲明」條款)。</p>
+                            </div><!-- 政策 2 End -->
+                            <!-- 政策 3 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">三、會員</h6>
+                                <p class="terms__list-text">
+                                    1.使用本站所提供之會員服務時，於加入會員時所登錄之帳號及密碼使用之。<br>
+                                    2.會員須善盡帳號及密碼的使用與管理之責任。對於使用該會員之帳號及密碼(無關於會員本身或其他人)利用本站服務所造成或衍生之所有行為及結果，會員須自行負擔全部責任。<br>
+                                    3.會員之帳號及密碼遺失，或發現無故遭第三者盜用時，應立即通知本站連絡掛失，因未即時通知，導致本站無法有效防止及修改時，所造成的所有損失，會員應自負全責。<br>
+                                    4.每次結束使用本服務，執行會員之登出並關閉視窗，以確保您的會員權益。<br>
+                                    5.盜用第三者會員之帳號及密碼，導致第三者或本公司遭其他第三人或行政機關之調查或追訴時，第三者會員或本公司有權向您請求損害賠償，包括但不限於訴訟費用、律師費及商譽損失等。
+                                </p>
+                            </div><!-- 政策 3 End -->
+                            <!-- 政策 4 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">四、會員登錄資料</h6>
+                                <p class="terms__list-text">
+                                    1.會員登錄資料須提供您本人正確、最新及完整的資料。<br>
+                                    2.會員登錄資料不得有偽造、不實等之情事(ex如個人資料及信用卡資料)，一經發現本公司可拒絕其加入會員資格之權利。並得以暫停或終止其會員資格，若違反中華民國相關法律，亦將依法追究。<br>
+                                    3.會員基本資料(ex:住址，電話及其他登錄資料)<br>有變更時，請不定期更新相關個人資料，確保其正確及完整性。若您提供的資料有錯誤或不符等現象，本網站有權暫停或終止您的帳號，並拒絕您繼續使用本服務。<br>
+                                    4.未經會員本人同意，本公司原則上不會將涉及個人隱私之資料開示給第三者，唯資料共用原則...等不在此限(請參閱本站「隱私權保護聲明」相關規定)。<br>
+                                    5.會員應妥善保管密碼，不可將密碼洩露或提供給他人知道或使用；以同一個會員身分證字號和密碼使用本服務所進行的所有行為，都將被認為是該會員本人和密碼持有人的行為。<br>
+                                    6.會員如果發現或懷疑有第三人使用其會員身分證字號或密碼，應該立即通知本公司，採取必要的必要的防範措施。但上述通知不得解釋為本公司對會員負有任何形式之賠償或補償之責任或義務。
+                                </p>
+                            </div><!-- 政策 4 End -->
+                            <!-- 政策 5 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">五、使用行為</h6>
+                                <p class="terms__list-text">
+                                    1.您使用本服務之一切行為必須符合當地或國際相關法令規範；對於使用者的一切行為，您須自行負擔全部責任。<br>
+                                    2.您同意絕不為非法之目的或以非法方式使用本服務，與確實遵守中華民國相關法規及網際網路之國際慣例，並保證不得利用本服務從事侵害他人權益或違法之行為。<br>
+                                    3.您於使用本站會員服務時應遵守以下限制：<br>
+                                     a)有損他人人格或商標權、著作權等智慧財產權或其他權利內容。<br>
+                                     b)使用違反公共秩序或善良風俗或其他不法之文字。<br>
+                                     c)強烈政治、宗教色彩的偏激言論。<br>
+                                     d)未經本公司許可，不得利用本服務或本網站所提供其他資源，包括但不限於圖文資料庫、編寫製作網頁之軟體等，從事任何商業交易行為，或招攬廣告商或贊助人。<br>
+                                     e)其他違反本站「會員服務條款」的內容。
+                                </p>
+                            </div><!-- 政策 5 End -->
+                            <!-- 政策 6 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">六、COOKIE之使用</h6>
+                                <p class="terms__list-text">
+                                    1.本服務所載，或本服務所連結之一切軟體或內容，或本公司之廣告商或合夥人所提供之內容，均受其著作權或其他專有權利或法律所保障。<br>
+                                    2.當您傳輸資料至本公司提供之服務時，您即同意此一資料為全開放性(任何人均可瀏覽)。您授權並許可本公司得以重製、修飾、改編或以其他形式使用該內容之全部或一部分，及利用該內容製作衍生著作。衍生著作之著作權悉歸本公司所有。<br>
+                                    3. 本公司同意除依本使用條款約定，將前述您的資料及衍生著作置於本網站供網路使用者瀏覽，以及本公司所屬相關媒體外，絕不非法轉供其他直接營利目的或侵害您的權利之使用。<br>
+                                    4.所有網頁之頁面出現之廣告看板與活動訊息，所有權及經營權均為本公司所有，使用者除事先取得本公司同意外，不得自行使用所有訊息。<br>
+                                    5.會員同意並授權本網站，得為提供個人化服務或相關加值服務之目的，提供所需之會員資料給合作單位(第三者)做約定範圍內之運用，如會員不同意將其資料列於合作單位(第三者)產品或服務名單內，可通知本網站於名單中刪除其資料，並同時放棄其本網站以外之購物優惠或獲獎權利。<br>
+                                    6.同時為提供行銷、市場分析、統計或研究、或為提供會員個人化服務或加值服務之目的，會員同意本公司、或本公司之策略合作夥伴，得記錄、保存、並利用會員在本網站所留存或產生之資料及記錄，同時在不揭露各該資料之情形下得公開或使用統計資料。<br>
+                                    7.對於會員所登錄之個人資料，會員同意本網站得於合理之範圍內蒐集、處理、保存、傳遞及使用該等資料，以提供使用者其他資訊或服務、或作成會員統計資料、或進行關於網路行為之調查或行銷研究。
+                                </p>
+                            </div><!-- 政策 6 End -->
+                            <!-- 政策 7 -->
+                            <div class="terms__list">
+                                <h6 class="terms__list-title">七、會員身份終止與本公司通知之義務</h6>
+                                <p class="terms__list-text">
+                                    1.本公司具有更改各項服務內容或終止任一會員帳戶服務之權利。<br>
+                                    2.若會員決定終止本公司會員資格，可直接以電子郵件的方式通知本公司或是由本公司所提供之機制進行取消，本公司將儘快註銷您的會員資料。<br>
+                                    3.會員有通知取消本公司會員資格之義務，並自停止本公司會員身份之日起（以本公司電子郵件發出日期為準），喪失所有本服務所提供之優惠及權益。<br>
+                                    4.為避免惡意情事發生致使會員應享權益損失，當會員通知本公司停止會員身份時，本公司將再次以電子郵件確認無誤後，再進行註銷會員資格。</p>
+                            </div><!-- 政策 7 End -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer of the page -->
+        <footer id="footer">
+            <!-- footer folder of the page -->
+            <div class="footer-holder">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="footer__wrapper">
+                                <div class="logo">
+                                    <a href="index.html"><img class="img-responsive" src="images/logo-w.png" alt="size_345X100"></a>
+                                </div>
+                                <!-- footer nav of the page -->
+                                <ul class="list-unstyled footer-nav text-center">
+                                    <li><a href="news_list.html">新品優惠</a></li>
+                                    <li><a href="product_type_list.html">各式酒品</a></li>
+                                    <li><a href="story_list.html">酒品事典</a></li>
+                                    <li><a href="story_list2.html">調酒靈感</a></li>
+                                    <li><a href="faq.html">常見問題</a></li>
+                                    <li><a href="member.html">會員專區</a></li>
+                                    <li><a href="privacy.html">隱私權政策</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="footer__info-wrapper">
+                                <div class="footer__social-wrapper text-center">
+                                    <a href="#" class="footer__social-link"><img src="images/m-line.png" alt=""></a>
+                                    <a href="#" class="footer__social-link"><img src="images/m-facebook.png" alt=""></a>
+                                </div>
+                                <div class="footer__company-info-wrapper text-center">
+                                    <a href="tel:0955162322" class="footer__company-info"><i class="fa fa-phone" aria-hidden="true"></i>0955-162322</a>
+                                    <a href="tel:073878898" class="footer__company-info"><i class="fa fa-fax" aria-hidden="true"></i>07-3878898</a>
+                                    <a href="mailto:godchu77422@gmail.com" class="footer__company-info"><i class="fa fa-envelope" aria-hidden="true"></i>godchu77422@gmail.com</a>
+                                    <a href="https://goo.gl/maps/2AdU41vo2kcnJMHV7" target="__blank" class="footer__company-info"><i class="fa fa-map-marker" aria-hidden="true"></i>高雄市三民區澄清路381號</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="copyright text-center">
+                                <p>Copyright 嘉瑝洋酒 © 2022. <span class="footer__br">All rights reserved. </span><span class="footer__br">Designed By <a href="https://www.bondlink.com.tw/" target="_blank">Bondlink</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 警告標語 -->
+        <div class="warn-sign__wrapper pc-sign">
+            <div class="warn-sing__content">
+                <span class="warn-sing__txt">禁止酒駕&thinsp;<img src="images/warning-drive.png" alt="" class="warning__sign-icon">&thinsp;安全有保障</span>
+                <span class="warn-sing__txt">未滿十八歲者&thinsp;<img src="images/warning-drink.png" alt="" class="warning__sign-icon">&thinsp;禁止飲酒</span>
+            </div>
+        </div>
+        <div class="warn-sign__wrapper mobile-sign">
+            <div class="warn-sing__content">
+                <span class="warn-sing__txt">禁止酒駕&thinsp;<img src="images/warning-drive.png" alt="" class="warning__sign-icon">&thinsp;酒後不開車&thinsp;安全有保障</span>
+            </div>
+        </div>
+        <!-- 浮動Icon -->
+        <div class="scroll__item">
+            <ul class="list-unstyled widget-cart-wrap">
+                <li class="header__member"><a href="member.html" data-bs-toggle="modal" data-bs-target="#member-login" class="btn__member"><i class="icon-user"></i></a></li>
+                <li class="header__cart">
+                    <a href="order_cart.html" class="btn__order-cart"><img src="images/form-cart.png" alt="" class="cart-form"><span class="num round fontjosefin text-center">3</span></a>
+                </li>
+                <li class="header__search"><a href="javascript:void(0);" class="search-opener"><i class="icon-search"></i></a></li>
+                <li class="back-top__wrap">
+                    <a id="go-to-top" class="btn__back-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 浮動social-icon -->
+        <div class="footer__chatbox">
+            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=chiahuang"><img src="images/m-line.png" alt=""></a>
+            <a href="#"><img src="images/messenger.png" alt=""></a>
+        </div>
+        <!-- loader of the page -->
+        <!-- <div id="loader" class="loader-holder">
+            <div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
+        </div> -->
+    </div>
+    <!-- ↓↓↓ 會員登入彈窗 ↓↓↓ -->
+    <!-- 未登入彈窗 -->
+    <div class="modal fade login__modal" id="cart-login" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">您還沒登入哦！</div>
+                    <a href="order_cart.html">不登入直接購買</a>
+                </div>
+                <div class="modal-body">
+                    <div class="tx">
+                        <div>使用官網帳號登入</div>
+                    </div>
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號密碼不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="order_cart.html">
+                        <div class="edit-list">
+                            <input type="text" placeholder="*帳號 (E-mail)" class="modal-account">
+                        </div>
+                        <div class="edit-list">
+                            <input type="password" placeholder="*密碼 (6~10碼英文或數字)" class="modal-psw">
+                        </div>
+                        <div class="edit-list">
+                            <input type="text" placeholder="*驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg" class="modal-captcha-img">
+                        </div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn">登入</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn">登入</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <a data-bs-toggle="modal" data-bs-target="#forget-sendpw" class="forget-sendpw">忘記密碼</a>
+                        <span>/</span>
+                        <a data-bs-toggle="modal" data-bs-target="#member-register" class="member-register">會員註冊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登入彈窗 -->
+    <div class="modal fade login__modal member" id="member-login" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">會員登入</div>
+                </div>
+                <div class="modal-body">
+                    <div class="tx">
+                        <div>使用官網帳號登入</div>
+                    </div>
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號密碼不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="member.html">
+                        <div class="edit-list">
+                            <input type="text" placeholder="*帳號 (E-mail)" class="modal-account">
+                        </div>
+                        <div class="edit-list">
+                            <input type="password" placeholder="*密碼 (6~10碼英文或數字)" class="modal-psw">
+                        </div>
+                        <div class="edit-list">
+                            <input type="text" placeholder="*驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg" class="modal-captcha-img">
+                        </div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn">登入</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn">登入</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <a data-bs-toggle="modal" data-bs-target="#forget-sendpw" class="forget-sendpw">忘記密碼</a>
+                        <span>/</span>
+                        <a data-bs-toggle="modal" data-bs-target="#member-register" class="member-register">會員註冊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 註冊彈窗 -->
+    <div class="modal fade login__modal" id="member-register" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">會員註冊</div>
+                </div>
+                <div class="modal-body">
+                    <div class="tx">
+                        <div>註冊新帳號</div>
+                    </div>
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號密碼不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="registered_ok.html">
+                        <div class="edit-list">
+                            <div class="title">帳號*</div>
+                            <input type="text" placeholder="E-mail" class="modal-account modal-account__js">
+                        </div>
+                        <div class="edit-list">
+                            <div class="title">密碼*</div>
+                            <input type="password" placeholder="6~10碼英文或數字" class="modal-psw">
+                        </div>
+                        <div class="edit-list">
+                            <div class="title">驗證碼*</div>
+                            <input type="text" placeholder="驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg">
+                        </div>
+                        <div class="terms">確認註冊後，表示您已詳閱我們的<a href="terms.html" target="_blank" class="red">會員條款</a></div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn">確認送出</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn">確認送出</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <div>已經有帳號了？<a class="red member-login" data-bs-toggle="modal" data-bs-target="#member-login">馬上登入</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 忘記密碼彈窗 -->
+    <div class="modal fade login__modal forget" id="forget-sendpw" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">重設密碼</div>
+                    <span class="modal-txt">我們會發送信件至Email，<br>點擊信件中的連結以重設密碼</span>
+                </div>
+                <div class="modal-body">
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="order_cart.html">
+                        <div class="edit-list">
+                            <input type="text" placeholder="*帳號 (E-mail)" class="modal-account1">
+                        </div>
+                        <div class="edit-list">
+                            <input type="text" placeholder="*驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg" class="modal-captcha-img">
+                        </div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn-1">送出驗證信</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn-1">送出驗證信</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <a class="member-login" data-bs-toggle="modal" data-bs-target="#member-login">會員登入</a>
+                        <span>/</span>
+                        <a data-bs-toggle="modal" data-bs-target="#member-register" class="member-register">會員註冊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ↑↑↑ 會員登入彈窗End ↑↑↑ -->
+    <!-- include jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <!-- include jQuery -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- include jQuery -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>

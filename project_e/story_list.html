@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>酒品事典 | 嘉瑝洋酒</title>
+    <meta property="og:title" content="嘉瑝洋酒" />
+    <meta property="og:description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店" />
+    <meta property="og:url" content="網站網址" />
+    <meta property="og:image" content="代表縮圖" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店">
+    <!-- Css -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700%7CPinyon+Script" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/icofont.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link href="assets/css/cart-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- 網頁圖標 -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/192X192.png">
+</head>
+
+<body>
+    <!-- main container of all the page elements -->
+    <div id="wrapper">
+        <!-- header of the page -->
+        <header id="header" class="v1">
+            <!-- header holder of the page -->
+            <div class="header-holder">
+                <div class="container-fluid">
+                    <div class="top__header">
+                        <!-- 會員/搜尋icon -->
+                        <ul class="list-unstyled widget-cart-wrap pull-right header__list">
+                            <li class="header__menu-dropdown">
+                                <a href="javascript:void(0);" class="nav-opener menu-toggle" id="menu-toggle">
+                                    <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                                    <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                                    <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+                                </a>
+                            </li>
+                            <li class="header__member"><a href="member.html" data-bs-toggle="modal" data-bs-target="#member-login" class="btn__member"><i class="icon-user"></i><span class="header-icon__title">會員登入/註冊</span></a></li>
+                            <li class="header__cart">
+                                <a href="order_cart.html" class="btn__order-cart"><img src="images/form-cart.png" alt="" class="cart-form"><span class="num round fontjosefin text-center">3</span><span class="header-icon__title">洽詢清單</span></a>
+                            </li>
+                            <li class="header__search"><a href="javascript:void(0);" class="search-opener"><i class="icon-search"></i></a></li>
+                        </ul>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="size_345X100" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 導覽列 -->
+            <div class="nav-holder container">
+                <!-- nav of the page -->
+                <nav id="nav">
+                    <ul class="list-unstyled text-center" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+                        <li class="n-logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="size_345X100" class="img-responsive">
+                            </a>
+                        </li>
+                        <li class="dropdown" itemprop="name" content="新品優惠">
+                            <a itemprop="url" href="news_list.html" class="main-link">新品優惠</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="news_list.html">限時優惠</a></li>
+                                <li itemprop="name"><a itemprop="url" href="news_list.html">獨家優惠</a></li>
+                                <li itemprop="name"><a itemprop="url" href="news_list.html">禮盒優惠</a></li>
+                            </ul>
+                        </li>
+                        <!-- dropdown of the page -->
+                        <li class="dropdown" itemprop="name" content="各式酒品">
+                            <a itemprop="url" href="product_type_list.html" class="main-link">各式酒品</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">威士忌</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">葡萄酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">香檳氣泡酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">烈酒/白蘭地</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">清酒/燒酎</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">果實酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">中式酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">啤酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">調酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="product_list.html">送禮專區</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" itemprop="name" content="酒品事典">
+                            <a itemprop="url" href="story_list.html" class="main-link">酒品事典</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">威士忌</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">葡萄酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">調酒</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list.html">喝酒文化</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" itemprop="name" content="調酒靈感">
+                            <a itemprop="url" href="story_list2.html" class="main-link">調酒靈感</a>
+                            <a href="javascript:void(0);" class="nav__plus"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <!-- dropdown menu of the page -->
+                            <ul class="dropdown-menu text-left">
+                                <!-- 手機板才會出現的關閉按鈕 -->
+                                <div class="mobile__close-btn">
+                                    <div class="dropdown-menu__close">
+                                        <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">威士忌基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">白蘭地基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">琴酒基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">利口酒基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">伏特加基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">龍舌蘭基底</a></li>
+                                <li itemprop="name"><a itemprop="url" href="story_list2.html">蘭姆酒基底</a></li>
+                            </ul>
+                        </li>
+                        <li itemprop="name">
+                            <a itemprop="url" href="faq.html">常見問題</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 搜尋列 -->
+            <div class="search-holder">
+                <!-- select form of the page -->
+                <form action="product_list.html" class="select-form">
+                    <fieldset>
+                        <input type="search" class="form-control fwNormal bdr" placeholder="搜尋產品...">
+                        <button type="submit" class="sub-btn"><i class="fa fa-search"></i></button>
+                    </fieldset>
+                </form>
+                <a href="javascript:void(0);" class="search-opener icon"><i class="fa fa-times"></i></a>
+            </div>
+        </header>
+        <!-- main of the page -->
+        <main id="main">
+            <!-- banner of the page -->
+            <!-- 分頁Banner圖片尺寸: size_1280x900 -->
+            <section class="banner bg-parallax breadcrumb-banner">
+                <div class="breadcrumb__lazyload" style="background-image:url(images/banner_1920x900-5.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center breadcrumb-txt__wrap">
+                            <h1 class="heading text-uppercase fwLight">酒品事典</h1>
+                            <ul class="list-unstyled breadcrumbs">
+                                <li><a href="index.html">首頁</a></li>
+                                <li>/</li>
+                                <li class="active">酒品事典</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- blog sec of the page -->
+            <section class="blog-sec container">
+                <div class="row">
+                    <!-- sidebar of the page -->
+                    <aside id="sidebar" class="col-12 col-lg-3 pull-left">
+                        <!-- widget of the page -->
+                        <section class="widget search__widget">
+                            <h5 class="heading2 text-uppercase">酒品事典搜尋</h5>
+                            <form action="story_list1.html" method="post">
+                                <div class="input-group list-search__wrapper">
+                                    <input type="text" class="form-control list-search__box" placeholder="搜尋酒品事典...">
+                                    <span class="btn-type__search-outer">
+                                        <button class="btn-type__search" type="submit"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </section>
+                        <!-- widget of the page -->
+                        <section class="widget category-widget">
+                            <h5 class="heading2 text-uppercase">酒品事典分類</h5>
+                            <ul class="list-unstyled text-uppercase category-list">
+                                <li class="active"><a href="story_list.html">所有酒品事典<span class="item__amount">(20)</span></a></li>
+                                <li><a href="story_list.html">威士忌<span class="item__amount">(9)</span></a></li>
+                                <li><a href="story_list.html">葡萄酒<span class="item__amount">(2)</span></a></li>
+                                <li><a href="story_list.html">調酒<span class="item__amount">(5)</span></a></li>
+                                <li><a href="story_list.html">喝酒文化<span class="item__amount">(5)</span></a></li>
+                            </ul>
+                        </section>
+                        <!-- widget of the page -->
+                        <!-- 熱門消息 -->
+                        <section class="widget hot-list__widget">
+                            <h5 class="heading2 text-uppercase">熱門酒品事典</h5>
+                            <ul class="list-unstyled feature-list feature2">
+                                <li>
+                                    <div class="img-holder text-center pull-left">
+                                        <a href="story_info.html" class="sidebar-img">
+                                            <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                        </a>
+                                    </div>
+                                    <div class="txt-holder pull-left">
+                                        <div class="heading3"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></div>
+                                        <div class="story__time">- 2022.07.15 -</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-holder text-center pull-left">
+                                        <a href="story_info.html" class="sidebar-img">
+                                            <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                        </a>
+                                    </div>
+                                    <div class="txt-holder pull-left">
+                                        <div class="heading3"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></div>
+                                        <div class="story__time">- 2022.07.15 -</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-holder text-center pull-left">
+                                        <a href="story_info.html" class="sidebar-img">
+                                            <img class="img-responsive" src="images/900x600-no.jpg" alt="size_900X600 / min_size_300X200">
+                                        </a>
+                                    </div>
+                                    <div class="txt-holder pull-left">
+                                        <div class="heading3"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></div>
+                                        <div class="story__time">- 2022.07.15 -</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-holder text-center pull-left">
+                                        <a href="story_info.html" class="sidebar-img">
+                                            <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                        </a>
+                                    </div>
+                                    <div class="txt-holder pull-left">
+                                        <div class="heading3"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></div>
+                                        <div class="story__time">- 2022.07.15 -</div>
+                                    </div>
+                                </li>
+                        </section>
+                    </aside>
+                    <!-- 酒品事典項目 每頁最多六項 -->
+                    <article id="content" class="col-12 col-lg-9 pull-right news-list__sec story__sec">
+                        <div class="row">
+                            <!-- 酒品事典 項目 -->
+                            <div class="col-sm-6">
+                                <div class="portfolio-col">
+                                    <div class="story-top__wrap">
+                                        <a href="story_info.html">
+                                            <div class="img-holder story-img__wrapper">
+                                                <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                            </div>
+                                        </a>
+                                        <a href="story_list.html" class="story-list__tag"><i class="fa fa-book" aria-hidden="true"></i>喝酒文化</a>
+                                    </div>
+                                    <div class="wrap story-card__wrapper">
+                                        <div class="content pull-left story-intro__wrapper">
+                                            <div class="story__time">- 2022.07.15 -</div>
+                                            <h4 class="heading2"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></h4>
+                                            <p class="two-row">「飲酒會」對日本人來說是社交生活不可或缺的一環，不論是工作應酬、和朋友聚會一定都少不了喝酒助興，但在日本喝酒其實有非常多的「潛規則」！想知道日本人到底有多愛喝酒，有哪些類型的飲酒會嗎？快一起來深入了解日本喝酒文化吧！</p>
+                                        </div>
+                                        <div class="btn__story-more">
+                                            <a href="story_info.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="portfolio-col">
+                                    <div class="story-top__wrap">
+                                        <a href="story_info.html">
+                                            <div class="img-holder story-img__wrapper">
+                                                <img class="img-responsive" src="images/900x600-no.jpg" alt="size_900X600 / min_size_300X200">
+                                            </div>
+                                        </a>
+                                        <a href="story_list.html" class="story-list__tag"><i class="fa fa-book" aria-hidden="true"></i>喝酒文化</a>
+                                    </div>
+                                    <div class="wrap story-card__wrapper">
+                                        <div class="content pull-left story-intro__wrapper">
+                                            <div class="story__time">- 2022.07.15 -</div>
+                                            <h4 class="heading2"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></h4>
+                                            <p class="two-row">「飲酒會」對日本人來說是社交生活不可或缺的一環，不論是工作應酬、和朋友聚會一定都少不了喝酒助興，但在日本喝酒其實有非常多的「潛規則」！想知道日本人到底有多愛喝酒，有哪些類型的飲酒會嗎？快一起來深入了解日本喝酒文化吧！</p>
+                                        </div>
+                                        <div class="btn__story-more">
+                                            <a href="story_info.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="portfolio-col">
+                                    <div class="story-top__wrap">
+                                        <a href="story_info.html">
+                                            <div class="img-holder story-img__wrapper">
+                                                <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                            </div>
+                                        </a>
+                                        <a href="story_list.html" class="story-list__tag"><i class="fa fa-book" aria-hidden="true"></i>喝酒文化</a>
+                                    </div>
+                                    <div class="wrap story-card__wrapper">
+                                        <div class="content pull-left story-intro__wrapper">
+                                            <div class="story__time">- 2022.07.15 -</div>
+                                            <h4 class="heading2"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></h4>
+                                            <p class="two-row">「飲酒會」對日本人來說是社交生活不可或缺的一環，不論是工作應酬、和朋友聚會一定都少不了喝酒助興，但在日本喝酒其實有非常多的「潛規則」！想知道日本人到底有多愛喝酒，有哪些類型的飲酒會嗎？快一起來深入了解日本喝酒文化吧！</p>
+                                        </div>
+                                        <div class="btn__story-more">
+                                            <a href="story_info.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="portfolio-col">
+                                    <div class="story-top__wrap">
+                                        <a href="story_info.html">
+                                            <div class="img-holder story-img__wrapper">
+                                                <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                            </div>
+                                        </a>
+                                        <a href="story_list.html" class="story-list__tag"><i class="fa fa-book" aria-hidden="true"></i>喝酒文化</a>
+                                    </div>
+                                    <div class="wrap story-card__wrapper">
+                                        <div class="content pull-left story-intro__wrapper">
+                                            <div class="story__time">- 2022.07.15 -</div>
+                                            <h4 class="heading2"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></h4>
+                                            <p class="two-row">「飲酒會」對日本人來說是社交生活不可或缺的一環，不論是工作應酬、和朋友聚會一定都少不了喝酒助興，但在日本喝酒其實有非常多的「潛規則」！想知道日本人到底有多愛喝酒，有哪些類型的飲酒會嗎？快一起來深入了解日本喝酒文化吧！</p>
+                                        </div>
+                                        <div class="btn__story-more">
+                                            <a href="story_info.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="portfolio-col">
+                                    <div class="story-top__wrap">
+                                        <a href="story_info.html">
+                                            <div class="img-holder story-img__wrapper">
+                                                <img class="img-responsive" src="images/900x600-no.jpg" alt="size_900X600 / min_size_300X200">
+                                            </div>
+                                        </a>
+                                        <a href="story_list.html" class="story-list__tag"><i class="fa fa-book" aria-hidden="true"></i>喝酒文化</a>
+                                    </div>
+                                    <div class="wrap story-card__wrapper">
+                                        <div class="content pull-left story-intro__wrapper">
+                                            <div class="story__time">- 2022.07.15 -</div>
+                                            <h4 class="heading2"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></h4>
+                                            <p class="two-row">「飲酒會」對日本人來說是社交生活不可或缺的一環，不論是工作應酬、和朋友聚會一定都少不了喝酒助興，但在日本喝酒其實有非常多的「潛規則」！想知道日本人到底有多愛喝酒，有哪些類型的飲酒會嗎？快一起來深入了解日本喝酒文化吧！</p>
+                                        </div>
+                                        <div class="btn__story-more">
+                                            <a href="story_info.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="portfolio-col">
+                                    <div class="story-top__wrap">
+                                        <a href="story_info.html">
+                                            <div class="img-holder story-img__wrapper">
+                                                <img class="img-responsive" src="images/story/story_900x600.jpg" alt="size_900X600 / min_size_300X200">
+                                            </div>
+                                        </a>
+                                        <a href="story_list.html" class="story-list__tag"><i class="fa fa-book" aria-hidden="true"></i>喝酒文化</a>
+                                    </div>
+                                    <div class="wrap story-card__wrapper">
+                                        <div class="content pull-left story-intro__wrapper">
+                                            <div class="story__time">- 2022.07.15 -</div>
+                                            <h4 class="heading2"><a href="story_info.html" class="one-row">日本「飲酒會文化」大解析</a></h4>
+                                            <p class="two-row">「飲酒會」對日本人來說是社交生活不可或缺的一環，不論是工作應酬、和朋友聚會一定都少不了喝酒助興，但在日本喝酒其實有非常多的「潛規則」！想知道日本人到底有多愛喝酒，有哪些類型的飲酒會嗎？快一起來深入了解日本喝酒文化吧！</p>
+                                        </div>
+                                        <div class="btn__story-more">
+                                            <a href="story_info.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <!-- 暫無資料 -->
+                                <div class="no-info__wrapper">
+                                    <p>暫無相關資訊</p>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <!-- 頁碼 -->
+                                <ul class="list-unstyled pagination">
+                                    <li><a href="story_list.html"><i class="fa fa-long-arrow-left"></i></a></li>
+                                    <li><a href="story_list.html">1</a></li>
+                                    <li><a href="story_list.html">2</a></li>
+                                    <li class="active"><a href="story_list.html">3</a></li>
+                                    <li><a href="story_list.html">4</a></li>
+                                    <li><a href="story_list.html">5</a></li>
+                                    <li><a href="story_list.html"><i class="fa fa-long-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!-- footer of the page -->
+        <footer id="footer">
+            <!-- footer folder of the page -->
+            <div class="footer-holder">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer__wrapper">
+                                <div class="logo">
+                                    <a href="index.html"><img class="img-responsive" src="images/logo-w.png" alt="size_345X100"></a>
+                                </div>
+                                <!-- footer nav of the page -->
+                                <ul class="list-unstyled footer-nav text-center">
+                                    <li><a href="news_list.html">新品優惠</a></li>
+                                    <li><a href="product_type_list.html">各式酒品</a></li>
+                                    <li><a href="story_list.html">酒品事典</a></li>
+                                    <li><a href="story_list2.html">調酒靈感</a></li>
+                                    <li><a href="faq.html">常見問題</a></li>
+                                    <li><a href="member.html">會員專區</a></li>
+                                    <li><a href="privacy.html">隱私權政策</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="footer__info-wrapper">
+                                <div class="footer__social-wrapper text-center">
+                                    <a href="#" class="footer__social-link"><img src="images/m-line.png" alt=""></a>
+                                    <a href="#" class="footer__social-link"><img src="images/m-facebook.png" alt=""></a>
+                                </div>
+                                <div class="footer__company-info-wrapper text-center">
+                                    <a href="tel:0955162322" class="footer__company-info"><i class="fa fa-phone" aria-hidden="true"></i>0955-162322</a>
+                                    <a href="tel:073878898" class="footer__company-info"><i class="fa fa-fax" aria-hidden="true"></i>07-3878898</a>
+                                    <a href="mailto:godchu77422@gmail.com" class="footer__company-info"><i class="fa fa-envelope" aria-hidden="true"></i>godchu77422@gmail.com</a>
+                                    <a href="https://goo.gl/maps/2AdU41vo2kcnJMHV7" target="__blank" class="footer__company-info"><i class="fa fa-map-marker" aria-hidden="true"></i>高雄市三民區澄清路381號</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="copyright text-center">
+                                <p>Copyright 嘉瑝洋酒 © 2022. <span class="footer__br">All rights reserved. </span><span class="footer__br">Designed By <a href="https://www.bondlink.com.tw/" target="_blank">Bondlink</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- 警告標語 -->
+        <div class="warn-sign__wrapper pc-sign">
+            <div class="warn-sing__content">
+                <span class="warn-sing__txt">禁止酒駕&thinsp;<img src="images/warning-drive.png" alt="" class="warning__sign-icon">&thinsp;安全有保障</span>
+                <span class="warn-sing__txt">未滿十八歲者&thinsp;<img src="images/warning-drink.png" alt="" class="warning__sign-icon">&thinsp;禁止飲酒</span>
+            </div>
+        </div>
+        <div class="warn-sign__wrapper mobile-sign">
+            <div class="warn-sing__content">
+                <span class="warn-sing__txt">禁止酒駕&thinsp;<img src="images/warning-drive.png" alt="" class="warning__sign-icon">&thinsp;酒後不開車&thinsp;安全有保障</span>
+            </div>
+        </div>
+        <!-- 浮動Icon -->
+        <div class="scroll__item">
+            <ul class="list-unstyled widget-cart-wrap">
+                <li class="header__member"><a href="member.html" data-bs-toggle="modal" data-bs-target="#member-login" class="btn__member"><i class="icon-user"></i></a></li>
+                <li class="header__cart">
+                    <a href="order_cart.html" class="btn__order-cart"><img src="images/form-cart.png" alt="" class="cart-form"><span class="num round fontjosefin text-center">3</span></a>
+                </li>
+                <li class="header__search"><a href="javascript:void(0);" class="search-opener"><i class="icon-search"></i></a></li>
+                <li class="back-top__wrap">
+                    <a id="go-to-top" class="btn__back-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 浮動social-icon -->
+        <div class="footer__chatbox">
+            <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=chiahuang"><img src="images/m-line.png" alt=""></a>
+            <a href="#"><img src="images/messenger.png" alt=""></a>
+        </div>
+        <!-- loader of the page -->
+        <!-- <div id="loader" class="loader-holder">
+            <div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
+        </div> -->
+    </div>
+    <!-- ↓↓↓ 會員登入彈窗 ↓↓↓ -->
+    <!-- 未登入彈窗 -->
+    <div class="modal fade login__modal" id="cart-login" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">您還沒登入哦！</div>
+                    <a href="order_cart.html">不登入直接購買</a>
+                </div>
+                <div class="modal-body">
+                    <div class="tx">
+                        <div>使用官網帳號登入</div>
+                    </div>
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號密碼不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="order_cart.html">
+                        <div class="edit-list">
+                            <input type="text" placeholder="*帳號 (E-mail)" class="modal-account">
+                        </div>
+                        <div class="edit-list">
+                            <input type="password" placeholder="*密碼 (6~10碼英文或數字)" class="modal-psw">
+                        </div>
+                        <div class="edit-list">
+                            <input type="text" placeholder="*驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg" class="modal-captcha-img">
+                        </div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn">登入</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn">登入</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <a data-bs-toggle="modal" data-bs-target="#forget-sendpw" class="forget-sendpw">忘記密碼</a>
+                        <span>/</span>
+                        <a data-bs-toggle="modal" data-bs-target="#member-register" class="member-register">會員註冊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登入彈窗 -->
+    <div class="modal fade login__modal member" id="member-login" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">會員登入</div>
+                </div>
+                <div class="modal-body">
+                    <div class="tx">
+                        <div>使用官網帳號登入</div>
+                    </div>
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號密碼不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="member.html">
+                        <div class="edit-list">
+                            <input type="text" placeholder="*帳號 (E-mail)" class="modal-account">
+                        </div>
+                        <div class="edit-list">
+                            <input type="password" placeholder="*密碼 (6~10碼英文或數字)" class="modal-psw">
+                        </div>
+                        <div class="edit-list">
+                            <input type="text" placeholder="*驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg" class="modal-captcha-img">
+                        </div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn">登入</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn">登入</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <a data-bs-toggle="modal" data-bs-target="#forget-sendpw" class="forget-sendpw">忘記密碼</a>
+                        <span>/</span>
+                        <a data-bs-toggle="modal" data-bs-target="#member-register" class="member-register">會員註冊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 註冊彈窗 -->
+    <div class="modal fade login__modal" id="member-register" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">會員註冊</div>
+                </div>
+                <div class="modal-body">
+                    <div class="tx">
+                        <div>註冊新帳號</div>
+                    </div>
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號密碼不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="registered_ok.html">
+                        <div class="edit-list">
+                            <div class="title">帳號*</div>
+                            <input type="text" placeholder="E-mail" class="modal-account modal-account__js">
+                        </div>
+                        <div class="edit-list">
+                            <div class="title">密碼*</div>
+                            <input type="password" placeholder="6~10碼英文或數字" class="modal-psw">
+                        </div>
+                        <div class="edit-list">
+                            <div class="title">驗證碼*</div>
+                            <input type="text" placeholder="驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg">
+                        </div>
+                        <div class="terms">確認註冊後，表示您已詳閱我們的<a href="terms.html" target="_blank" class="red">會員條款</a></div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn">確認送出</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn">確認送出</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <div>已經有帳號了？<a class="red member-login" data-bs-toggle="modal" data-bs-target="#member-login">馬上登入</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 忘記密碼彈窗 -->
+    <div class="modal fade login__modal forget" id="forget-sendpw" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                    </button>
+                    <div class="title">重設密碼</div>
+                    <span class="modal-txt">我們會發送信件至Email，<br>點擊信件中的連結以重設密碼</span>
+                </div>
+                <div class="modal-body">
+                    <!-- 帳密未填notice-block加上show 就會出現提醒樣式 -->
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>帳號不正確，請再檢查一下
+                    </div>
+                    <div class="notice-block show">
+                        <i class="fa fa-exclamation-circle"></i>驗證碼不正確，請再檢查一下
+                    </div>
+                    <!-- form表單 -->
+                    <form action="order_cart.html">
+                        <div class="edit-list">
+                            <input type="text" placeholder="*帳號 (E-mail)" class="modal-account1">
+                        </div>
+                        <div class="edit-list">
+                            <input type="text" placeholder="*驗證碼" class="modal-captcha">
+                            <img src="assets/images/demo/captcha.jpg" class="modal-captcha-img">
+                        </div>
+                        <!-- 帳密皆輸入 可點 -->
+                        <button type="submit" value="submit" class="lezada-button lezada-button--medium run-btn-1">送出驗證信</button>
+                        <!-- 帳或密無輸入 不能點 -->
+                        <button type="button" value="submit" class="lezada-button lezada-button--medium no-run-btn-1">送出驗證信</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="other-link">
+                        <a class="member-login" data-bs-toggle="modal" data-bs-target="#member-login">會員登入</a>
+                        <span>/</span>
+                        <a data-bs-toggle="modal" data-bs-target="#member-register" class="member-register">會員註冊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ↑↑↑ 會員登入彈窗End ↑↑↑ -->
+    <!-- include jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <!-- include jQuery -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- include jQuery -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>

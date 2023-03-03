@@ -1,0 +1,30 @@
+.header__area-top-bar-transparent-bar{
+  background: #333;
+}
+.header__area-top-bar-left ul li a i::before{
+  color: #F03241;
+}
+.header__area-left-contact{
+  background: #F03241;
+}
+.header__area-left-contact-content span{
+  color: #333;
+}
+.header__area-top-bar-right ul li a:hover i::before{
+  color: #F03241;
+}
+
+
+.page__banner-content ul li{
+  color: #F03241;
+}
+
+.section-top{
+  color: #F03241;
+}
+.section-top::before{
+  background: #F03241;
+}
+.theme-btn{
+  background: #F03241;
+}

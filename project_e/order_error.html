@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>刷卡失敗 | 嘉瑝洋酒</title>
+  <meta property="og:title" content="嘉瑝洋酒" />
+  <meta property="og:description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店" />
+  <meta property="og:url" content="網站網址" />
+  <meta property="og:image" content="代表縮圖" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="嘉瑝洋酒，專業威士忌，烈酒，葡萄酒專賣店">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/192X192.png">
+  <!-- 樣式Css -->
+  <style type="text/css">
+  @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+  * {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  .error-page {
+    margin: 0;
+    height: 100vh;
+  }
+
+  .error-box {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .error-box-text {
+    z-index: 999;
+    position: relative;
+  }
+
+  .error-box-text span {
+    font-size: 200px;
+    font-weight: 700;
+    color: #C8A063;
+    line-height: 1;
+    margin-top: 0;
+  }
+
+  .error-box-text .mt-20 {
+    margin-top: 20px;
+  }
+
+  .error-box-text .mr-5 {
+    margin-right: 5px;
+  }
+
+  .error-box-text .dark-button {
+    padding: 10px 49px;
+    background-color: #1478D0;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    border-radius: 50px;
+  }
+
+  .error-box-text .dark-button:hover {
+    background-color: transparent;
+    border: 1px solid #1478D0;
+    color: #1478D0;
+  }
+
+  .error-box-text .dark-button.dark-button--black {
+    background-color: #bbb;
+  }
+
+  .error-box-text .dark-button.dark-button--black:hover {
+    background-color: transparent;
+    border: 1px solid #aaa;
+    color: #aaa;
+  }
+
+  .back-box {
+    z-index: -999999;
+    background: #f9f9f9;
+    position: relative;
+  }
+
+  .back-box p {
+    color: rgba(204, 204, 204, 0.2);
+    font-size: 250px;
+    line-height: 250px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fail-box {
+    color: #333;
+    width: 360px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .fail-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .fail-reason {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+
+  .fail-reason p {
+    margin: 0;
+    line-height: 1.8;
+  }
+
+  .fail-reason__title {
+    margin-bottom: 10px !important;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .remind-list {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px 15px 20px 35px;
+    color: #1478D0;
+    border: 1px solid rgb(20 120 208 / 25%);
+    border-radius: 3px;
+    background-color: rgb(20 120 208 / 10%);
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+  }
+
+  .remind-list li {}
+
+  .remind-list__item {
+
+    list-style: disc;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .remind-list__item:last-child,
+  .mb-0 {
+    margin-bottom: 0;
+  }
+
+  .fail-img {
+    margin-top: 25%;
+    width: 44px;
+  }
+
+  @media (max-width: 900px) {
+    .error-box p {
+      font-size: 150px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .back-box {
+      display: none;
+    }
+
+    .error-box-text span {
+      font-size: 100px;
+    }
+
+    .fail-title {
+      margin-top: 10px;
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .error-box-text .dark-button {
+      padding: 10px 35px;
+    }
+
+    .fail-box {
+      width: 300px;
+    }
+
+    .fail-title {
+      font-size: 26px;
+    }
+
+    .fail-img {
+      margin-top: 8%;
+    }
+  }
+  </style>
+</head>
+
+<body class="error-page">
+  <!-- error START -->
+  <div class="fail-box">
+    <img class="fail-img" src="images/pay-fail.png" alt="">
+    <h1 class="fail-title">付款失敗! 請重新付款</h1>
+    <div class="fail-reason">
+      <p class="fail-reason__title">您付款失敗的原因，可能如下：</p>
+      <p>1.信用卡第一次使用尚未開卡</p>
+      <p>2.信用卡卡號或到期日輸入錯誤</p>
+      <p>3.信用卡已超過到期日使用期限</p>
+      <p>4.信用卡發卡銀行內部系統問題</p>
+      <p>5.信用卡授權時，網路斷線</p>
+    </div>
+    <ul class="remind-list">
+      <li class="remind-list__item">提醒您！請留意輸入的信用卡卡號、姓名、到期日以及卡片背後末3碼是否正確。</li>
+      <li class="remind-list__item mb-0">如果依然收到授權失敗的通知，可能原因為發卡銀行內部系統作業問題，請與您的信用卡發卡銀行聯絡。</li>
+    </ul>
+    <div class="error-box-text">
+      <div class="mt-20">
+        <a href="#" class="dark-button dark-button--black mr-5">洽詢紀錄</a>
+        <a href="#" class="dark-button">立即付款</a>
+      </div>
+    </div>
+  </div>
+  <div class="error-box">
+    <div class="back-box">
+      <p>Error</p>
+    </div>
+  </div>
+  <!-- error END -->
+</body>
+
+</html>

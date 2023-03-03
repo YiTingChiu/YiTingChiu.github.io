@@ -1,0 +1,237 @@
+ /*卡片外型*/
+ .one-row {
+   overflow: hidden;
+   display: -webkit-box;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+ }
+
+ .three-row {
+   overflow: hidden;
+   display: -webkit-box;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+ }
+
+ .list__img {
+   display: block;
+   overflow: hidden;
+   transition: 0.3s;
+ }
+ 
+
+ .single-item .list__img img:hover,
+ .sidebar-item .list__img img:hover {
+   transform: scale(1.1);
+   transition: 0.3s;
+ }
+
+ .blog-area .blog-items .item {
+   border-radius: 8px
+ }
+
+ .blog-area .blog-items .single-item {
+   border-radius: 8px;
+ }
+
+ .no-info__wrapper {
+   padding: 14px 10px;
+   margin-bottom: 30px;
+   border: 1px solid #d7d7d7;
+   border-radius: 3px;
+   box-sizing: border-box;
+   display: block;
+ }
+
+ .no-info__wrapper p {
+   text-align: center;
+   font-size: 16px;
+   letter-spacing: 1px;
+   margin: 0;
+ }
+
+ /*卡片連結*/
+ .card-btn__wrap {
+   justify-content: flex-end;
+ }
+
+ .card-link {
+   color: #1CB9DE;
+   display: flex;
+   align-items: center;
+ }
+
+ .card-link i {
+   padding-left: 8px;
+ }
+
+ .card-link:hover {
+   color: #EF7C00;
+ }
+
+
+ /*卡片字體*/
+ .blog-area .blog-items .info {
+   padding-top: 4px !important;
+   background: #ffffff;
+   border-radius: 0 0 5px 5px;
+ }
+
+ .blog-area .blog-items .info .card__title {
+   font-weight: 700;
+   line-height: 40px;
+   font-size: 24px;
+   margin-bottom: 10px;
+   min-height: 38px;
+ }
+
+ .blog-area .blog-items .info .card__intro {
+   font-size: 16px;
+   line-height: 36px;
+   letter-spacing: 0.15em;
+   color: #575656;
+   min-height: 108px;
+ }
+
+ .blog-area .meta ul li {
+   font-size: 17px;
+   font-family: 'open sans', sans-serif;
+   color: #333333;
+   min-height: 28px;
+ }
+
+
+ /*側欄*/
+ .blog-area .sidebar button[type="submit"]:hover {
+   color: #1CB9DE;
+ }
+
+ .blog-area .sidebar .title .sidebar__head {
+   font-weight: 600;
+   margin-bottom: 30px;
+   margin-top: -5px;
+   position: relative;
+   text-transform: capitalize;
+   z-index: 1;
+   font-size: 20px;
+   display: inline-block;
+   padding-bottom: 15px;
+ }
+
+ .blog-area .sidebar .sidebar-item li a:hover {
+   color: #1CB9DE;
+ }
+
+
+ .blog-area .sidebar .sidebar-item li a span {
+   transition: 0.3s;
+ }
+
+ .blog-area .sidebar .sidebar-item li a:hover span {
+   background: #1CB9DE;
+   color: #fff;
+   transition: 0.3s;
+ }
+
+ .blog-area .sidebar .sidebar-item li.active a {
+   color: #1CB9DE;
+ }
+
+ .blog-area .sidebar .sidebar-item li.active>a>span {
+   background: #1CB9DE;
+   color: #fff;
+ }
+
+ .blog-area .sidebar .title h5::after {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   content: "";
+   height: 2px;
+   width: 50px;
+   border-bottom: 2px solid #1CB9DE;
+ }
+
+
+ .sidebar-item.recent-post li .info a {
+   font-size: 16px;
+ }
+
+ /*頁碼*/
+ .pagi-area .pagination li.page-item a {
+   width: 50px;
+ }
+
+ .pagi-area .pagination li a {
+   padding: 15px;
+ }
+
+ .page-link:focus {
+   box-shadow: none;
+ }
+
+ .page-link:hover {
+   color: #fff;
+   text-decoration: none;
+   background-color: rgb(28 185 222 / 20%);
+   border-color: rgb(28 185 222 / 20%);
+ }
+
+
+ /*消息內容頁面的麵包屑*/
+
+ /*消息內容頁面*/
+ .info__main-title {
+   font-size: 32px;
+   margin-bottom: 15px;
+   font-weight: 700;
+ }
+
+ .blog-area .blog-items .info .info-content__wrap {
+   margin-bottom: 30px;
+   text-align: justify;
+   line-height: 36px;
+ }
+
+ .blog-area .blog-items .info .info-content__wrap ul {
+   list-style: disc;
+   padding-left: 27px;
+ }
+
+ .blog-area .blog-items .info .info-content__wrap ol {
+   list-style: auto;
+   padding-left: 27px;
+ }
+
+ .info-content__wrap .sub-title {
+   font-size: 27px;
+   font-weight: 700;
+   line-height: 1.4;
+ }
+
+ .info__social {
+   align-items: center;
+ }
+
+ .info__social .socia__share {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #898989;
+   border-radius: 3px;
+   width: 24px;
+   height: 24px;
+   margin: 0 5px;
+   transition: 0.3s;
+ }
+
+ .info__social .socia__share:hover {
+   background: #EF7C00;
+   transition: 0.3s;
+ }
+
+.info__social .socia__share img{
+   width: 20px;
+}

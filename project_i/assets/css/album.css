@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+/*===================================================================
+album_6
+  側邊欄位
+  相簿專區列表卡片
+  相簿專區內頁介紹區
+  相簿專區內頁卡片
+  
+=====================================================================*/
+
+
+/*
+-----------------------------------------------------------------------
+  album_6
+-----------------------------------------------------------------------
+*/
+
+/*/////////////////側邊欄位/////////////////*/
+.album_6__widget-item {
+  border-radius: 10px;
+  margin-bottom: 60px;
+  padding-right: 30px;
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .album_6__widget-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .album_6__widget-item {
+    margin-top: 30px;
+    padding-right: 0;
+  }
+}
+
+
+/* 分類標題 */
+.album_6__widget-title {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+  width: fit-content;
+}
+
+.album_6__widget-title::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: -2px;
+  height: 8px;
+  width: 100%;
+  background-color: var(--color-fourth);
+  z-index: -1;
+}
+
+/* 分類項目 */
+.album_6__widget-categories ul {
+  margin: 0;
+}
+
+.album_6__widget-categories ul li {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 10px;
+  padding: 0;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 19px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.album_6__widget-categories ul li.active {
+  border-bottom: 1px solid var(--color-primary);
+  background-color: rgba(var(--color-fourth-rgb), 0.3);
+}
+
+.album_6__widget-categories ul li.active a,
+.album_6__widget-categories ul li.active span {
+  color: var(--color-primary);
+}
+
+.album_6__widget-categories ul li:last-child {
+  margin-bottom: 0;
+}
+
+.album_6__widget-categories ul li a {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #494949;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.album_6__widget-categories ul li a span {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.album_6__widget-categories ul li:hover {
+  color: var(--color-primary);
+  background-color: rgba(var(--color-fourth-rgb), 0.3);
+  border-color: var(--color-primary);
+}
+
+.album_6__widget-categories ul li:hover a {
+  color: var(--color-primary);
+}
+
+.album_6__widget-categories ul li:hover a span {
+  color: var(--color-primary);
+}
+
+
+.album_6__widget-body {
+  margin-top: 30px;
+}
+
+
+
+/*/////////////////相簿專區列表卡片/////////////////*/
+
+.album_6__list-wrapper {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.album_6__img-outer {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.album_6__img {
+  display: block;
+  position: relative;
+  transition: 0.8s;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 4px 10px 1px rgb(0 0 0 / 15%);
+}
+
+.album_6__img img {
+  position: relative;
+  transition: 0.8s;
+  border-radius: 22px;
+}
+
+.album_6__img:hover>img {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.album_6__img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 5px solid rgba(var(--color-white-rgb), 0.6);
+  border-radius: 20px;
+}
+
+.album_6__item-tag {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.album_6__item-tag a {
+  font-size: 15px;
+  padding: 0 8px 3px;
+  line-height: 1;
+  display: inline-block;
+  border-right: 1px solid var(--color-primary);
+  border-left: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.album_6__item-tag a:hover {
+  color: rgba(var(--color-primary-rgb), 0.8);
+  border-right: 1px solid rgba(var(--color-primary-rgb), 0.8);
+  border-left: 1px solid rgba(var(--color-primary-rgb), 0.8);
+}
+
+.album_6__item-name {
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+}
+
+
+/*/////////////////相簿專區內頁介紹區/////////////////*/
+
+.album_6__detail-wrap {
+  padding-left: 50px;
+}
+
+.album_6__gray-thumb {
+  position: relative;
+  margin: 0;
+}
+
+.album_6__gray-thumb:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 15px;
+  top: 15px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.album_6__gray-thumb-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 50px;
+}
+
+.album_6__detail-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 13px;
+}
+
+.album_6__detail-cato {
+  color: var(--color-white);
+  font-size: 15px;
+  margin-bottom: 0;
+  color: var(--color-primary);
+  background: var(--color-fourth);
+  padding: 3px 15px;
+  display: inline-block;
+  transition: .2s;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.album_6__detail-cato:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.album_6__detail-text {
+  font-size: 18px;
+}
+
+.album_6__back-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 991px) {
+  .album_6__detail-wrap {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .album_6__gray-thumb {
+    margin-bottom: 30px;
+  }
+
+  .album_6__detail-wrap {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .album_6__detail-title {
+    font-size: 28px;
+  }
+
+  .album_6__detail-text {
+    font-size: 16px;
+  }
+
+  .album_6__gray-thumb:after {
+    left: 8px;
+    top: 8px;
+  }
+}
+
+
+
+/*/////////////////相簿專區內頁卡片/////////////////*/
+
+.album_6__box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+  opacity: 1;
+  transform-origin: 50% 50% 0px;
+  transform: translate3d(0px, 0px, 0px);
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+
+.album_6__box img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border-radius: 25px;
+}
+
+.album_6__box:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0;
+  -webkit-transition: opacity 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s;
+  transition: opacity 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s;
+  border-radius: 25px;
+}
+
+.album_6__box:before {
+  z-index: 3;
+  background-color: rgb(51 51 51 / 60%);
+}
+
+.album_6__box .album_6__box-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: var(--color-white);
+  z-index: 5;
+}
+
+.album_6__box .album_6__box-title {
+  padding: 20px 23px 0 23px;
+}
+
+
+.album_6__box .album_6__box-title .album_6__box-title-inner {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.album_6__box .album_6__box-title-inner {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out 0.1s;
+}
+
+.album_6__box:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.album_6__box:hover:before {
+  height: 100%;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.album_6__box:hover .album_6__box-title .album_6__box-title-inner {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}

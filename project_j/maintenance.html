@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>網站維護中｜高堃營造股份有限公司</title>
+  <!-- FB用，也會影響SEO分數 -->
+  <meta property="og:title" content="高堃營造股份有限公司">
+  <meta property="og:description" content="台灣甲級綜合營造業，主要業務為基礎公共工程建造、免開挖式工程施工及各類管線(/洞道)工程服務。">
+  <meta property="og:url" content="網站網址">
+  <meta property="og:image" content="img/628x628-logo.png">
+  <meta property="og:type" content="website">
+  <!-- END -->
+  <meta name="description" content="台灣甲級綜合營造業，主要業務為基礎公共工程建造、免開挖式工程施工及各類管線(/洞道)工程服務。">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon.ico">
+  <!-- 樣式Css -->
+  <style type="text/css">
+  @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+  
+  :root {
+    --text: #777;
+    --title-text: #333;
+    --white: #FFF;
+    --primary: #1B95BE;
+    --btn-bg: #0C4975;
+    --bg: #f9f9f9;
+    --error-tx: #eee;
+  }
+
+  * {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  ::selection {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  .maintenance-page {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .maintenance__content {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .maintenance-box {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+  }
+
+  .maintenance-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .maintenance-title {
+    color: var(--title-text);
+    font-size: 42px;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .maintenance-reason {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .maintenance-reason>p,.follow-box > p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .08em;
+    text-align: center;
+    color: var(--text);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .contact-box > a {
+    padding: 10px 40px;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-bg);
+    border-radius: 3px;
+    color: var(--white);
+    font-size: 18px;
+    letter-spacing: 2px;  
+    transition: 0.3s; 
+  }
+
+  .contact-box > a:hover {
+    color: var(--btn-bg);
+    background-color: var(--white);
+  }
+
+  .follow-box {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .follow-social-outer {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .follow-social-outer a+a {
+    margin-left: 10px;
+  }
+
+  .follow-social-outer a>img {
+    width: 36px;
+    image-rendering: -webkit-optimize-contrast;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+  }
+
+  .follow-social-outer a>img:hover {
+    top: -5px;
+    transition: 0.3s;
+  }
+
+  .maintenance-background {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: -9;
+    background: var(--bg);
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .maintenance-background p {
+    color: var(--error-tx);
+    font-size: 200px;
+    line-height: 200px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  @media(max-width: 1699px) {
+    .maintenance-background p {
+      font-size: 180px;
+      line-height: 180px;
+    }
+  }
+
+  @media(max-width: 1499px) {
+    .maintenance-background p {
+      font-size: 160px;
+      line-height: 160px;
+    }
+  }
+
+  @media(max-width: 1299px) {
+    .maintenance-background p {
+      font-size: 140px;
+      line-height: 140px;
+    }
+  }
+
+  @media(max-width: 1199px) {
+    .maintenance-background p {
+      font-size: 110px;
+      line-height: 110px;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .maintenance-title {
+      margin-bottom: 10px;
+    }
+
+    .maintenance-background p {
+      font-size: 85px;
+      line-height: 85px;
+    }
+
+  }
+
+  @media(max-width: 767px) {
+    .media-block {
+      display: block;
+    }
+
+    .media-none {
+      display: none;
+    }
+
+    .maintenance-background {
+      display: none;
+    }
+
+    .maintenance-reason>p, .follow-box > p {
+      font-size: 16px;
+    }
+  }
+
+  @media(max-width: 575px) {
+    .maintenance-title {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+
+    .contact-box>a {
+      font-size: 16px;
+      padding: 8px 25px;
+    }
+  }
+  </style>
+</head>
+
+<body class="maintenance-page">
+  <div class="maintenance__content">
+    <div class="maintenance-box">
+      <!-- 放logo圖 -->
+      <div class="maintenance-logo">
+        <img class="maintenance-img" src="img/logo.png" alt="size_405x100">
+      </div>
+      <h1 class="maintenance-title">網站維護中<span class="media-none">，</span><span class="media-block">請稍後!</span></h1>
+      <div class="maintenance-reason">
+        <p>系統正在進行維護</p>
+        <p>如果造成您的不便，敬請見諒</p>
+      </div>
+      <div class="contact-box">
+          <a href="#" class="contact-button">聯絡我們</a>
+      </div>
+      <div class="follow-box">
+        <p>關注我們</p>
+        <div class="follow-social-outer">
+        <a href="#" class="social-icon"><img src="assets/img/demo/m-facebook.png" alt=""></a>
+        <a href="#" class="social-icon"><img src="assets/img/demo/m-line.png" alt=""></a>
+        <a href="#" class="social-icon"><img src="assets/img/demo/m-ig.png" alt=""></a>
+      </div>
+      </div>
+    </div>
+    <div class="maintenance-background">
+      <p>maintenance</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,789 @@
+@charset "UTF-8";
+
+/*===================================================================
+join_3
+  大標題
+  表單各項標題
+  加盟說明資訊
+  聯絡表單
+  上傳檔案按鈕
+  送出按鈕
+join_3_2(送出完成頁)
+=====================================================================*/
+
+
+
+/*
+-----------------------------------------------------------------------
+    join_3
+-----------------------------------------------------------------------
+*/
+
+
+
+.join_3 {
+  background-position: center;
+  background-image: url(../img/demo/pattern-bg.jpg);
+}
+
+
+.join_3__process-pic-1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.join_3__process-pic-2 {
+  display: none;
+}
+
+
+@media(max-width: 767px) {
+  .join_3__process-pic-1 {
+    display: none;
+  }
+
+  .join_3__process-pic-2 {
+    display: block;
+  }
+}
+
+
+
+/*/////////////////大標題/////////////////*/
+
+.join_3__join-area-title {
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.join_3__join-area-title:after {
+  background: #C8A063;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 50px;
+}
+
+/*/////////////////表單各項標題/////////////////*/
+
+
+.join_3__join-form{
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.join_3__join-form-block {
+  margin-bottom: 40px;
+}
+
+.join_3__join-form-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #d2b0a130;
+  padding: 13px 20px;
+  position: relative;
+}
+
+.join_3__join-form-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/demo/join/title_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.join_3__join-form-title img {
+  width: 55px;
+  image-rendering: -webkit-optimize-contrast;
+  margin-top: -33px;
+  position: relative;
+}
+
+.join_3__join-form-title .join_3__join-form-title-inner {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #c3360e;
+  position: relative;
+}
+
+
+@media(max-width: 575px) {
+  .join_3__join-form{
+    padding: 25px 15px;
+  }
+}
+
+
+@media(max-width: 375px) {
+  .join_3__join-form-title {
+    padding: 13px;
+  }
+
+  .join_3__join-form-title .join_3__join-form-title-inner {
+    font-size: 20px;
+  }
+
+  .join_3__join-form-title img {
+    width: 48px;
+    margin-top: -28px;
+  }
+}
+
+
+/*/////////////////加盟說明資訊/////////////////*/
+
+.join_3__join-info {
+  padding: 30px;
+  border: 1px solid #DA3F13;
+}
+
+.join_3__join-info>h5 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #DA3F13;
+  border-bottom: 2px dashed;
+  padding-bottom: 15px;
+}
+
+.join_3__join-info ul {
+  margin-bottom: 0;
+}
+
+.join_3__join-info ul li:not(:last-child) {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+
+/*/////////////////聯絡表單/////////////////*/
+
+.join_3__join-form .form-group {
+  margin-bottom: 30px;
+}
+
+.join_3__join-form .form-group .form-control {
+  /* background: #f5f5f5; */
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #e4e3e3;
+  transition: 0.3s;
+}
+
+.join_3__join-form .form-group .form-control:focus {
+  border: 1px solid #DA3F13;
+}
+
+
+.join_3__join-form .form-group input {
+  height: 40px;
+}
+
+.join_3__join-form .form-group .form-control {
+  font-size: 17px;
+}
+
+.join_3__join-form .form-group input {
+  height: 50px;
+}
+
+.join_3__join-form .form-group select {
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  height: 50px;
+  background-image: url(../img/demo/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 110%;
+  cursor: pointer;
+}
+
+.join_3__join-form .form-group input::-webkit-input-placeholder,
+.join_3__join-form .form-group textarea::-webkit-input-placeholder,
+.join_3__join-form .form-group select {
+  /* Chrome/Opera/Safari */
+  color: #888888;
+}
+
+.join_3__join-form .form-group input::-moz-placeholder,
+.join_3__join-form .form-group textarea::-moz-placeholder,
+.join_3__join-form .form-group select {
+  /* Firefox 19+ */
+  color: #888888;
+}
+
+.join_3__join-form .form-group input:-ms-input-placeholder,
+.join_3__join-form .form-group textarea::-moz-placeholder,
+.join_3__join-form .form-group select {
+  /* IE 10+ */
+  color: #888888;
+}
+
+.join_3__join-form .form-group input:-moz-placeholder,
+.join_3__join-form .form-group textarea::-moz-placeholder,
+.join_3__join-form .form-group select {
+  /* Firefox 18- */
+  color: #888888;
+}
+
+.join_3__form-item-title {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.join_3__require {
+  color: red;
+}
+
+
+/*/////////////////上傳檔案按鈕/////////////////*/
+
+.join_3__upload-block {
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #e4e3e3;
+  transition: 0.3s;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: #212529;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.join_3__upload-block i {
+  margin-right: 8px;
+}
+
+
+#upload-file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.join_3__upload-btn {
+  color: #333;
+  border: none;
+  background: transparent;
+  padding: 0
+}
+
+#upload-text {
+  color: #333;
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+/* 地址 */
+.join_3__form-address {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.join_3__form-address .form-postcode__box {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.join_3__form-address .form-area__box {
+  width: 15%;
+  margin-right: 10px;
+}
+
+.join_3__form-address .form-address__box {
+  width: calc(60% - 30px);
+}
+
+@media(max-width: 767px) {
+  .join_3__form-address .form-postcode__box {
+    width: 20%;
+    margin-right: 0;
+  }
+
+  .join_3__form-address .form-area__box {
+    width: calc(40% - 10px);
+    margin-left: 10px;
+    margin-right: 0
+  }
+
+  .join_3__form-address .form-address__box {
+    width: 100%;
+  }
+}
+
+/* 生日 */
+.join_3__form-birth {
+  display: flex;
+}
+
+.join_3__form-birth .form-birth-year {
+  width: calc(40% - 20px);
+}
+
+.join_3__form-birth .form-birth-month,
+.join_3__form-birth .form-birth-date {
+  width: 30%;
+  margin-left: 10px;
+}
+
+
+/*/////////////////驗證碼/////////////////*/
+
+.join_3__captcha-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.join_3__captcha-area-img {
+  cursor: pointer;
+}
+
+.join_3__captcha-area input[type="text"] {
+  margin-bottom: 0;
+}
+
+.join_3__captcha-area-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.join_3__sp-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px rgba(0, 0, 0, 0.15) solid;
+  border-top: 2px #4e4e4e solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+}
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.join_3__captcha-text-area-span {
+  font-size: 15px;
+  color: #777777;
+}
+
+.join_3__captcha-text-area-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+@media(max-width: 767px) {
+  .join_3__captcha-area {
+    margin-top: 0px;
+  }
+
+  .join_3__captcha-area-btn {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+}
+
+
+/*/////////////////送出按鈕/////////////////*/
+.join_3__btn-theme {
+  text-align: center;
+  background-color: #DA3F13;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 35px;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.join_3__btn-theme:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+
+/* checkbox樣式 */
+
+.join_3 .checkbox input[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+  outline: 0 !important;
+  height: initial;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.join_3 .checkbox label {
+  display: inline-block;
+  padding-left: 8px;
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 0;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #888;
+}
+
+.join_3 .checkbox label::before {
+  -o-transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 2px solid #98a6ad;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+  margin-left: -18px;
+  position: absolute;
+  transition: 0.1s ease-in-out;
+  outline: 0 !important;
+  transform: translateY(-50%);
+}
+
+.join_3 .checkbox label::after {
+  color: #6c757d;
+  display: inline-block;
+  font-size: 11px;
+  height: 18px;
+  left: 0;
+  margin-left: -18px;
+  padding-left: 3px;
+  padding-top: 2px;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.join_3 .checkbox input[type="checkbox"]:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  display: table;
+  width: 4px;
+  height: 8px;
+  border: 2px solid #6c757d;
+  border-top-width: 0;
+  border-left-width: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.join_3 .new-checkbox input[type="checkbox"]:checked+label::before {
+  background-color: #DA3F13;
+  border-color: #DA3F13;
+}
+
+.join_3 .new-checkbox input[type="checkbox"]:checked+label::after {
+  border-color: #fff;
+}
+
+
+/* radio樣式 */
+.join_3 .radio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.join_3 .radio input[type="radio"] {
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+  outline: 0 !important;
+  height: initial;
+  display: flex;
+}
+
+.join_3 .radio label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 8px;
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-right: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.join_3 .radio label::before {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #98a6ad;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  left: 0;
+  margin-left: -15px;
+  position: absolute;
+  width: 18px;
+  outline: 0 !important;
+}
+
+
+.join_3 .radio label::after {
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  -webkit-transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+  background-color: #DA3F13;
+  border-radius: 50%;
+  /* border: 2px solid #DA3F13; */
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: -11px;
+}
+
+.join_3 .radio input[type="radio"]:checked+label::after {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.join_3 .radio input[type="radio"]:checked+label::before {
+  border: 2px solid #DA3F13;
+}
+
+
+
+.join_3 .radio span {
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.join_3 .input__sm-box {
+  width: 100px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.join_3 .input__md-box {
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.join_3 .input__lg-box {
+  width: 300px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.join_3 .input__xl-box {
+  width: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.join_3__brand-row{
+  max-width: 630px;
+}
+
+
+
+@media(max-width: 991px) {
+  .join_3 .input__md-box {
+    width: 130px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 767px) {
+  .join_3 .checkbox {
+    margin-left: 17px;
+  }
+
+  .join_3 .checkbox input[type="checkbox"] {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .join_3 .input__md-box {
+    width: calc(33% - 10px);
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .join_3__join-form-block {
+    margin-bottom: 20px;
+  }
+
+  .join_3__join-form-block .form-group>input.input__md-box:last-child {
+    margin-right: 0;
+  }
+
+  .join_3 .radio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .join_3 .radio input[type="radio"] {
+    display: none;
+  }
+
+  .join_3 .radio label {
+    padding-left: 0;
+  }
+
+
+  .join_3 .radio label::before {
+    position: relative;
+    margin-left: 0;
+    margin-right: 8px;
+  }
+
+  .join_3 .radio label::after {
+    left: 4px;
+  }
+
+}
+
+
+/*
+-----------------------------------------------------------------------
+    join_3_2
+-----------------------------------------------------------------------
+*/
+
+
+.join_3_2__container {
+  width: 1200px;
+  max-width: 100%;
+}
+
+
+.join_3_2__img {
+  width: 100%;
+}
+
+.join_3_2__title {
+  color: #333333;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+
+.join_3_2__btn {
+  background-color: #DA3F13;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 40px;
+  position: relative;
+}
+
+
+.join_3_2__btn:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.join_3_2__text {
+  width: 100%;
+  text-align: center;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .join_3_2__text {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}

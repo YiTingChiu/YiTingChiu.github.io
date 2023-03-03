@@ -1,0 +1,462 @@
+.quality__text p {
+    letter-spacing: 0.15em;
+    line-height: 35px;
+    color: #333333;
+    margin: 0;
+}
+
+.intro_outer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro_innercol_bg {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: .3s;
+    height: 100%;
+}
+
+.intro_innercol_bg:hover {
+    transform: translateY(-10px);
+}
+
+.intro_innercol_bg .introcol__txt {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    padding-left: 0;
+    word-break: break-all;
+    width: 70%;
+}
+
+.introcol_outer-img {
+    padding-right: 10px;
+    margin: 10px 0;
+}
+
+.intro_innercol-img {
+    width: 56px;
+    margin-right: 5px;
+}
+
+.intro_col-margin {
+    margin-top: 15px;
+}
+
+.quality_second-row {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.quality_row {
+    margin-top: 20px;
+}
+
+.quality_row p {
+    margin: 0;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+    color: #333;
+}
+
+.quality__text {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.quality_row .quality__text-blue {
+    color: #2BA1DE;
+    margin-top: 30px !important;
+}
+
+/* .quality_col-margin {
+    margin-right: 15px !important;
+} */
+
+.quality__card {
+    width: 20%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+
+.quality_bg {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: .3s;
+}
+
+.quality_bg:hover {
+    transform: translateY(-10px);
+}
+
+.quality_bg .quality_title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.12em;
+    color: #333333;
+    padding-left: 0;
+    word-break: break-all;
+    width: 70%;
+    text-align: center;
+}
+
+.quality_img {
+    width: 85%;
+}
+
+.intro_second-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.intro-content {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+    color: #333333;
+}
+
+.intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-content .text-blue {
+    color: #2BA1DE;
+}
+
+.intro_third-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.timeline .tl-block {
+    padding-bottom: 35px;
+}
+
+.timeline .tl-block .tl-message .tl-main {
+    width: 40vw;
+}
+
+.timeline .tl-block .tl-message .tl-main p {
+    margin: 0;
+    letter-spacing: 0.15em;
+    color: #333333;
+}
+
+.timeline .tl-block .tl-message .tl-main p .tl-bold {
+    font-weight: 600;
+}
+
+.timeline .tl-message {
+    border-radius: 3px;
+    float: left;
+    margin-left: 110px !important;
+    margin-top: -5px !important;
+    margin-bottom: 0px !important;
+}
+
+.timeline .tl-block .tl-time {
+    width: 100px;
+    text-align: center;
+    border: solid 2px #CBCBCB;
+}
+
+.timeline:before {
+    left: 165px !important;
+    width: 2px !important;
+    background: #cbcbcb !important;
+}
+
+.timeline .tl-block .tl-bar {
+    margin-left: 148.5px !important;
+}
+
+.time_col {
+    display: flex;
+    justify-content: center;
+}
+
+.page_about-timeline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media only screen and (max-width: 1599px) {
+    .intro_second-col {
+        width: 100%;
+    }
+
+    .intro_second-row {
+        padding-top: 40px;
+    }
+
+    .intro_second-row .intro-img_col {
+        order: 2;
+    }
+
+    .intro_second-row .intro-txt_col {
+        margin-bottom: 30px;
+    }
+
+    .intro_third-col {
+        width: 100%;
+    }
+
+    .intro_third-row .intro-box {
+        margin-bottom: 30px;
+    }
+
+    .quality__card {
+        width: 33.33%;
+    }
+
+    .quality_second-row {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 1399px) {
+    .intro_innercol-img {
+        width: 36px;
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+    .intro_innercol_bg {
+        padding: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .page__about {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .intro_second-row {
+        padding-top: 60px;
+    }
+
+    .intro_second-row img {
+        margin-bottom: 30px;
+    }
+
+    .intro_third-row {
+        padding-top: 60px;
+    }
+
+    .intro_innercol_bg .introcol__txt {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.12em;
+        padding-left: 0;
+        word-break: break-all;
+        width: 100%;
+    }
+
+    .quality_second-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .introcol_outer-img {
+        padding-right: 0;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1108px) {
+    .timeline .tl-message {
+        border-radius: 3px;
+        float: left;
+        margin-left: 110px !important;
+        margin-top: -5px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .timeline .tl-block .tl-time {
+        float: left;
+        padding: 10px 20px 0px 20px;
+        margin-top: -15px;
+        border: solid 2px #ddd;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 481px) {
+    .introcol_outer-img {
+        padding-right: 0;
+        width: initial;
+    }
+
+    .intro_innercol_bg .introcol__txt {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .page__about {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .intro_second-row {
+        display: block;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    .intro_third-row {
+        display: block;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .intro-content {
+        line-height: 30px;
+    }
+
+    .intro_innercol_bg .introcol__txt {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 0;
+        word-break: break-all;
+    }
+
+    .intro-box {
+        margin-top: 15px;
+    }
+
+    .timeline .tl-message {
+        border-radius: 3px;
+        float: left;
+        margin-left: 205px !important;
+        margin-top: -35px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .timeline .tl-block .tl-message .tl-main {
+        width: 52vw;
+    }
+
+    .wow {
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+
+    .quality_col-margin {
+        margin-top: 15px;
+    }
+
+    .quality__card {
+        width: calc(50% - 15px);
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .timeline .tl-message {
+        border-radius: 3px;
+        float: left;
+        margin-left: 150px !important;
+        margin-top: -60px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .timeline .tl-block .tl-message .tl-main {
+        width: 58vw;
+    }
+
+    .timeline .tl-message {
+        border-radius: 3px;
+        float: left;
+        margin-left: 205px !important;
+        margin-top: -35px !important;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .timeline .tl-block .tl-message .tl-main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .intro_col-margin {
+        width: 100%;
+    }
+
+    .introcol_outer-img {
+        width: fit-content;
+        padding-right: 10px;
+    }
+
+    .intro_second-row img {
+        margin-bottom: 15px;
+    }
+
+    .intro_second-row .intro-txt_col {
+        margin-bottom: 15px;
+    }
+
+    .intro_innercol_bg .introcol__txt {
+        width: 70%;
+    }
+
+    .quality__card {
+        width: 100%;
+    }
+
+    .timeline:before {
+        left: 0px !important;
+    }
+
+    .timeline .tl-block .tl-bar {
+        margin-left: -16px !important;
+    }
+
+    .timeline .tl-block .tl-time {
+        margin-left: 15px;
+        width: 70px;
+        padding: 10px 10px 0px 10px !important;
+    }
+
+    .timeline .tl-message {
+        margin-left: 100px !important;
+        margin-top: -45px !important;
+    }
+
+}
+
+
+
