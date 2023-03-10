@@ -2215,7 +2215,7 @@ table p {
   max-width: 100%;
   max-height: 100%;
   transition: 0.3s;
-  height: 100px;
+  /* height: 100px; */
   image-rendering: -webkit-optimize-contrast;
 }
 
