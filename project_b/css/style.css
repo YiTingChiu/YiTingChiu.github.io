@@ -1972,6 +1972,15 @@ p.quote {
   margin: 0;
 }
 
+.tab-text ul {
+  padding-left: 27px;
+  list-style: disc;
+}
+
+.tab-text ul li{
+  margin-bottom: 10px;
+}
+
 /*----------------------------------------*/
 /*  15. About Page
 /*----------------------------------------*/
