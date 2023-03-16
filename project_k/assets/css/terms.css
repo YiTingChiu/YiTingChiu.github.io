@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+-----------------------------------------------------------------------
+  terms_op1
+-----------------------------------------------------------------------
+*/
+
+.terms_op1__content {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.terms_op1__content:last-child {
+  margin-bottom: 0;
+}
+
+.terms_op1_title {
+  position: relative;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  color: #3D5FA6;
+  border-left: 7px double #3D5FA6;
+  border-right: 7px double #3D5FA6;
+  padding: 10px;
+  background: #EDF1F9;
+  background-image: url(../img/demo/deco-line-3.png);
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.terms_op1__list {
+  font-size: 19px;
+  color: #3E3A39;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+
+@media only screen and (max-width:480px) {
+
+  .terms_op1_title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .terms_op1__list {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+}

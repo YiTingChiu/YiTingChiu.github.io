@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>23011212054503 | 商務客製一頁式</title>
+    <meta property="og:title" content="" />
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Stylesheets
+  ============================================= -->
+    <link rel="canonical" href="" />
+    <!-- Css -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <link href="assets/css/main1.css" rel="stylesheet">
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/cart-all-op.css" rel="stylesheet">
+    <link href="assets/css/member.css" rel="stylesheet" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/demo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/demo/favicon.ico">
+</head>
+
+<body class="preloader-deactive">
+    <div>
+        <!-- loading 區塊 -->
+        <!-- <div class="preloader_op1" id="preloader">
+            <div class="preloader_op1__inner"><span class="preloader_op1__dot"></span>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div> -->
+        <header class="header_op1">
+            <div class="header_op1__header-middle sticky-header hidden-md-down">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-lg-3 col-sm-12 header_op1__top logo">
+                            <div class="header_op1__header-logo-area">
+                                <a href="index.html">
+                                    <img class="logo-main" src="assets/img/demo/header-logo.png" alt="size_250X76">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-md-7 position-relative header_op1__top navbar">
+                            <div class="header_op1__header-align justify-content-center">
+                                <div class="header_op1__header-navigation-area hidden-md-down">
+                                    <ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement" class="header_op1__main-menu nav">
+                                        <li itemprop="name"><a itemprop="url" href="index.html#intro"><span class="cn">關於我們</span><span class="en">About Us</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#news"><span class="cn">最新消息</span><span class="en">Latest News</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#product"><span class="cn">產品介紹</span><span class="en">Product Items</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#contact"><span class="cn">聯絡我們</span><span class="en">Contact Us</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#store"><span class="cn">據點資訊</span><span class="en">Store</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="order_check.html"><span class="cn">查詢訂單</span><span class="en">Order Check</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-2 col-sm-12 header_op1__top shop">
+                            <div class="header_op1__btn_wrap">
+                                <div class="header_op1__btn top-cart">
+                                    <a class="header_op1__btn-item cart" href="cart_login.html">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="header_op1__cart-amount" id="bl_cart_item">0</span>
+                                    </a>
+                                </div>
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 / 登出按鈕 ↓↓↓ -->
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 ↓↓↓ -->
+                                <div class="header_op1__btn top-coupon">
+                                    <a class="header_op1__btn-item coupon">
+                                        <img src="assets/img/demo/coupon-icon.png">
+                                        <span class="header_op1__coupon-dot">1</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 優惠券彈窗 -->
+                <div class="coupon_modal" style="display:none;">
+                    <div class="search_block">
+                        <!-- <form> -->
+                        <input type="text" class="sm-form-control bl_cupon_input" placeholder="請輸入折扣碼" name="bl_cupon_input">
+                        <button type="button" class="btn bl_cupon_receive">領取</button>
+                        <!-- </form> -->
+                        <div class="cupon-block">
+                            <div class="cupon-value">$100</div>
+                            <div class="cupon-info">
+                                <div class="cupon-name">單品滿100元，折現金$100元</div>
+                                <div class="cupon-use bl_cupon_input">test1</div>
+                                <div class="cupon-tx">僅限原價商品</div>
+                                <div class="cupon-date">2023/01/20到期</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機版 -->
+            <div class="responsive-header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 col-5 justify-content-start">
+                            <div class="header-item">
+                                <div class="header-logo-area">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="assets/img/demo/header-logo.png" alt="size_250x76">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-6">
+                            <div class="header_op1__btn_wrap">
+                                <div class="header_op1__btn top-cart">
+                                    <a class="header_op1__btn-item cart" href="cart_login.html">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="header_op1__cart-amount" id="bl_cart_item">0</span>
+                                    </a>
+                                </div>
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 / 登出按鈕 ↓↓↓ -->
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 ↓↓↓ -->
+                                <div class="header_op1__btn top-coupon">
+                                    <a class="header_op1__btn-item coupon">
+                                        <img src="assets/img/demo/coupon-icon.png">
+                                        <span class="header_op1__coupon-dot">1</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="header-item justify-content-center">
+                                <button class="btn-menu" type="button"><i class="fas fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 優惠券彈窗 -->
+                <div class="coupon_modal" style="display:none;">
+                    <div class="search_block">
+                        <!-- <form> -->
+                        <input type="text" class="sm-form-control bl_cupon_input" placeholder="請輸入折扣碼" name="bl_cupon_input">
+                        <button type="button" class="btn bl_cupon_receive">領取</button>
+                        <!-- </form> -->
+                        <div class="cupon-block">
+                            <div class="cupon-value">$100</div>
+                            <div class="cupon-info">
+                                <div class="cupon-name">單品滿100元，折現金$100元</div>
+                                <div class="cupon-use bl_cupon_input">test1</div>
+                                <div class="cupon-tx">僅限原價商品</div>
+                                <div class="cupon-date">2023/01/20到期</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside class="off-canvas-wrapper">
+            <div class="off-canvas-inner">
+                <div class="off-canvas-overlay"></div>
+                <div class="off-canvas-content">
+                    <div class="off-canvas-header">
+                        <div class="close-action">
+                            <button class="btn-menu-close">menu<i class="icon-arrow-left"></i></button>
+                        </div>
+                    </div>
+                    <div class="off-canvas-item">
+                        <div class="res-mobile-menu menu-active-one">
+                            <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="breadcrumb_op1" style="background-image: url(assets/img/demo/breadcrumb-1.jpg)" alt="size_1920X250">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="breadcrumb_op1__title">23011212054503</h1>
+                            <nav class="breadcrumb_op1__inner">
+                                <ul class="breadcrumb_op1__list">
+                                    <li><a href="index.html">首頁</a></li>
+                                    <li class="breadcrumb_op1__breadcrumb-sep"><i class="fas fa-angle-right"></i></li>
+                                    <li><a href="member.html">查詢訂單</a></li>
+                                    <li class="breadcrumb_op1__breadcrumb-sep"><i class="fas fa-angle-right"></i></li>
+                                    <li><a href="order_history.html">查詢訂單</a></li>
+                                    <li class="breadcrumb_op1__breadcrumb-sep"><i class="fas fa-angle-right"></i></li>
+                                    <li>23011212054503</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="member__page sec-padding">
+                <div class="container">
+                    <div class="content-wrap">
+                        <div class="row member-flex">
+                            <div class="col-xl-3">
+                                <div class="member-side">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-4 col-sm-6 col-12">
+                                            <div class="member-link side-hover active">
+                                                <div class="find-border">
+                                                    <img src="assets/img/demo/member/paste.png">
+                                                </div>
+                                                <span>查詢訂單</span>
+                                                <a href="order_history.html"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-md-4 col-sm-6 col-12">
+                                            <div class="member-link side-hover ">
+                                                <div class="find-border">
+                                                    <img src="assets/img/demo/member/heart.png">
+                                                </div>
+                                                <span>我的收藏</span>
+                                                <a href="member_like.html"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-md-4 col-sm-6 col-12">
+                                            <div class="member-link side-hover ">
+                                                <div class="find-border">
+                                                    <img src="assets/img/demo/member/highlighter.png">
+                                                </div>
+                                                <span>修改基本資料</span>
+                                                <a href="member_edit.html"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-md-4 col-sm-6 col-12">
+                                            <div class="member-link side-hover ">
+                                                <div class="find-border">
+                                                    <img src="assets/img/demo/member/padlock.png">
+                                                </div>
+                                                <span>修改密碼</span>
+                                                <a href="member_password.html"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-md-4 col-sm-6 col-12">
+                                            <div class="member-link side-hover ">
+                                                <div class="find-border">
+                                                    <img src="assets/img/demo/member/coupon.png">
+                                                </div>
+                                                <span>優惠券</span>
+                                                <a href="member_coupon.html"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-md-4 col-sm-6 col-12">
+                                            <div class="member-link side-hover">
+                                                <div class="find-border">
+                                                    <img src="assets/img/demo/member/log-out.png">
+                                                </div>
+                                                <span>登出</span>
+                                                <a href="#" class="bl_login_off"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="member-content order-content">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="finish-block">
+                                                <h3 class="order-title"><i class="fas fa-user"></i>訂購人資料</h3>
+                                                <table class="rwd-table spend-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="spend-name">姓名：</td>
+                                                            <td class="spend-info">
+                                                                <div data-th="姓名">
+                                                                    <span>邦立買</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name">E-mail：</td>
+                                                            <td class="spend-info">
+                                                                <div data-th="E-mail"><span>bondlink@gmail.com</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name">聯絡電話：</td>
+                                                            <td class="spend-info">
+                                                                <div data-th="聯絡電話"><span>07-1234567</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name">通訊地址：</td>
+                                                            <td class="spend-info">
+                                                                <div data-th="通訊地址"><span>(800)高雄市新興區民生一路56號24樓之5 </span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name">備註事項：</td>
+                                                            <td class="spend-info">
+                                                                <div class="note" data-th="備註事項"><span>產品物美價廉!</span></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="finish-block">
+                                                <h3 class="order-title"><i class="far fa-credit-card"></i>付款資訊</h3>
+                                                <table class="rwd-table spend-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="spend-name"><span>訂單編號：</span></td>
+                                                            <td class="spend-info">
+                                                                <div data-th="訂單編號"><span>23011212054503</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name"><span>訂購時間：</span></td>
+                                                            <td class="spend-info">
+                                                                <div data-th="訂購時間"><span>2023-01-12 12:05:44</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name"><span>訂單金額：</span></td>
+                                                            <td class="spend-info">
+                                                                <div data-th="訂單金額"><span>$160</span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name"><span>付款方式：</span></td>
+                                                            <td class="spend-info pay-info">
+                                                                <div data-th="付款方式">
+                                                                    <span>ATM</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name"><span>發票形式：</span></td>
+                                                            <td class="spend-info">
+                                                                <div data-th="發票形式"><span>個人 </span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="spend-name"><span>物流狀態：</span></td>
+                                                            <td class="spend-info">配送中</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="finish-block">
+                                        <h3 class="order-title"><i class="fas fa-shopping-cart"></i>訂購明細</h3>
+                                        <table class="rwd-table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>圖片</th>
+                                                    <th class="order-name-th">產品名稱</th>
+                                                    <th>單價</th>
+                                                    <th>數量</th>
+                                                    <th>小計</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="order-img">
+                                                        <img src="assets/img/demo/product/800X800-1.jpg" alt="">
+                                                    </td>
+                                                    <td class="order-name">
+                                                        <div class="order-table-txt" data-th="產品名稱">
+                                                            <span>香煎嫩雞起司堡/1份</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="order-cost">
+                                                        <div class="order-table-txt" data-th="單價"><span>$80</span></div>
+                                                    </td>
+                                                    <td class="order-qty">
+                                                        <div class="order-table-txt" data-th="數量"><span>1</span></div>
+                                                    </td>
+                                                    <td class="order-price">
+                                                        <div class="order-table-txt" data-th="小計"><span>$90</span></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="finish-block">
+                                        <h3 class="order-title"><i class="fas fa-clipboard-list"></i>付款詳細資訊</h3>
+                                        <table class="rwd-table send-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="order-info__title">商品小計</td>
+                                                    <td class="order-info__price">$90</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="order-info__title">優惠券</td>
+                                                    <td class="order-info__price">- $10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="order-info__title">訂單運費</td>
+                                                    <td class="order-info__price">$80</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="order-info__title">訂單金額</td>
+                                                    <td class="order-info__price">$160</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="enter-btn" align="right">
+                                        <a class="btn contact-btn" href="/lyvv/order_history"><i class="icon-arrow-left"></i>返回訂單列表</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer_op1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-12">
+                        <div class="footer_op1__img-wrap">
+                            <a href="index.html" class="footer_op1__logo-img"><img src="assets/img/demo/footer-logo.png" alt="size_280x80"></a>
+                            <div class="footer_op1__company-id-wrap">
+                                <span>邦立小館 統一編號12345678</span>
+                                <span>食品業者登錄字號 E-100000000-00000-0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_op1__title">網站地圖</div>
+                        <div class="footer_op1__link">
+                            <ul>
+                                <li><a href="index.html#intro">關於我們</a></li>
+                                <li><a href="index.html#news">最新消息</a></li>
+                                <li><a href="index.html#product">產品介紹</a></li>
+                                <li><a href="index.html#contact">聯絡我們</a></li>
+                                <li><a href="index.html#store">據點資訊</a></li>
+                                <li><a href="member.html">會員中心</a></li>
+                                <li><a href="order_cart.html">購物車</a></li>
+                                <li><a href="privacy.html">隱私權政策</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_op1__title">公司資訊</div>
+                        <div class="footer_op1__info">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:07-2232891" class="phone">07-7654321</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&amp;authuser=0" target="_blank">800高雄市新興區民生一路56號24F-5</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="bondlinktest@gmail.com" class="email">bondlinktest@gmail.com</a>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_op1__footer-bottom">
+                <div class="container">
+                    <div class="row align-items-baseline">
+                        <div class="col-lg-12">
+                            <p class="footer_op1__copyright">Copyright © 2023 邦立小館 All Right Reserved.Designed by <a target="_blank" href="https://www.bondlink.com.tw">Bondlink.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="fixdownload_op1__inner">
+            <a href="tel:+07-7654321" class="fixdownload_op1 fixdownload_phone"><img src="assets/img/demo/phone-call.png" alt=""></a>
+            <a href="#" class="fixdownload_op1 fixdownload_fb"><img src="assets/img/demo/facebook.png" alt=""></a>
+            <a href="#" class="fixdownload_op1 fixdownload_line" class="fixdownload_op1 fixdownload_line"><img src="assets/img/demo/line.png" alt=""></a>
+            <a href="#" class="fixdownload_op1 fixdownload_ig">
+                <img src="assets/img/demo/instagram.png" alt="">
+            </a>
+        </div>
+        <div id="scroll-to-top" class="footer_op1__scroll-to-top"><span class="fas fa-angle-up"></span></div>
+        <!-- cookie先隱藏 -->
+        <div class="cookie_op1" style="display:none;">
+            <div class="cookie_op1-inner__wrapper">
+                <div class="container">
+                    <div class="cookie_op1-content__wrapper">
+                        <!-- ↓↓ 開編輯器 ↓↓ -->
+                        <div class="cookie-content">
+                            <div class="cookie-title">Cookies政策</div>
+                            <p>本網站使用瀏覽器紀錄 (Cookies) 來提供您最好的使用體驗，我們使用的 Cookies 也包括了第三方 Cookies。</p>
+                            <p>相關資訊請瀏覽我們的<a href="privacy" target="_blank">隱私權政策</a>。如果您選擇繼續瀏覽或關閉這個提示，便表示您已接受我們的網站使用條款。</p>
+                        </div>
+                        <!-- ↑↑ 開編輯器 ↑↑ -->
+                        <div class="btn_op1 btn-cookie bl_agree_cookie">
+                            <a class="btn btn-1" id="cookie_op1__btn">我同意 <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- #wrapper end -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <script src="assets/js/main1.js"></script>
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,900&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>

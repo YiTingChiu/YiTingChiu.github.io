@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>結帳確認 | 商務客製一頁式</title>
+    <meta property="og:title" content="" />
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Stylesheets
+  ============================================= -->
+    <link rel="canonical" href="" />
+    <!-- Css -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <link href="assets/css/main1.css" rel="stylesheet">
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/cart-all-op.css" rel="stylesheet">
+    <link href="assets/css/member.css" rel="stylesheet" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/demo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/demo/favicon.ico">
+</head>
+
+<body>
+    <header class="cart__header">
+        <div class="container">
+            <div class="container-header align-center">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/demo/header-logo.png" alt="商務客製一頁式" title="商務客製一頁式" class="img-fluid">
+                    </a>
+                </div>
+                <div class="cart__step-list">
+                    <ul>
+                        <li class="active"><span>1</span>購物車</li>
+                        <li class="align-center active">
+                            <div class="line"></div><span>2</span>結帳確認
+                        </li>
+                        <li class="align-center ">
+                            <div class="line"></div><span>3</span>完成
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopping-btn">
+                    <span class="user-name"><span>
+                            <img src="assets/img/demo/member/user.png" alt="">
+                            未登入 </span></span>
+                    <a href="index.html#product">
+                        <i class="fa fa-angle-left"></i>繼續購物
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-cart__step-list">
+        <div class="container">
+            <div class="cart__step-list">
+                <ul>
+                    <li class="active"><span>1</span>購物車</li>
+                    <li class="align-center active">
+                        <div class="line"></div><span>2</span>結帳確認
+                    </li>
+                    <li class="align-center">
+                        <div class="line"></div><span>3</span>完成
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main id="confirm__main">
+        <form action="#" class="bl_form_submit" method="post" accept-charset="utf-8" novalidate="novalidate">
+            <!-- <form action="orderwrite" class="bl_form_submit" method="get"> -->
+            <div class="container full-container">
+                <div class="row">
+                    <!-- 七區塊 -->
+                    <div class="col-lg-8" id="bl_order_form">
+                        <div class="confirm-warp">
+                            <div class="title">
+                                <div>訂購人資訊</div>
+                            </div>
+                            <!-- notice-block加上show 就會出現提醒樣式 -->
+                            <div class="notice-block bl_orderinfo_alert">
+                                <i class="fa fa-exclamation-circle"></i>訂購人資訊 請填寫完整
+                            </div>
+                            <div class="info order-info__wrap">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="info-label">訂購人姓名 *</label>
+                                        <input type="text" placeholder="訂購人姓名" class="form-control" name="order-name" id="order-name" required="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="info-label">訂購人電話 *</label>
+                                        <input type="text" placeholder="訂購人電話" class="form-control" name="order-phone" id="order-phone" required="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="info-label">訂購人信箱 *</label>
+                                        <input type="text" placeholder="訂購人信箱" class="form-control" name="order-email" id="order-email" required="">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label class="info-label">訂購人地址 *</label>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <input type="text" id="order_zip" name="order_zip" class="form-control" placeholder="郵遞區號" value="" readonly="" required="">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="order_city" class="order_city form-control" required="">
+                                                    <option value="" disabled selected>請選擇縣/市</option>
+                                                    <option value="基隆市">高雄市</option>
+                                                    <option value="臺北市">臺北市</option>
+                                                    <option value="新北市">新北市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="order_town" class="order_town form-control" required="">
+                                                    <option value="" disabled selected>請選擇區/鎮</option>
+                                                    <option value="">三民區</option>
+                                                    <option value="">新興區</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text" id="order_address" name="order_address" class="form-control" placeholder="請輸入完整地址" value="" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-warp">
+                            <div class="title">
+                                <div>配送方式<span>宅配(離島)</span></div>
+                            </div>
+                            <!-- notice-block加上show 就會出現提醒樣式 -->
+                            <div class="notice-block bl_orderinfo_alert">
+                                <i class="fa fa-exclamation-circle"></i>收件人資訊 請填寫完整
+                            </div>
+                            <div class="info order-info__wrap">
+                                <div class="subtitle">
+                                    收件人資訊
+                                    <div class="same-order">
+                                        <input type="checkbox" id="check-coypinfo" class="bl_copy_info" name="bl_copy_info">
+                                        <label for="check-coypinfo"></label>
+                                        <span>同訂購人</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="info-label">收件人姓名 *</label>
+                                        <input type="text" placeholder="收件人姓名" class="form-control" name="order-name" id="order-name" required="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="info-label">收件人電話 *</label>
+                                        <input type="text" placeholder="收件人電話" class="form-control" name="order-phone" id="order-phone" required="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="info-label">收件人信箱 *</label>
+                                        <input type="text" placeholder="收件人信箱" class="form-control" name="order-email" id="order-email" required="">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label class="info-label">收件人地址 *</label>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <input type="text" id="order_zip" name="order_zip" class="form-control" placeholder="郵遞區號" value="" readonly="" required="">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="order_city" class="order_city form-control" required="">
+                                                    <option value="" disabled selected>請選擇縣/市</option>
+                                                    <option value="基隆市">高雄市</option>
+                                                    <option value="臺北市">臺北市</option>
+                                                    <option value="新北市">新北市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="order_town" class="order_town form-control" required="">
+                                                    <option value="" disabled selected>請選擇區/鎮</option>
+                                                    <option value="">三民區</option>
+                                                    <option value="">新興區</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text" id="order_address" name="order_address" class="form-control" placeholder="請輸入完整地址" value="" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-warp">
+                            <div class="title">
+                                <div>付款方式</div>
+                            </div>
+                            <div class="notice-block bl_order_pay_alert">
+                                <i class="fa fa-exclamation-circle"></i>請選擇付款方式
+                            </div>
+                            <div class="info">
+                                <div class="gray-block-warp">
+                                    <input class="pay-checkbox bl_order_pay" type="radio" name="order_pay" id="pay-1" value="信用卡">
+                                    <label class="for-pay-checkbox" for="pay-1">
+                                        <div class="w-100">
+                                            <img src="assets/img/demo/confirm-icon-1.png">
+                                            <div>線上刷卡</div>
+                                        </div>
+                                    </label>
+                                    <input class="pay-checkbox bl_order_pay" type="radio" name="order_pay" id="pay-2" value="ATM">
+                                    <label class="for-pay-checkbox" for="pay-2">
+                                        <div class="w-100">
+                                            <img src="assets/img/demo/confirm-icon-2.png">
+                                            <div>ATM匯款</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-warp">
+                            <div class="title">
+                                <div>發票選項<span>紙本發票</span></div>
+                            </div>
+                            <div class="notice-block bl_order_invoice_alert">
+                                <i class="fa fa-exclamation-circle"></i>請選擇發票選項
+                            </div>
+                            <div class="info">
+                                <div class="select-warp">
+                                    <select class="bl_order_invoice" name="invoice_type" data-chose="" onchange="this.dataset.chose = this.value;">
+                                        <option value="" selected="">請選擇發票選項</option>
+                                        <option value="person">個人</option>
+                                        <option value="company">公司</option>
+                                        <option value="donate">捐贈</option>
+                                    </select>
+                                    <div class="company-info">
+                                        <input type="text" name="invoice_sno" placeholder="統一編號" maxlength="8">
+                                        <input type="text" name="invoice_title" placeholder="發票抬頭">
+                                    </div>
+                                    <div class="donate-info">
+                                        <input type="text" name="donate_sno" placeholder="捐贈碼(必填)" maxlength="7">
+                                        <p class="mt-2">捐贈碼<a href="https://www.einvoice.nat.gov.tw/APCONSUMER/BTC603W/" target="_blank">點我查詢</a>: 捐贈碼查詢完成後，請填寫於捐贈欄位即可</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-warp">
+                            <div class="title">
+                                <div>備註事項</div>
+                            </div>
+                            <div class="info">
+                                <textarea rows="3" name="order_notes" placeholder="有任何特殊需求請讓我們知道，我們會盡力達成:)"></textarea>
+                            </div>
+                        </div>
+                        <!-- 會員才顯示 -->
+                        <div class="confirm-warp">
+                            <div class="title title-2">
+                                <input type="checkbox" id="check-synchronize" name="check_synchronize" value="Y">
+                                <label for="check-synchronize"></label>
+                                <div><span>訂購人資訊 同步至會員資料</span></div>
+                            </div>
+                        </div>
+                        <!-- 非會員才顯示(帳號自動帶入) -->
+                        <div class="confirm-warp">
+                            <div class="title title-2">
+                                <input type="checkbox" id="check-registration" class="bl_registration" name="check_registration" value="Y">
+                                <label for="check-registration"></label>
+                                <div><span>快速加入會員</span><span class="small-remark">加入會員可享有我們最新優惠資訊，依訂購人資訊直接加入會員,同時表示您已經詳閱我們的<a href="/lyvv/terms" target="_blank">會員條款</a></span></div>
+                            </div>
+                            <!-- notice-block加上show 就會出現提醒樣式 -->
+                            <div class="notice-block">
+                                <i class="fa fa-exclamation-circle"></i>請填寫會員密碼
+                            </div>
+                            <div class="info">
+                                <div class="quick-registration">
+                                    <div class="input-name">帳號*</div>
+                                    <input type="email" name="user_email" placeholder="E-mail" class="email modal-account bl_user_email" value="">
+                                </div>
+                                <div class="quick-registration">
+                                    <div class="input-name">密碼*</div>
+                                    <input type="password" name="passwordSet" placeholder="6~10碼英文或數字" class="modal-psw" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 側欄 -->
+                    <div class="col-lg-4">
+                        <div class="cart-detail-container">
+                            <div class="cart-detail">
+                                <div class="item-list">
+                                    <div class="title">
+                                        <div>購買清單<span class="gray-tx">共 1項商品</span></div>
+                                        <div class="toggle-btn"><i class="fa fa-angle-up"></i></div>
+                                    </div>
+                                    <div class="item-content purchase-list">
+                                        <div class="product-list">
+                                            <div class="product-pic">
+                                                <a href="/lyvv/product_info?id=172">
+                                                    <img src="assets/img/demo/product/800X800-1.jpg" class="img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="warp-3">
+                                                <div class="product-info">
+                                                    <a href="product_info.html" class="product-name">香煎嫩雞起司堡</a>
+                                                    <div class="size">一盒</div>
+                                                    <div class="product-price">$ 90</div>
+                                                </div>
+                                                <div class="warp-4">
+                                                    <div class="product-quantity">x1</div>
+                                                    <div class="total-price">$ 90</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-list">
+                                    <div class="title">結帳金額</div>
+                                    <div class="item-content">
+                                        <div class="checkout">
+                                            <div>商品小計</div>
+                                            <div>$ 90</div>
+                                        </div>
+                                        <div class="checkout">
+                                            <div>優惠折扣</div>
+                                            <div>-$ 10</div>
+                                        </div>
+                                        <div class="checkout">
+                                            <div>運費(宅配(本島))</div>
+                                            <div>$ 80</div>
+                                        </div>
+                                        <div class="total">
+                                            <div><span>總計</span>$ 160</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" value="submit" class="lezada-button lezada-button--medium w-100 total-checkout bl_go_write">
+                                    <a href="order_ok.html">前往結帳 <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </button>
+                            </div>
+                            <a href="order_cart.html" class="back-cart"><i class="fas fa-long-arrow-alt-left"></i> 返回購物車</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form> <!-- </form> -->
+    </main>
+    <!-- 手機板 footer -->
+    <div class="cart__footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="total">
+                    <div><span>總計</span>$ <font class="bl_product_tot">160</font>
+                    </div>
+                </div>
+                <button type="button" value="submit" class="lezada-button lezada-button--medium total-checkout bl_go_confirm">
+                    <a href="order_ok.html">前往結帳 <i class="fas fa-long-arrow-alt-right"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cart__copyright-2">
+        <div class="container">
+            <p>Copyright © 2023 商務客製一頁式 All Right Reserved.Designed by <a target="_blank" href="https://www.bondlink.com.tw">Bondlink.</a></p>
+        </div>
+    </div>
+    <div id="scroll-to-top" class="footer_op1__scroll-to-top"><span class="fas fa-angle-up"></span></div>
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <script src="assets/js/main1.js"></script>
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,900&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>

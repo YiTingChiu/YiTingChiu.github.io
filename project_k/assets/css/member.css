@@ -1,0 +1,2153 @@
+@charset "UTF-8";
+
+/*===================================================================
+member
+    Forms
+    Member
+    Member Password
+    Member Like
+    Order History
+    Order Info
+    Order Confirm
+    Member Edit
+    查詢訂單頁面
+    Member Login
+    Member pagination
+    Member Coupon
+    Member RWD
+=====================================================================*/
+
+
+/* ----------------------------------------------------------------
+  Forms
+-----------------------------------------------------------------*/
+.member__page .sm-form-control {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 14px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: var(--color-white);
+  /*background-image: none;*/
+  border: 2px solid #DDD;
+  border-radius: 0 !important;
+  -webkit-transition: border-color ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s;
+  transition: border-color ease-in-out .15s;
+}
+
+.member__page .sm-form-control:focus {
+  border-color: #AAA;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.member__page .sm-form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.member__page .sm-form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.member__page .sm-form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.member__page .sm-form-control[disabled],
+.member__page .sm-form-control[readonly],
+.member__page fieldset[disabled] .sm-form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+
+.member__page .sm-form-control {
+  height: auto;
+}
+
+.member__page .form-control {
+  border-radius: 3px;
+}
+
+.member__page .form-control:active,
+.member__page .form-control:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+
+.member__page label {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 10px;
+  /*cursor: pointer;*/
+}
+
+.member__page label.label-muted {
+  color: #999;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.member__page form .col_full,
+.member__page form .col_half,
+.member__page form .col_one_third,
+.member__page form .col_two_third,
+.member__page form .col_three_fourth,
+.member__page form .col_one_fourth,
+.member__page form .col_one_fifth,
+.member__page form .col_two_fifth,
+.member__page form .col_three_fifth,
+.member__page form .col_four_fifth,
+.member__page form .col_one_sixth,
+.member__page form .col_five_sixth {
+  margin-bottom: 25px;
+}
+
+.member__page .rwd-table {
+  width: 100%;
+  color: #777;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: var(--font-text);
+  margin-bottom: 15px;
+}
+
+.member__page .rwd-table tr:first-child {
+  border-top: none;
+  border-bottom: none;
+  background: #555;
+  color: var(--color-white);
+}
+
+.member__page .rwd-table tr {
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+
+.member__page .rwd-table th {
+  font-weight: 500;
+  padding: 15px;
+  display: table-cell;
+  letter-spacing: 1px;
+}
+
+.member__page .rwd-table th {
+  width: 17%;
+}
+
+.member__page .rwd-table th.order-name-th {
+  width: 32%;
+}
+
+.member__page .rwd-table td {
+  padding: 12px 15px;
+  display: table-cell;
+}
+
+.member__page .rwd-table .note {
+  height: 76px;
+}
+
+.member__page .rwd-table .order-img .mobile-del {
+  display: inline-block;
+  color: #bbb;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px auto 5px;
+}
+
+.member__page .rwd-table .order-img .mobile-del:hover {
+  color: var(--color-primary);
+}
+
+.member__page .rwd-table .order-img img {
+  transition: 0.5s;
+  width: 110px;
+}
+
+.member__page .rwd-table .order-img a>img:hover {
+  opacity: 0.7;
+}
+
+.member__page .rwd-table .order-name a {
+  color: #666;
+  font-weight: 500;
+}
+
+.member__page .rwd-table .order-del a {
+  color: #aaa;
+}
+
+.member__page .rwd-table .order-name a:hover,
+.member__page .rwd-table .order-del a:hover {
+  color: var(--color-primary);
+}
+
+.member__page .rwd-table tr:nth-child(2) {
+  border-top: none;
+}
+
+.member__page .rwd-table tr:last-child {
+  border-bottom: 2px solid #E5E5E5;
+}
+
+
+/* ----------------------------------------------------------------
+  member
+-----------------------------------------------------------------*/
+.member__page .login-info {
+  border: 5px solid #f1f1f1;
+  padding: 30px 50px 35px 30px;
+  text-align: center;
+  transform: translateX(30px);
+  margin-top: 20px;
+}
+
+.member__page .login-info img {
+  width: 100px;
+  opacity: 0.1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.member__page .login-info p {
+  margin-bottom: 8px;
+  font-size: 15px;
+  border-bottom: 1px solid #EEE;
+  padding: 7px 0 14px;
+}
+
+/*.member__page .login-info span{
+  width: 110px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+}*/
+
+.member__page .login-info .check-ok {
+  color: #4caf50;
+  margin-right: 5px;
+}
+
+.member__page .login-info .check-no {
+  color: #d7d7d7;
+}
+
+.member__page .login-info .check-no:hover {
+  color: #222;
+}
+
+.member__page .login-info p i {
+  margin-right: 2px;
+}
+
+.member__page .link-info {
+  border: 5px solid #f1f1f1;
+  padding: 65px 40px 55px;
+  text-align: center;
+  transform: translateX(-30px);
+  background: var(--color-white);
+}
+
+.member__page .hover-block {
+  text-align: center;
+  position: relative;
+  margin: 25px auto;
+  transition: 0.5s;
+}
+
+.member__page .member-link a.enter-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.member__page .member-link .find-border {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 8px;
+  background-color: #f5f5f5;
+}
+
+.member__page .member-link .find-border img {
+  height: 33px;
+  width: auto;
+  opacity: 0.3;
+}
+
+.member__page .member-link span {
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--color-text);
+  opacity: 0.5;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.member__page .hover-block:hover span {
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.member__page .hover-block:hover .find-border {
+  border: 3px solid #555;
+  transform: translateY(-5px);
+}
+
+.member__page .hover-block:hover .find-border img {
+  opacity: 0.8;
+  transform: scale(1.15);
+}
+
+.member-content .btn {
+  background-color: #555;
+  color: var(--color-white);
+  border-radius: 2px;
+  letter-spacing: 2px;
+  padding: 5px 12px 7px 16px;
+  min-width: 120px;
+}
+
+.member-content .btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* ----------------------------------------------------------------
+  Member Password
+-----------------------------------------------------------------*/
+
+.member__page .member-side {
+  transform: translateX(24px);
+  margin-top: 15px;
+}
+
+.member__page .member-side .side-hover {
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.member__page .member-side .side-hover a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.member__page .member-side .find-border {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 8px 0 8px 12px;
+  background-color: transparent;
+}
+
+.member__page .member-side .find-border img {
+  height: 18px;
+  width: auto;
+  opacity: 0.3;
+}
+
+.member__page .side-hover span {
+  line-height: 63px;
+}
+
+.member__page .side-hover:hover,
+.member__page .side-hover.active {
+  background-color: #f1f1f1;
+}
+
+.member__page .side-hover:hover span,
+.member__page .side-hover.active span {
+  opacity: 0.8;
+}
+
+
+.member__page .side-hover:hover .find-border img,
+.member__page .side-hover.active .find-border img {
+  opacity: 0.8;
+  transform: scale(1.15);
+}
+
+.member__page .member-content {
+  border: 5px solid #f1f1f1;
+  padding: 30px 35px;
+  margin-bottom: 15px;
+  min-height: 552px;
+}
+
+
+
+/* ----------------------------------------------------------------
+  Member Like
+-----------------------------------------------------------------*/
+
+.member__page .member-content .shop.product-3 {
+  margin: 0 -30px -10px 0;
+}
+
+.member__page .member-like .rwd-table th,
+.member__page .member-like .rwd-table td {
+  text-align: center;
+}
+
+.member__page .member-like .rwd-table tr:first-child {
+  background-color: transparent;
+  color: #555;
+  border-bottom: 4px double #E5E5E5;
+}
+
+.member__page .rwd-table td.order-add button,
+.member__page .rwd-table td.order-delet button {
+  border: none;
+  background: none;
+}
+
+
+/* ----------------------------------------------------------------
+  Order History
+-----------------------------------------------------------------*/
+
+.member__page .order-table {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.member__page .order-table th {
+  white-space: nowrap;
+}
+
+.member__page .order-table td {
+  padding: 15px;
+}
+
+.member__page .order-table .order-no {
+  color: var(--color-primary);
+  border-bottom: 1px dashed var(--color-primary);
+  transition: 0.5s;
+}
+
+.member__page .order-table .order-no:hover {
+  color: var(--color-text);
+  border-bottom: 1px dashed var(--color-text);
+}
+
+.member__page .order-table span {
+  display: block;
+  padding-right: 4px;
+}
+
+.member__page .order-table .no-pay {
+  color: var(--color-primary);
+}
+
+.member__page .history-btn {
+  font-size: 13px;
+  color: #666;
+  background-color: #E8E8E8;
+  padding: 2px 6px;
+  margin-top: 4px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.member__page .history-btn:hover {
+  transform: translateY(-2px);
+  color: #555;
+}
+
+.member__page .pay-again {
+  background-color: #555;
+  color: var(--color-white);
+}
+
+.member__page .pay-again:hover {
+  color: var(--color-white);
+}
+
+.member__page .no-data {
+  width: 100%;
+  color: #3d3d3d;
+  text-align: center;
+  border: 1px solid #e4e3e3;
+  padding: 10px 20px;
+}
+
+
+/* ----------------------------------------------------------------
+  Order Info
+-----------------------------------------------------------------*/
+
+.member__page .order-content .rwd-table {
+  font-size: 15px;
+}
+
+.member__page .order-content .finish-block .spend-table td.spend-name {
+  width: 100px;
+}
+
+.member__page .order-content .history-btn {
+  margin-top: 0;
+}
+
+.member__page .order-content .rwd-table td.pay-info span {
+  display: inline;
+  padding-right: 3px;
+}
+
+.member__page .center-item {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 30px;
+}
+
+.member__page .center-item img {
+  width: 50%;
+  opacity: 0.2;
+  margin-bottom: 15px;
+}
+
+.member__page .center-item p {
+  margin-bottom: 0;
+}
+
+.member__page .order-info__price,
+.member__page .order-info__title {
+  text-align: right;
+}
+
+/* ----------------------------------------------------------------
+  Order Confirm
+-----------------------------------------------------------------*/
+
+.member__page .order-title {
+  color: var(--color-white);
+  background-color: #555;
+  border-radius: 5px 5px 0 0;
+  font-size: var(--font-text);
+  padding: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.member__page .order-title i {
+  margin-right: 5px;
+  transform: translateY(1px);
+}
+
+.member__page .spend-group .form-radio>input+label {
+  font-weight: 700;
+  color: #555;
+}
+
+.member__page .comfirm-block {
+  margin-bottom: 20px;
+}
+
+.member__page .comfire-btn {
+  padding: 0;
+}
+
+.member__page .order-ok {
+  padding: 15px;
+  background-color: #555;
+  color: var(--color-white);
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: var(--font-text);
+  margin-bottom: 25px;
+}
+
+.member__page .order-ok a {
+  color: var(--color-white);
+  border-bottom: 1px dashed var(--color-white);
+  transition: 0.5s;
+}
+
+.member__page .order-ok a:hover {
+  border-bottom: none;
+}
+
+.member__page .finish-block {
+  margin-bottom: 25px;
+}
+
+.member__page .finish-block .order-title {
+  background: #eee;
+  color: var(--color-text);
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.member__page .finish-block .rwd-table tr:first-child {
+  background-color: transparent;
+  color: #555;
+  border-bottom: 4px double #E5E5E5;
+}
+
+.member__page .finish-block .rwd-table tr:last-child {
+  border-bottom: 2px solid #E5E5E5;
+}
+
+.member__page .finish-block .rwd-table tr:hover:not(:first-child) {
+  background-color: transparent;
+}
+
+.member__page .finish-block .spend-table td {
+  text-align: left;
+}
+
+.member__page .finish-block .spend-table tr:first-child {
+  border-bottom: 1px solid #E5E5E5;
+  color: #777;
+}
+
+.member__page .finish-block .spend-table td.spend-name {
+  width: 100px;
+  vertical-align: baseline;
+  padding: 12px 0 12px 15px;
+}
+
+
+/* ----------------------------------------------------------------
+  Member Edit
+-----------------------------------------------------------------*/
+.member__page .content-wrap--member .select-style {
+  margin-bottom: 25px !important;
+  position: relative;
+}
+
+.member__page .content-wrap--member .select-style i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  pointer-events: none;
+}
+
+
+/* ----------------------------------------------------------------
+  查詢訂單頁面
+-----------------------------------------------------------------*/
+.member__page .content-wrap .order-check__page {
+  margin-bottom: 80px;
+}
+
+
+.member__page .member-info-area {
+  margin-bottom: 60px;
+}
+
+.member__page .confirm-form {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  background-color: var(--color-white);
+}
+
+.member__page .form-head {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 15px 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.member__page .form-head__icon {
+  margin-right: 5px;
+}
+
+.member__page .confirm-form__body {
+  padding: 20px 20px 20px;
+  height: 100%;
+}
+
+.member__page .form_group {
+  margin-bottom: 30px;
+}
+
+.member__page .form_group .input-form {
+  background: none;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  border: unset;
+  border: 1px solid #e4e3e3;
+  border-radius: 0 !important;
+  color: #666666;
+}
+
+.member__page .order-check-sec {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.member__page .order-check-sec p {
+  color: var(--color-primary);
+  margin-bottom: 0px;
+  font-size: var(--font-text);
+}
+
+
+.member__page .table-desc {
+  /* border: 1px solid #ebebeb; */
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--color-white);
+}
+
+.member__page .table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.member__page .table-desc .cart-page table {
+  width: 100%;
+}
+
+.member__page .table-desc .cart-page table thead tr th {
+  font-size: var(--font-text);
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 15px;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.member__page .table-desc .cart-page table tbody tr td {
+  border-bottom: 1px solid #ebebeb;
+  /* border-right: 1px solid #ebebeb; */
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: #666666;
+}
+
+.member__page .confirm-form__body .btn.btn-theme {
+  background: var(--color-primary);
+  color: var(--color-white)
+}
+
+.member__page .confirm-form__body .btn.btn-theme:hover {
+  background: #555555;
+  color: var(--color-white)
+}
+
+.member__page .member-info-area .order-ok {
+  display: block;
+  padding: 10px;
+  background-color: transparent;
+  color: #666666;
+  text-align: center;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  font-weight: initial;
+  font-size: var(--font-text);
+  margin-bottom: 0px;
+}
+
+.member__page .order-number {
+  color: var(--color-primary);
+  display: block;
+}
+
+.member__page .not-pay {
+  color: var(--color-primary);
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+}
+
+.member__page .re-pay {
+  display: inline-block;
+  background-color: var(--color-primary);
+  padding: 1px 9px;
+  border-radius: 2px;
+  color: var(--color-white);
+  font-size: 13px;
+}
+
+.member__page .re-pay:hover {
+  color: var(--color-white);
+  background-color: #555555;
+}
+
+.member__page .cart-page table thead tr:last-child th,
+.member__page .table-desc table tbody tr td:last-child {
+  border-right: 0;
+}
+
+.member__page .cancel-order {
+  display: inline-block;
+  background-color: #d7d7d7;
+  padding: 1px 9px;
+  border-radius: 2px;
+  color: #5d5d5d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.member__page .cancel-order:hover {
+  background-color: #555555;
+  color: var(--color-white);
+}
+
+/* 查詢訂單內容頁 */
+.member__page .member_table {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.member__page .member_table tr {
+  border-bottom: 1px solid #ede9e6;
+}
+
+.member__page .member_table td.main {
+  font-weight: 500;
+  white-space: nowrap;
+  width: 106px;
+  color: var(--color-text);
+}
+
+.member__page .member_table td {
+  font-size: var(--font-text);
+  padding: 0.8rem 1rem;
+  vertical-align: baseline;
+  word-break: break-all;
+  color: #666666;
+}
+
+.member__page .mr-10 {
+  margin-right: 10px;
+}
+
+.member__page .table-desc.table-desc--history .cart-page table thead tr th {
+  background: #f5f5f5;
+  color: inherit;
+}
+
+.member__page .table-desc .cart-page table thead tr th.product-name,
+.member__page .table-desc .cart-page table tbody tr td.product-name {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.member__page .table-desc.table-desc--history .cart-page table thead tr th.product-total,
+.member__page .table-desc .cart-page table tbody tr td.product-total {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.member__page .member-info-area .product-image {
+  max-width: 70px;
+  width: initial;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.member__page .table-desc .cart-page table tbody tr td.product-name {
+  min-width: 180px;
+}
+
+.member__page .table-desc .cart-page table tbody tr td.product-name a,
+.member__page .table-desc .cart-page table tbody tr td.product-name .product-name__title {
+  color: #444;
+  text-transform: capitalize;
+  font-size: var(--font-text);
+  font-weight: 400;
+}
+
+.member__page .gift-text {
+  display: block;
+  color: #EC6C82;
+  font-size: 14px;
+}
+
+.member__page .table-desc.table-desc--history {
+  box-shadow: none;
+}
+
+.member__page .table-desc .cart-page table tbody tr td.product-price {
+  min-width: 130px;
+  font-size: var(--font-text);
+}
+
+.member__page .table-desc .cart-page table tbody tr td.product-quantity {
+  min-width: 180px;
+}
+
+.member__page .member-info-area .product-image img:hover {
+  transform: scale(1);
+}
+
+.member__page .order-total {
+  position: relative;
+  color: #666666;
+}
+
+.member__page .order-total .total-list {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member__page .order-total .total-title {
+  width: 100px;
+  margin-right: 15px;
+  text-align: left;
+  display: inline-block;
+  color: #595757;
+}
+
+.member__page .order-total .total-price {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.member__page .order-total .red {
+  color: #EC6C82;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* ----------------------------------------------------------------
+  Member Login
+-----------------------------------------------------------------*/
+.member__page .fast-link {
+  background-color: var(--color-white);
+  margin-bottom: 20px;
+  position: relative;
+  padding: 30px;
+}
+
+.member__page .link-contact {
+  min-height: 335px;
+  overflow: hidden;
+}
+
+.member__page .goto-register,
+.member__page .login-form {
+  min-height: 345px;
+  margin-bottom: 30px;
+  height: calc(100% - 30px);
+}
+
+.member__page .link-contact--login {
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+}
+
+.member__page .link-contact img {
+  opacity: 0.052;
+  position: absolute;
+  right: -5px;
+  bottom: -20px;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+.member__page .goto-register img {
+  right: -60px;
+  bottom: -40px;
+  transform: rotate(-12deg);
+  max-height: 95%;
+}
+
+.member__page .link-contact.link-contact--login img {
+  opacity: 0.054;
+  height: 100%;
+}
+
+.member__page .link-contact .contact-memo {
+  padding-left: 15px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.member__page .link-contact .contact-memo a {
+  background-color: #555;
+  color: var(--color-white);
+  border-radius: 2px;
+  letter-spacing: 2px;
+  padding: 5px 12px 7px 16px;
+  width: 240px;
+  font-weight: 500;
+}
+
+.member__page .link-contact .contact-memo a:hover {
+  background-color: var(--color-primary);
+}
+
+.member__page .goto-register .contact-memo {
+  margin-top: 0px;
+}
+
+.member__page .goto-register .contact-memo p {
+  font-size: 18px;
+}
+
+.member__page .login-form {
+  border: 1px solid #ddd;
+  padding: 30px 40px;
+}
+
+.member__page .login-form h3 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.member__page .contact-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.member__page .login-form .enter-btn .btn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 115px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.member__page .login-form .enter-btn .btn:hover {
+  background-color: #555;
+}
+
+.member__page .contact-code input {
+  width: 120px;
+  padding: 8px 14px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: var(--color-white);
+  background-image: none;
+  border: 2px solid #DDD;
+  display: inline-block;
+  margin: 0 5px 10px 0;
+}
+
+.member__page .sp-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px rgba(0, 0, 0, 0.15) solid;
+  border-top: 2px #4e4e4e solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+}
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.member__page .forget-note a {
+  font-size: 14px;
+  color: #777777;
+  padding-left: 6px;
+}
+
+.member__page .forget-note a:hover {
+  color: var(--color-primary);
+}
+
+.member__page .no-login-choice {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.member__page .no-login-choice a,
+.member__page .no-login-choice .cart-login__note {
+  font-size: 14px;
+  color: #777777;
+}
+
+.member__page .no-login-choice a:hover {
+  color: var(--color-primary);
+}
+
+
+/* 其他方式登入 */
+.member__page .other-login_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member__page .other-login {
+  letter-spacing: 0px;
+  padding: 9px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.member__page .other-login:last-child {
+  margin-bottom: 0;
+}
+
+.member__page .other-login img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.member__page .other-login>div {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+.member__page .fb-login {
+  color: var(--color-white);
+  background-color: #446bae;
+}
+
+.member__page .google-login {
+  color: #555;
+  background-color: #efefef;
+}
+
+.member__page .line-login {
+  color: var(--color-white);
+  background-color: #00bb00;
+}
+
+.member__page .fb-login:hover,
+.member__page .google-login:hover,
+.member__page .line-login:hover {
+  opacity: 0.7;
+}
+
+.member__page .tx {
+  position: relative;
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.member__page .tx:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.member__page .tx>div {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  background-color: var(--color-white);
+  letter-spacing: 1px;
+}
+
+
+.member__page .register_terms {
+  font-size: 13px;
+  font-weight: 500;
+  color: #898989;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.member__page .register_terms .red {
+  color: #595757;
+}
+
+.member__page .register_terms .red:hover {
+  color: var(--color-primary);
+}
+
+
+/* ----------------------------------------------------------------
+  Member pagination
+-----------------------------------------------------------------*/
+.member__pagination {
+  margin: 30px 0;
+}
+
+.member__pagination li {
+  margin-right: 5px;
+}
+
+.member__pagination li a {
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  color: var(--color-text);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 35px;
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+  width: 36px;
+}
+
+.member__pagination li a.active {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.member__pagination li a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.member__pagination li i {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.member__pagination li:last-child {
+  margin-right: 5px;
+}
+
+
+/* ----------------------------------------------------------------
+  Member Coupon
+-----------------------------------------------------------------*/
+.member__page .coupon_top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member__page .member-item-btn {
+  position: relative;
+}
+
+.member__page .member-item-btn li {
+  display: inline-block;
+  margin-right: 3px;
+  min-width: 84px;
+  text-align: center;
+}
+
+.member__page .member-item-btn li:last-child {
+  margin-right: 0;
+}
+
+.member__page .member-item-btn li a {
+  display: block;
+  position: relative;
+  padding: 12px 10px;
+  font-size: 15px;
+  line-height: 1;
+  color: #666;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+.member__page .member-item-btn li a:hover {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transition: 0.3s;
+}
+
+.member__page .member-item-btn li.active a {
+  color: var(--color-white);
+  margin: -1px 0;
+  padding: 13px 18px;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.member__page .coupon_receive {
+  display: flex;
+  align-items: center;
+}
+
+.member__page .coupon_receive input {
+  font-size: 15px;
+  color: #595757;
+  height: 41px;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: var(--color-white);
+  letter-spacing: 1px;
+  -webkit-appearance: none;
+}
+
+.member__page .coupon_receive button {
+  position: relative;
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 13px 15px;
+  margin-left: 7px;
+  border: unset;
+  border-radius: 3px;
+  background-color: #555;
+  line-height: 1;
+}
+
+.member__page .coupon_receive button:hover {
+  background-color: var(--color-primary);
+}
+
+.member__page .no-coupon-data {
+  border: 1px solid #E5E5E5;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.member__page .cupon-block {
+  position: relative;
+  border: solid 1px #ddd;
+  margin-top: 30px;
+  background-color: var(--color-white);
+  font-family: 微軟正黑體, sans-serif;
+  font-weight: 600;
+  height: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+}
+
+.member__page .cupon-block:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 110px;
+  border-right: dashed 1px #ccc;
+}
+
+.member__page .cupon-block .cupon-value {
+  display: inline-block;
+  width: 110px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #595757;
+  padding: 35px 15px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.member__page .cupon-block .cupon-value img {
+  width: 50px;
+}
+
+.member__page .cupon-block .cupon-info {
+  display: inline-block;
+  width: calc(100% - 115px);
+  padding: 10px 15px;
+  vertical-align: middle;
+}
+
+.member__page .cupon-block .cupon-info .cupon-name {
+  color: #595757;
+  font-size: var(--font-text);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.member__page .cupon-block .cupon-info .cupon-use {
+  color: #ef525e;
+  font-size: 14px;
+}
+
+.member__page .cupon-block .cupon-info .cupon-tx {
+  color: #898989;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.member__page .cupon-block .cupon-info .cupon-date,
+.member__page .cupon-block .cupon-info .cupon-order {
+  font-size: 13px;
+  color: #898989;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.member__page .cupon-block .cupon-info .cupon-order:hover {
+  color: #898989;
+}
+
+.member__page .cupon-block .cupon-info .cupon-get {
+  color: var(--color-white);
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  background-color: #555;
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.member__page .cupon-block .cupon-info .cupon-get:hover {
+  background-color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.member__page .cant-use .cupon-value,
+.member__page .cant-use .cupon-info .cupon-name,
+.member__page .cant-use .cupon-info .cupon-use,
+.member__page .cant-use .cupon-info .cupon-tx,
+.member__page .cant-use .cupon-info .cupon-date,
+.member__page .cant-use .cupon-info .cupon-order {
+  color: #ccc;
+}
+
+.member__page .cupon-block.cant-use .cupon-info .cupon-get {
+  background-color: #ccc;
+}
+
+.member__page .cupon-select {
+  margin-bottom: 0 !important;
+}
+
+.member__page .product-cupon {
+  padding: 0 0 30px;
+}
+
+.member__page .product-cupon .cupon-block {
+  margin-top: 0;
+  height: 100%;
+}
+
+.member__page .order-detail {
+  position: relative;
+  color: #898989;
+  padding: 0 30px;
+  text-align: right;
+}
+
+.member__page .order-detail .detial-list {
+  margin-bottom: 10px;
+}
+
+.member__page .order-detail .detial-title {
+  width: 100px;
+  margin-right: 15px;
+  text-align: left;
+  display: inline-block;
+  color: #595757;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.member__page .order-detail .detial-price {
+  width: 150px;
+  display: inline-block;
+}
+
+.member__page .order-detail .red {
+  color: #d3122a;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.member__page .upload-pic {
+  width: 100px;
+}
+
+
+/* ----------------------------------------------------------------
+  Member RWD
+-----------------------------------------------------------------*/
+
+@media(max-width: 1399px) and (min-width: 992px) {
+  .member__page .login-form .enter-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+@media(max-width: 1199px) {
+  .member__page .member-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .member__page .member-side {
+    transform: none;
+    margin-top: 0;
+  }
+
+  .member__page .member-content {
+    min-height: auto;
+  }
+
+  .member__page .member-side .find-border {
+    width: 40px !important;
+    height: 40px !important;
+    margin: auto 5px auto 15px;
+  }
+
+  .member__page .member-side .find-border img {
+    height: 24px !important;
+  }
+
+  .member__page .rwd-table th {
+    width: 17%;
+  }
+
+  .member__page .rwd-table th.order-name-th {
+    width: 32%;
+  }
+
+}
+
+@media(max-width: 991px) {
+  .member__page .login-info {
+    margin-right: 0;
+  }
+
+  .member__page .member-link {
+    margin: 13px auto;
+  }
+
+  /* 表格 991 */
+  .member__page .rwd-table td div:before {
+    content: attr(data-th) "：";
+    display: inline-block;
+    color: #777;
+    width: 30%;
+  }
+
+  .member__page .rwd-table th {
+    display: none;
+  }
+
+  .member__page .rwd-table tr {
+    border-bottom: 2px solid #E5E5E5;
+  }
+
+  .member__page .rwd-table td {
+    display: block;
+    padding: 5px 15px;
+  }
+
+  .member__page .rwd-table .order-img {
+    text-align: center;
+  }
+
+  .member__page .rwd-table td.order-price {
+    padding: 5px 15px 15px;
+  }
+
+  .member__page .rwd-table .order-qty select {
+    display: inline;
+    width: 100px;
+  }
+
+  .member__page .rwd-table .order-name a,
+  .member__page .rwd-table .order-table-txt {
+    font-size: 16px;
+  }
+
+  .member__page .rwd-table .order-del {
+    display: none;
+  }
+
+  .member__page .rwd-table tr:last-child {
+    border-bottom: 4px double #E5E5E5;
+  }
+
+  .member__page .order-content .finish-block .rwd-table.send-table td {
+    display: table-cell;
+  }
+
+  .member__page .finish-block .rwd-table .order-img img {
+    margin-top: 12px;
+    width: 80%;
+  }
+
+  .member__page .finish-block .rwd-table td {
+    padding: 5px;
+  }
+
+  .member__page .finish-block .rwd-table td.order-price {
+    padding: 5px 5px 15px;
+  }
+
+  .member__page .finish-block .spend-table td.spend-name {
+    display: none;
+  }
+
+  .member__page .finish-block .spend-table td div:before,
+  .member__page .finish-block .send-table td div:before {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .member__page .finish-block .spend-table td,
+  .member__page .finish-block .send-table td {
+    padding: 12px 2px;
+  }
+
+  .member__page .finish-block .rwd-table tr {
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .member__page .finish-block .send-table tr td {
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .member__page .finish-block .send-table tr,
+  .member__page .finish-block .send-table tr td:last-child {
+    border-bottom: none;
+  }
+
+  .member__page .finish-block .rwd-table td.spend-info span,
+  .member__page .finish-block .send-table td span {
+    display: inline-block;
+    word-break: break-all;
+    /*width: calc(100% - 90px);*/
+  }
+
+  .member__page .cart-inside table thead {
+    display: none;
+  }
+
+  .member__page .cart-inside table .product-remove:before {
+    display: none;
+  }
+
+  .member__page .cart-inside table .quantity {
+    padding: 10px 0 13px 0;
+  }
+
+  .member__page .cart-inside table .product-name,
+  .member__page .cart-inside table .product-price,
+  .member__page .cart-inside table .product-remove {
+    padding-top: 15px;
+  }
+
+  .member__page .cart-inside table td {
+    display: block;
+    padding-top: 35px;
+    text-align: right;
+  }
+
+  .member__page .cart-inside table td:before {
+    content: attr(data-title) "： ";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    float: left;
+    color: #777;
+  }
+
+  .member__page .cart-inside table td.product-thumbnail:before {
+    content: attr(data-title) "";
+  }
+
+  .member__page .cart-inside table td.text-center {
+    text-align: right;
+  }
+
+  .member__page .cart-step li {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  .member__page .link-info {
+    margin-top: 20px;
+  }
+
+  .member__page .order-table td div:before {
+    display: inline;
+  }
+
+  .member__page .order-table span {
+    display: inline-block;
+  }
+
+  .member__page .order-table td {
+    padding: 5px 0;
+  }
+
+  .member__page .order-table td:first-child {
+    padding: 15px 0 5px;
+  }
+
+  .member__page .order-table td:last-child {
+    padding: 5px 0 15px;
+  }
+
+  .member__page .order-table .history-btn {
+    margin-top: 0;
+  }
+
+  .member__page .order-table-txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .member__page .member-content {
+    padding: 20px 15px;
+  }
+
+  .member__page .login-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .member__page .login-form {
+    margin-bottom: 30px;
+  }
+
+  .member__page .cupon-block {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .member__page .product-cupon {
+    padding: 0;
+  }
+
+  .member__page .product-cupon .cupon-block {
+    margin-bottom: 12px;
+    height: calc(100% - 12px);
+  }
+
+  .member__page .coupon_top {
+    margin-bottom: 25px;
+  }
+
+  .member__page .member-like .rwd-table th,
+  .member__page .member-like .rwd-table td {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+
+  .member__page .member-like .rwd-table tr:first-child {
+    border-bottom: none;
+  }
+
+  .member__page .member-like .rwd-table .order-img {
+    text-align: center;
+  }
+
+  .member__page .member-like .rwd-table .order-img img {
+    width: 80%;
+  }
+
+  .member__page .member-like .rwd-table .order-img {
+    padding-bottom: 15px;
+  }
+
+  .member__page .member-like .rwd-table tr:not(:first-child) .order-img {
+    padding-top: 30px;
+  }
+
+  .member__page .order-info__title {
+    text-align: left;
+  }
+
+}
+
+@media(max-width: 767px) {
+  .member__page .login-info {
+    transform: none;
+    margin-top: 0;
+  }
+
+  .member__page .link-info {
+    padding: 55px 40px 50px;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .member__page .link-contact {
+    min-height: auto;
+  }
+
+  .member__page .goto-register .contact-memo p {
+    font-size: 18px;
+  }
+
+  .member__page .link-contact .contact-memo a {
+    margin-bottom: 15px;
+  }
+
+  .member__page .link-contact .contact-memo {
+    margin-top: 30px;
+  }
+
+  .member__page .cupon-block .cupon-info .cupon-tx,
+  .member__page .cupon-block .cupon-info .cupon-date,
+  .member__page .cupon-block .cupon-info .cupon-order {
+    display: none;
+  }
+
+  .member__page .coupon_top {
+    display: block;
+  }
+
+  .member__page .member-item-btn {
+    margin-bottom: 15px;
+  }
+
+  .member__page .member-item-btn li {
+    min-width: 95px;
+  }
+
+  .member__page .member-item-btn {
+    text-align: center;
+  }
+
+  .member__page.coupon_receive {
+    justify-content: center;
+  }
+
+  .member__page .coupon_receive input {
+    width: calc(100% - 70px);
+  }
+
+  .member__page .order-detail {
+    border-top: unset;
+    padding: 0;
+  }
+
+  .member__page .order-detail .detial-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 5px;
+    margin-bottom: 0;
+  }
+
+  .member__page .order-detail .detial-list:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .member__page .order-detail .detial-title {
+    color: #595757;
+    width: unset;
+    display: block;
+    white-space: unset;
+    margin-right: unset;
+  }
+
+  .member__page .order-detail .detial-price {
+    width: unset;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .member__page .table-responsive .shopping-cart thead {
+    display: none;
+  }
+
+  .member__page .table-responsive .shopping-cart tbody {
+    border-top: none;
+  }
+
+  .member__page .table-responsive .shopping-cart tr {
+    display: block;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 10px 20px;
+    background-color: var(--color-white);
+  }
+
+  .member__page .table-responsive .shopping-cart tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .member__page .table-responsive .shopping-cart td {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0;
+    padding: 4px 0 !important;
+    text-align: right !important;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: none !important;
+    margin-bottom: 12px;
+  }
+
+  .member__page .shopping-cart td:before {
+    content: attr(data-text);
+    float: left;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-text);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .member__page .shopping-cart td.product-image:before {
+    display: none;
+  }
+
+  .member__page .not-pay {
+    padding: 0;
+  }
+
+  .member__page .member-info-area .order-ok {
+    padding: 0px;
+  }
+
+  .member__page .table-responsive .shopping-cart td.product-image {
+    margin-bottom: 10px;
+  }
+
+  .member__page .table-desc--history .table-responsive .shopping-cart tr {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+    padding: 0 0 12px 0;
+  }
+
+  .member__page .order-total {
+    border-top: 1px dashed #ababab;
+    margin-top: -30px;
+    padding-top: 25px;
+  }
+
+  .member__page .order-total .total-price {
+    padding-right: 0;
+  }
+
+  .member__page .table-desc {
+    margin-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .member__page .table-responsive {
+    overflow-x: initial;
+  }
+
+  .member__page .member-info-area {
+    margin-bottom: 30px;
+  }
+
+  .member__page .content-wrap .order-check__page {
+    margin-bottom: 0;
+  }
+
+  .member__page .login-form {
+    padding: 20px;
+  }
+
+  .member__page .login-form .enter-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width:575px) {
+  .member__page .cupon-block {
+    margin: 0 0 20px;
+  }
+
+  #cart__main .cupon-block {
+    margin: 0 20px 20px;
+  }
+
+  .member__page .product-cupon .cupon-block {
+    margin: 0 0 12px;
+  }
+
+  .member__page .member-item-btn li {
+    min-width: 18.5%;
+  }
+
+  .member__page .coupon_receive input {
+    width: calc(100% - 70px);
+  }
+
+  .member__page .finish-block .rwd-table .order-img img,
+  .member__page .member-like .rwd-table .order-img img {
+    width: 100%;
+  }
+
+  .member__page .rwd-table td div:before {
+    width: 100%;
+  }
+}
+
+@media(max-width: 480px) {
+  .member__page .login-info {
+    text-align: left;
+    padding: 15px 20px 25px;
+  }
+
+  .member__page .login-info img {
+    margin-bottom: 8px;
+    margin-left: 5px;
+  }
+
+  .member__page .link-info {
+    padding: 35px 20px 30px;
+  }
+
+  .member__page .member-link .find-border {
+    width: 100px;
+    height: 100px;
+  }
+
+  .member__page .member-link span {
+    font-size: 17px;
+  }
+
+  .member__page .fast-link {
+    padding: 20px 15px;
+  }
+
+  .member__page .link-contact .contact-memo a {
+    width: auto;
+  }
+
+  .member__page .contact-code.login-code img {
+    margin-bottom: 10px
+  }
+
+  .member__page .member-item-btn li {
+    min-width: 23%;
+  }
+
+  .member__page .cupon-block {
+    margin: 0 20px 20px;
+  }
+
+  .member__page .coupon_receive input {
+    width: calc(100% - 70px - 40px);
+  }
+
+}
+
+@media(max-width: 375px) {
+  .member__page .link-info {
+    padding: 20px 25px 15px;
+  }
+
+  .member__page .member-link .find-border {
+    width: 75px;
+    height: 75px;
+  }
+
+  .member__page .member-link .find-border img {
+    height: 26px;
+  }
+
+  .member__page .cupon-block {
+    margin: 0 0 10px;
+    height: calc(100% - 10px);
+  }
+
+  #cart__main .cupon-block {
+    margin: 0 10px 10px;
+  }
+
+  .member__page .product-cupon .cupon-block {
+    margin: 0 0 12px;
+  }
+
+  .member__page .cupon-block .cupon-value {
+    font-size: 22px;
+  }
+
+  .member__page .cupon-block .cupon-info .cupon-name {
+    font-size: 14px;
+  }
+
+  .member__page .cupon-block .cupon-info .cupon-get {
+    font-size: 13px;
+  }
+
+  .member__page .member-item-btn {
+    margin-bottom: 15px;
+  }
+
+  .member__page .member-item-btn li {
+    width: 31%;
+  }
+
+  .member__page .member-item-btn li a,
+  .member__page .member-item-btn li.active a {
+    padding: 10px 5px;
+  }
+
+  .member__page .coupon_receive input {
+    width: calc(100% - 70px);
+  }
+
+  .member__page .contact-code input{
+    width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>訂購成功 | 商務客製一頁式</title>
+    <meta property="og:title" content="" />
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Stylesheets
+  ============================================= -->
+    <link rel="canonical" href="" />
+    <!-- Css -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <link href="assets/css/main1.css" rel="stylesheet">
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/cart-all-op.css" rel="stylesheet">
+    <link href="assets/css/member.css" rel="stylesheet" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/demo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/demo/favicon.ico">
+</head>
+
+<body>
+    <header class="cart__header">
+        <div class="container">
+            <div class="container-header align-center">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/demo/header-logo.png" alt="商務客製一頁式" title="商務客製一頁式" class="img-fluid">
+                    </a>
+                </div>
+                <div class="cart__step-list">
+                    <ul>
+                        <li class="active"><span>1</span>購物車</li>
+                        <li class="align-center active">
+                            <div class="line"></div><span>2</span>結帳確認
+                        </li>
+                        <li class="align-center active">
+                            <div class="line"></div><span>3</span>完成
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopping-btn">
+                    <span class="user-name"><span>
+                            <img src="assets/img/demo/member/user.png" alt="">未登入</span></span>
+                    <a href="index.html#product">
+                        <i class="fa fa-angle-left"></i>繼續購物
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-cart__step-list">
+        <div class="container">
+            <div class="cart__step-list">
+                <ul>
+                    <li class="active"><span>1</span>購物車</li>
+                    <li class="align-center active">
+                        <div class="line"></div><span>2</span>結帳確認
+                    </li>
+                    <li class="align-center active">
+                        <div class="line"></div><span>3</span>完成
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main id="img__area" class="confirm__ok">
+        <div class="container full-container">
+            <div class="row">
+                <!-- 圖 -->
+                <div class="col-lg-6">
+                    <div class="w-100">
+                        <img src="assets/img/demo/confirm-ok.png">
+                    </div>
+                </div>
+                <!-- 文 -->
+                <div class="col-lg-6 align-center">
+                    <div class="tx">
+                        <div class="big">表單送出成功，感謝您！</div>
+                        <!-- ↓ 已註冊會員顯示 ↓ -->
+                        <div class="small">可至「<a href="order_history.html">洽詢查詢</a>」查看您的洽詢狀態</div>
+                        <!-- ↓ 非會員顯示 ↓ -->
+                        <div class="small">可至「<span>信箱</span>」查看您的洽詢狀態</div>
+                        <button type="button" class="lezada-button lezada-button--medium back">
+                            <a href="index.html#product">
+                                <div>繼續瀏覽</div>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cart__copyright-2">
+        <div class="container">
+            <p>Copyright © 2023 商務客製一頁式 All Right Reserved.Designed by <a target="_blank" href="https://www.bondlink.com.tw">Bondlink.</a></p>
+        </div>
+    </div>
+    <div id="scroll-to-top" class="footer_op1__scroll-to-top"><span class="fas fa-angle-up"></span></div>
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <script src="assets/js/main1.js"></script>
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,900&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>

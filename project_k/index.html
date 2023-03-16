@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>邦立小館 | 商務客製一頁式</title>
+    <meta property="og:title" content="" />
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Stylesheets
+  ============================================= -->
+    <link rel="canonical" href="" />
+    <!-- Css -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <link href="assets/css/main1.css" rel="stylesheet">
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/cart-all-op.css" rel="stylesheet">
+    <link href="assets/css/slide.css" rel="stylesheet">
+    <link href="assets/css/intro.css" rel="stylesheet" />
+    <link href="assets/css/news.css" rel="stylesheet" />
+    <link href="assets/css/product.css" rel="stylesheet" />
+    <link href="assets/css/contact.css" rel="stylesheet" />
+    <link href="assets/css/store.css" rel="stylesheet" />
+    <link href="assets/css/member.css" rel="stylesheet" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/demo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/demo/favicon.ico">
+</head>
+
+<body class="preloader-deactive">
+    <div>
+        <!-- loading 區塊 -->
+        <!-- <div class="preloader_op1" id="preloader">
+            <div class="preloader_op1__inner"><span class="preloader_op1__dot"></span>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div> -->
+        <header class="header_op1">
+            <div class="header_op1__header-middle sticky-header hidden-md-down">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col col-lg-3 col-sm-12 header_op1__top logo">
+                            <div class="header_op1__header-logo-area">
+                                <a href="index.html">
+                                    <img class="logo-main" src="assets/img/demo/header-logo.png" alt="size_250X76">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-md-7 position-relative header_op1__top navbar">
+                            <div class="header_op1__header-align justify-content-center">
+                                <div class="header_op1__header-navigation-area hidden-md-down">
+                                    <ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement" class="header_op1__main-menu nav">
+                                        <li itemprop="name"><a itemprop="url" href="index.html#intro"><span class="cn">關於我們</span><span class="en">About Us</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#news"><span class="cn">最新消息</span><span class="en">Latest News</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#product"><span class="cn">產品介紹</span><span class="en">Product Items</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#contact"><span class="cn">聯絡我們</span><span class="en">Contact Us</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="index.html#store"><span class="cn">據點資訊</span><span class="en">Our Stores</span></a></li>
+                                        <li itemprop="name"><a itemprop="url" href="order_check.html"><span class="cn">查詢訂單</span><span class="en">Order Check</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-2 col-sm-12 header_op1__top shop">
+                            <div class="header_op1__btn_wrap">
+                                <div class="header_op1__btn top-cart">
+                                    <a class="header_op1__btn-item cart" href="cart_login.html">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="header_op1__cart-amount" id="bl_cart_item">0</span>
+                                    </a>
+                                </div>
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 / 登出按鈕 ↓↓↓ -->
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 ↓↓↓ -->
+                                <div class="header_op1__btn top-coupon">
+                                    <a class="header_op1__btn-item coupon">
+                                        <img src="assets/img/demo/coupon-icon.png">
+                                        <span class="header_op1__coupon-dot">1</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 優惠券彈窗 -->
+                <div class="coupon_modal" style="display:none;">
+                    <div class="search_block">
+                        <!-- <form> -->
+                        <input type="text" class="sm-form-control bl_cupon_input" placeholder="請輸入折扣碼" name="bl_cupon_input">
+                        <button type="button" class="btn bl_cupon_receive">領取</button>
+                        <!-- </form> -->
+                        <div class="cupon-block">
+                            <div class="cupon-value">$100</div>
+                            <div class="cupon-info">
+                                <div class="cupon-name">單品滿100元，折現金$100元</div>
+                                <div class="cupon-use bl_cupon_input">test1</div>
+                                <div class="cupon-tx">僅限原價商品</div>
+                                <div class="cupon-date">2023/01/20到期</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機版 -->
+            <div class="responsive-header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 col-5 justify-content-start">
+                            <div class="header-item">
+                                <div class="header-logo-area">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="assets/img/demo/header-logo.png" alt="size_250x76">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-6">
+                            <div class="header_op1__btn_wrap">
+                                <div class="header_op1__btn top-cart">
+                                    <a class="header_op1__btn-item cart" href="cart_login.html">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="header_op1__cart-amount" id="bl_cart_item">0</span>
+                                    </a>
+                                </div>
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 / 登出按鈕 ↓↓↓ -->
+                                <div class="header_op1__btn top-member">
+                                    <a class="header_op1__btn-item member" href="member_login.html">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </a>
+                                </div>
+                                <!-- ↓↓↓ 登入後，才顯示 ↓↓↓ -->
+                                <div class="header_op1__btn top-coupon">
+                                    <a class="header_op1__btn-item coupon">
+                                        <img src="assets/img/demo/coupon-icon.png">
+                                        <span class="header_op1__coupon-dot">1</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="header-item justify-content-center">
+                                <button class="btn-menu" type="button"><i class="fas fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 優惠券彈窗 -->
+                <div class="coupon_modal" style="display:none;">
+                    <div class="search_block">
+                        <!-- <form> -->
+                        <input type="text" class="sm-form-control bl_cupon_input" placeholder="請輸入折扣碼" name="bl_cupon_input">
+                        <button type="button" class="btn bl_cupon_receive">領取</button>
+                        <!-- </form> -->
+                        <div class="cupon-block">
+                            <div class="cupon-value">$100</div>
+                            <div class="cupon-info">
+                                <div class="cupon-name">單品滿100元，折現金$100元</div>
+                                <div class="cupon-use bl_cupon_input">test1</div>
+                                <div class="cupon-tx">僅限原價商品</div>
+                                <div class="cupon-date">2023/01/20到期</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside class="off-canvas-wrapper">
+            <div class="off-canvas-inner">
+                <div class="off-canvas-overlay"></div>
+                <div class="off-canvas-content">
+                    <div class="off-canvas-header">
+                        <div class="close-action">
+                            <button class="btn-menu-close">menu<i class="icon-arrow-left"></i></button>
+                        </div>
+                    </div>
+                    <div class="off-canvas-item">
+                        <div class="res-mobile-menu menu-active-one">
+                            <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="seo-text">
+                <h1>邦立小館</h1>
+                <h2>美味手工漢堡</h2>
+            </div>
+            <!-- 橫幅輪播 slide_op1 -->
+            <div class="slide_op1">
+                <section class="wow fadeIn" data-wow-delay="0.0s" data-wow-duration="1.5s">
+                    <!-- ↓↓↓電腦版輪播↓↓↓ -->
+                    <div class="swiper-container swiper-pagination-style dots-bg-light home-slider-container default-slider-container">
+                        <div class="swiper-wrapper home-slider-wrapper slider-default">
+                            <div class="swiper-slide">
+                                <div class="slider-content-area" style="background-image: url('assets/img/demo/slide/slide-1.jpg')" alt="size_1920X980">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12">
+                                                <div class="slider-content slider-content-light animate-pulse">
+                                                    <div class="title transition-slide-1 mb-0">邦立小館</div>
+                                                    <div class="title transition-slide-2">吃得到來自紐約的手做漢堡</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-content-area" style="background-image: url('assets/img/demo/slide/slide-2.jpg')" alt="size_1920X980">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12">
+                                                <div class="slider-content slider-content-light animate-flipInX">
+                                                    <div class="title transition-slide-1 mb-0">招牌和牛漢堡</div>
+                                                    <div class="title transition-slide-2">食材新鮮 現點現做</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- ↑↑↑電腦版輪播↑↑↑ -->
+                    <!-- ↓↓↓手機版輪播↓↓↓ -->
+                    <div class="swiper-container swiper-pagination-style dots-bg-light home-slider-container default-slider-container--mb">
+                        <div class="swiper-wrapper home-slider-wrapper slider-default">
+                            <div class="swiper-slide">
+                                <div class="slider-content-area">
+                                    <img class="slider-content-area__img" src="assets/img/demo/slide/banner1_767x800.jpg" alt="size_767x800">
+                                    <div class="container slider-content-area__text">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12">
+                                                <div class="slider-content slider-content-light animate-pulse">
+                                                    <div class="title transition-slide-1 mb-0">邦立小館</div>
+                                                    <div class="title transition-slide-2">吃得到來自紐約的手做漢堡</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-content-area">
+                                    <img class="slider-content-area__img" src="assets/img/demo/slide/banner2_767x800.jpg" alt="size_767x800">
+                                    <div class="container slider-content-area__text">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12">
+                                                <div class="slider-content slider-content-light animate-flipInX">
+                                                    <div class="title transition-slide-1 mb-0">招牌和牛漢堡</div>
+                                                    <div class="title transition-slide-2">食材新鮮 現點現做</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- ↑↑↑手機版輪播↑↑↑ -->
+                </section>
+            </div>
+            <!-- 關於我們 intro_op1 -->
+            <div class="intro_op1 sec-padding">
+                <div id="intro"></div>
+                <div class="container clearfix">
+                    <div class="section-title">
+                        <h3><span>關於</span>我們</h3>
+                        <p>About<br>Us</p>
+                    </div>
+                </div>
+                <!-- intro_op1_1 -->
+                <section class="intro_op1_1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 wow fadeInRight">
+                                <div class="intro_op1__img_wrap">
+                                    <img src="assets/img/demo/intro/intro_1000x850.jpg" alt="size_1000x850">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInRight">
+                                <div class="intro_op1__content_wrap">
+                                    <p>邦立小館，於2022.09.30在高雄誕生了。我們是一群熱愛美食的愛吃青年，因緣際會下，在美式餐廳相聚在一起。而多年後，決定打造屬於我們自己的美式基地，分享我們特製食譜給想吃美食的你們。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- intro_op1_2 -->
+                <section class="intro_op1_2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 intro_op1_2__concept_col">
+                                <div class="intro_op1_2__concept-content_wrap">
+                                    <div class="intro_op1_2__concept-point_title wow fadeInDown">安心</div>
+                                    <ul class="wow fadeInUp">
+                                        <li>嚴格挑選食材品質</li>
+                                        <li>食材新鮮控管</li>
+                                        <li>符合食安規範標準</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 intro_op1_2__concept_col">
+                                <div class="intro_op1_2__concept-content_wrap">
+                                    <div class="intro_op1_2__concept-point_title wow fadeInDown">衛生</div>
+                                    <ul class="wow fadeInUp">
+                                        <li>製作過程透明公開</li>
+                                        <li>與食物零接觸</li>
+                                        <li>定期環境整體消毒</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 intro_op1_2__concept_col">
+                                <div class="intro_op1_2__concept-content_wrap">
+                                    <div class="intro_op1_2__concept-point_title wow fadeInDown">美味</div>
+                                    <ul class="wow fadeInUp">
+                                        <li>多種獨家自創口味</li>
+                                        <li>餐點現點現做</li>
+                                        <li>宅配美味也不流失</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- intro_op1_3 -->
+                <section class="intro_op1_3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6  wow fadeInLeft">
+                                <div class="intro_op1__content_wrap">
+                                    <p>當然，美食不能等，想吃的時候就是想吃。所以我們也提供了宅配服務，讓你一年365天, 一天24小時隨時都能吃到美味的手作漢堡。只要動動手，下下單，按按微波爐，就像在邦立小館吃飯一樣!</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInRight">
+                                <div class="intro_op1__img_wrap">
+                                    <img src="assets/img/demo/intro/intro_1000x850-2.jpg" alt="關於我們">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- intro_op1_4 -->
+                <section class="intro_op1_4">
+                    <div class="container">
+                        <div class="head-title">本店菜單</div>
+                        <div class="about_op4__img_wrap wow fadeInUp">
+                            <a href="assets/img/demo/intro/intro_1920x1280.jpg" data-fancybox data-caption="">
+                                <img src="assets/img/demo/intro/intro_1920x1280.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 最新消息 news_op1 -->
+            <div class="news_op1 sec-padding" style="background-image:url(assets/img/demo/bg_1920.jpg); background-size:cover;">
+                <div id="news"></div>
+                <div class="container clearfix">
+                    <div class="section-title">
+                        <h3><span>最新</span>消息</h3>
+                        <p>Latest<br>News</p>
+                    </div>
+                </div>
+                <!-- 第一種: 輪播消息 -->
+                <section>
+                    <div class="container">
+                        <div class="news-content__wrap">
+                            <div class="swiper news-slide-content">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__img_wrap">
+                                                    <img src="assets/img/demo/news/1200x630.jpg" alt="size_1200x630/min-size_381x200">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__item">
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info-1" class="news_op1__info-btn">
+                                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                                        <!-- 編輯器 需要有news_op1__text -->
+                                                        <div class="news_op1__text three-row">消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述</div>
+                                                        <div class="btn_op1">
+                                                            <div class="btn btn-1">閱讀更多 <i class="fas fa-hand-point-right"></i></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__img_wrap">
+                                                    <img src="assets/img/demo/news/1200x630.jpg" alt="size_1200x630/min-size_381x200">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__item">
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info-1" class="news_op1__info-btn">
+                                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                                        <!-- 編輯器 需要有news_op1__text -->
+                                                        <div class="news_op1__text three-row">消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述</div>
+                                                        <div class="btn_op1">
+                                                            <div class="btn btn-1">閱讀更多 <i class="fas fa-hand-point-right"></i></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__img_wrap">
+                                                    <img src="assets/img/demo/news/1200x630.jpg" alt="size_1200x630/min-size_381x200">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__item">
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info-1" class="news_op1__info-btn">
+                                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                                        <!-- 編輯器 需要有news_op1__text -->
+                                                        <div class="news_op1__text three-row">消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述</div>
+                                                        <div class="btn_op1">
+                                                            <div class="btn btn-1">閱讀更多 <i class="fas fa-hand-point-right"></i></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__img_wrap">
+                                                    <img src="assets/img/demo/news/1200x630.jpg" alt="size_1200x630/min-size_381x200">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="news_op1__item">
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info-1" class="news_op1__info-btn">
+                                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                                        <!-- 編輯器 需要有news_op1__text -->
+                                                        <div class="news_op1__text three-row">消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述，消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述消息簡述</div>
+                                                        <div class="btn_op1">
+                                                            <div class="btn btn-1">閱讀更多 <i class="fas fa-hand-point-right"></i></div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-swiper-btn">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="news-swiper-dot">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- 消息彈窗之位置(不可放在swiper裡面) -->
+                            <div class="news_op1__info-modal">
+                                <div class="modal fade" id="news-info-1" tabindex="-1" role="dialog" aria-labelledby="newsLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="modal-title" id="newsLabel">獨特配方手作和牛起司堡也可宅配到你家了!</h3>
+                                                <div class="modal-img_wrap">
+                                                    <img src="assets/img/demo/news/1200x630.jpg" alt="size_1200x630/min-size_381x200">
+                                                </div>
+                                                <div class="modal-info_wrap">
+                                                    <span class="modal-info-date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                                    <!-- 以下開編輯器 -->
+                                                    <div class="modal-info-txt">
+                                                        <p>獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了。</p>
+                                                        <p>獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了。</p>
+                                                        <p>獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了。</p>
+                                                        <ul>
+                                                            <li>BBC One Page購物商城輕鬆架站</li>
+                                                            <li>BBC One Page購物商城輕鬆架站</li>
+                                                            <li>BBC One Page購物商城輕鬆架站</li>
+                                                        </ul>
+                                                        <ol>
+                                                            <li>BBC One Page購物商城輕鬆架站</li>
+                                                            <li>BBC One Page購物商城輕鬆架站</li>
+                                                            <li>BBC One Page購物商城輕鬆架站</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="social-share__btn">
+                                                    <span>分享此文章：</span>
+                                                    <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'facebook', config='height=auto,width=auto' ));" class="social-facebook"><img src="assets/img/demo/facebook-blue.png" alt="Facebook"></a>
+                                                    <a href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)),'line', config='height=auto,width=auto' ));" class="social-line"><img src="assets/img/demo/line-green.png" alt="Line"></a>
+                                                    <a href="javascript: void(0);"><img src="assets/img/demo/share-link.png" alt="Line"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 第二種: 一張代表圖+多項消息(隱藏中) -->
+                <section style="display:none">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="news_op1__img_wrap">
+                                    <img src="assets/img/demo/news/news-main-img.jpg" alt="size_900X693/min-size_260x200">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <!-- 最多5則最新消息 -->
+                                <div class="news_op1__item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info" class="news_op1__info-btn">
+                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                    </button>
+                                    <div class="news_op1__info-modal">
+                                        <div class="modal fade" id="news-info" tabindex="-1" role="dialog" aria-labelledby="newsLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h3 class="modal-title" id="newsLabel">獨特配方手作和牛起司堡也可宅配到你家了!</h3>
+                                                        <div class="modal-img_wrap">
+                                                            <img src="assets/img/demo/news/1200x630.jpg" alt="size_1200x630/min-size_381x200">
+                                                        </div>
+                                                        <div class="modal-info_wrap">
+                                                            <span class="modal-info-date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                                            <!-- 以下開編輯器 -->
+                                                            <div class="modal-info-txt">
+                                                                <p>獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了。</p>
+                                                                <p>獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了。</p>
+                                                                <p>獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了,獨特配方手作和牛起司堡也可宅配到你家了。</p>
+                                                                <ul>
+                                                                    <li>BBC One Page購物商城輕鬆架站</li>
+                                                                    <li>BBC One Page購物商城輕鬆架站</li>
+                                                                    <li>BBC One Page購物商城輕鬆架站</li>
+                                                                </ul>
+                                                                <ol>
+                                                                    <li>BBC One Page購物商城輕鬆架站</li>
+                                                                    <li>BBC One Page購物商城輕鬆架站</li>
+                                                                    <li>BBC One Page購物商城輕鬆架站</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="social-share__btn">
+                                                            <span>分享此文章：</span>
+                                                            <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'facebook', config='height=auto,width=auto' ));" class="social-facebook"><img src="assets/img/demo/facebook-blue.png" alt="Facebook"></a>
+                                                            <a href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)),'line', config='height=auto,width=auto' ));" class="social-line"><img src="assets/img/demo/line-green.png" alt="Line"></a>
+                                                            <a href="javascript: void(0);"><img src="assets/img/demo/share-link.png" alt="Line"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 以下為設計呈現, 故目前點擊時都是開啟第一個消息的彈窗 -->
+                                <div class="news_op1__item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info" class="news_op1__info-btn">
+                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                    </button>
+                                </div>
+                                <div class="news_op1__item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info" class="news_op1__info-btn">
+                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                    </button>
+                                </div>
+                                <div class="news_op1__item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info" class="news_op1__info-btn">
+                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                    </button>
+                                </div>
+                                <div class="news_op1__item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#news-info" class="news_op1__info-btn">
+                                        <span class="news_op1__date"><i class="fas fa-calendar-alt"></i>2022/09/30</span>
+                                        <div class="news_op1__title one-row">獨特配方手作和牛起司堡也可宅配到你家了!</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 產品介紹 product_op1 -->
+            <div class="product_op1 sec-padding">
+                <div id="product"></div>
+                <div class="container clearfix">
+                    <div class="section-title">
+                        <h3><span>產品</span>介紹</h3>
+                        <p>Product<br>Items</p>
+                    </div>
+                </div>
+                <section>
+                    <div class="container">
+                        <div class="product_op1__img-sec">
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-1.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-sale">特價</span>
+                                                <span class="tag-new">新品</span>
+                                                <span class="tag-sold-out">售完</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">香煎嫩雞起司堡/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$90</ins>
+                                                <del>$120</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-modal">
+                                        <div class="modal fade" id="product-info" tabindex="-1" role="dialog" aria-labelledby="productLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-5">
+                                                                <div class="swiper product_op1_main-img">
+                                                                    <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-1.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/NoPicture.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-2.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-3.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-4.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-5.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-button-next"></div>
+                                                                    <div class="swiper-button-prev"></div>
+                                                                </div>
+                                                                <div thumbsSlider="" class="swiper product_op1_sm-img" id="product-modal-slide">
+                                                                    <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-1.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/NoPicture.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-2.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-3.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-4.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <img src="assets/img/demo/product/800X800-5.jpg" alt="size_800x800/min-size_200x200">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7">
+                                                                <div class="product_op1__sale-flash">
+                                                                    <span class="tag-sale">特價</span>
+                                                                    <span class="tag-new">新品</span>
+                                                                    <span class="tag-sold-out">售完</span>
+                                                                </div>
+                                                                <h3 class="modal-title" id="productLabel">香煎嫩雞起司堡/1份</h3>
+                                                                <div class="modal-product_intro">
+                                                                    <p>香煎嫩雞起司堡簡述香煎嫩雞起司堡簡述，香煎嫩雞起司堡簡述香煎嫩雞起司堡簡述香煎嫩雞起司堡簡述。</p>
+                                                                    <ul>
+                                                                        <li>123</li>
+                                                                    </ul>
+                                                                    <ol>
+                                                                        <li>456</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-price_wrap">
+                                                                    <div class="product_op1__price_title">售價：</div>
+                                                                    <div class="product_op1__price">
+                                                                        <ins>$90</ins>
+                                                                        <del>$120</del>
+                                                                    </div>
+                                                                    <div class="no-stock">無庫存</div>
+                                                                </div>
+                                                                <div class="modal-select_wrap">
+                                                                    <div class="modal-num_select">
+                                                                        <select name="product-amount" class="sm-form-control">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                        <i class="fa fa-chevron-down select-icon" aria-hidden="true"></i>
+                                                                    </div>
+                                                                    <div class="modal-shop-btn_wrap">
+                                                                        <a href="#" class="modal-shop_btn go-buy bl_iAddCart"><i class="fas fa-credit-card"></i><span> 直接購買</span></a>
+                                                                        <a href="#" class="modal-shop_btn add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                                        <a href="#" class="modal-shop_btn list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="modal-info_wrap">
+                                                                    <div class="modal-info_title">產品介紹：</div>
+                                                                    <p>香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹。</p>
+                                                                    <ul>
+                                                                        <li>香煎嫩雞起司堡/1份</li>
+                                                                    </ul>
+                                                                    <ol>
+                                                                        <li>香煎嫩雞起司堡/1份</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 以下為設計呈現, 故目前點擊時都是開啟第一個產品的彈窗 -->
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-2.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-new">新品</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">北非香料豬排起司堡/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$110</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-3.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-sale">特價</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3><button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title"><span class="one-row">墨魚牛排起司堡/1份</button></h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$150</ins>
+                                                <del>$180</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-4.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">招牌和牛起司堡/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$220</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-5.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-sold-out">售完</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">酥炸洋蔥圈/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$70</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-6.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-new">新品</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">派對炸物拼盤/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$160</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-7.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">凱薩烤雞沙拉/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$100</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-8.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-new">新品</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">酪梨嫩雞主廚沙拉/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$110</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-9.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">Oreo巧克力甜甜圈/3入</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$120</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-10.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-sale">特價</span>
+                                                <span class="tag-new">新品</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">焦糖堅果甜甜圈/2入</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$60</ins>
+                                                <del>$80</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-11.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">美式經典楓糖鬆餅/1份</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$120</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="product_op1__wrap">
+                                        <div class="product_op1__image">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__info-btn">
+                                                <img src="assets/img/demo/product/800X800-12.jpg" alt="size_700x450/min-size_311x200">
+                                            </button>
+                                            <div class="product_op1__sale-flash">
+                                                <span class="tag-new">新品</span>
+                                            </div>
+                                            <div class="product_op1__overlay">
+                                                <a href="#" class="add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                <a href="#" class="list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product_op1__desc text-center">
+                                            <div class="product_op1__title">
+                                                <h3>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#product-info" class="product_op1__btn-title">
+                                                        <span class="one-row">手作布郎尼蛋糕/3入</span>
+                                                    </button>
+                                                </h3>
+                                            </div>
+                                            <div class="product_op1__price">
+                                                <ins>$90</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 聯絡我們 contact_op1 -->
+            <div class="contact_op1 sec-padding" style="background-image:url(assets/img/demo/contact-bg.jpg); background-position:bottom center;background-size:cover;">
+                <div id="contact"></div>
+                <div class="container clearfix">
+                    <div class="section-title">
+                        <h3><span>聯絡</span>我們</h3>
+                        <p>Contact<br>Us</p>
+                    </div>
+                </div>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <form action="" method="post" class="nobottommargin contact-form_wrap">
+                                    <div class="row contact_op1__form-row">
+                                        <div class="col-md-4 contact_op1__form-col">
+                                            <label for="contact-name">姓名 <small>*</small></label>
+                                            <input type="text" id="contact-name" name="f_name" class="sm-form-control" required="required" />
+                                        </div>
+                                        <div class="col-md-4 contact_op1__form-col">
+                                            <label for="contact-email">E-mail <small>*</small></label>
+                                            <input type="email" id="contact-email" name="f_email" class="email sm-form-control" required="required" />
+                                        </div>
+                                        <div class="col-md-4 contact_op1__form-col">
+                                            <label for="contact-phone">電話</label>
+                                            <input type="text" id="contact-phone" name="f_tel" class="sm-form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="row contact_op1__form-row">
+                                        <div class="col-md-12">
+                                            <label for="contact-message">留言內容 <small>*</small></label>
+                                            <textarea class="sm-form-control" id="contact-message" name="f_notes" rows="7" cols="30" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row contact_op1__form-row">
+                                        <div class="col-md-6">
+                                            <div class="contact_op1__code">
+                                                <input type="text" name="captcha" class="sm-form-control captcha-box" placeholder="驗證碼 *" required="required" maxlength="4" />
+                                                <img src="assets/img/demo/captcha.jpg" class="captcha" style=" width: 150; height: 30; border: 0;" alt=" " /> </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="contact_op1__send">
+                                                <!-- ↓資料送出中 -->
+                                                <div class="contact_op1__data-send">
+                                                    <span>資料送出中</span>
+                                                    <div class="sp sp-circle"></div>
+                                                </div>
+                                                <!-- ↑資料送出中 end -->
+                                                <button class="btn contact-btn nomargin" onclick="window.open('contact_ok.html', '_blank')" type="submit" id="contact-submit" name="contact-submit" value="submit">送出</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="contact_op1__content-wrap">
+                                    <img src="assets/img/demo/contact-mail.png">
+                                    <div class="contact_op1__memo">
+                                        <p>若您對商品有任何問題，<br>歡迎與我們聯繫！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 據點資訊 store_op1 -->
+            <div class="store_op1 sec-padding" style="background-image:url(assets/img/demo/store-bg.jpg); background-position:bottom center;background-size:cover;">
+                <div id="store"></div>
+                <div class="container clearfix">
+                    <div class="section-title">
+                        <h3><span>據點</span>資訊</h3>
+                        <p>Our<br>Stores</p>
+                    </div>
+                </div>
+                <section>
+                    <div class="container">
+                        <div class="store-list__head">
+                            <div class="store-list__title store-list__name">門市名稱</div>
+                            <div class="store-list__title store-list__phone">電話</div>
+                            <div class="store-list__title store-list__address">地址</div>
+                            <div class="store-list__title store-list__call">立即通話</div>
+                            <div class="store-list__title store-list__map">查看位置</div>
+                        </div>
+                        <div class="store-list__wrap">
+                            <div class="store-list__item">
+                                <div class="store-list__info store-list__name">高雄 苓雅店</div>
+                                <div class="store-list__info store-list__phone">07-1234567</div>
+                                <div class="store-list__info store-list__address">800高雄市新興區民生一路56號24F-5</div>
+                                <div class="store-list__info store-list__call"><a href="tel:07-1234567"><i class="fas fa-phone-alt"></i><span>立即通話</span></a></div>
+                                <div class="store-list__info store-list__map"><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&authuser=0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>查看位置</span></a></div>
+                            </div>
+                            <div class="store-list__item">
+                                <div class="store-list__info store-list__name">高雄 苓雅店</div>
+                                <div class="store-list__info store-list__phone">07-1234567</div>
+                                <div class="store-list__info store-list__address">800高雄市新興區民生一路56號24F-5</div>
+                                <div class="store-list__info store-list__call"><a href="tel:07-1234567"><i class="fas fa-phone-alt"></i><span>立即通話</span></a></div>
+                                <div class="store-list__info store-list__map"><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&authuser=0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>查看位置</span></a></div>
+                            </div>
+                            <div class="store-list__item">
+                                <div class="store-list__info store-list__name">高雄 苓雅店</div>
+                                <div class="store-list__info store-list__phone">07-1234567</div>
+                                <div class="store-list__info store-list__address">800高雄市新興區民生一路56號24F-5</div>
+                                <div class="store-list__info store-list__call"><a href="tel:07-1234567"><i class="fas fa-phone-alt"></i><span>立即通話</span></a></div>
+                                <div class="store-list__info store-list__map"><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&authuser=0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>查看位置</span></a></div>
+                            </div>
+                            <div class="store-list__item">
+                                <div class="store-list__info store-list__name">高雄 苓雅店</div>
+                                <div class="store-list__info store-list__phone">07-1234567</div>
+                                <div class="store-list__info store-list__address">800高雄市新興區民生一路56號24F-5</div>
+                                <div class="store-list__info store-list__call"><a href="tel:07-1234567"><i class="fas fa-phone-alt"></i><span>立即通話</span></a></div>
+                                <div class="store-list__info store-list__map"><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&authuser=0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>查看位置</span></a></div>
+                            </div>
+                            <div class="store-list__item">
+                                <div class="store-list__info store-list__name">高雄 苓雅店</div>
+                                <div class="store-list__info store-list__phone">07-1234567</div>
+                                <div class="store-list__info store-list__address">800高雄市新興區民生一路56號24F-5</div>
+                                <div class="store-list__info store-list__call"><a href="tel:07-1234567"><i class="fas fa-phone-alt"></i><span>立即通話</span></a></div>
+                                <div class="store-list__info store-list__map"><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&authuser=0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>查看位置</span></a></div>
+                            </div>
+                            <div class="store-list__item">
+                                <div class="store-list__info store-list__name">高雄 苓雅店</div>
+                                <div class="store-list__info store-list__phone">07-1234567</div>
+                                <div class="store-list__info store-list__address">800高雄市新興區民生一路56號24F-5</div>
+                                <div class="store-list__info store-list__call"><a href="tel:07-1234567"><i class="fas fa-phone-alt"></i><span>立即通話</span></a></div>
+                                <div class="store-list__info store-list__map"><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&authuser=0" target="_blank"><i class="fas fa-map-marked-alt"></i><span>查看位置</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer_op1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-12">
+                        <div class="footer_op1__img-wrap">
+                            <a href="index.html" class="footer_op1__logo-img"><img src="assets/img/demo/footer-logo.png" alt="size_280x80"></a>
+                            <div class="footer_op1__company-id-wrap">
+                                <span>邦立小館 統一編號12345678</span>
+                                <span>食品業者登錄字號 E-100000000-00000-0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_op1__title">網站地圖</div>
+                        <div class="footer_op1__link">
+                            <ul>
+                                <li><a href="index.html#intro">關於我們</a></li>
+                                <li><a href="index.html#news">最新消息</a></li>
+                                <li><a href="index.html#product">產品介紹</a></li>
+                                <li><a href="index.html#contact">聯絡我們</a></li>
+                                <li><a href="index.html#store">據點資訊</a></li>
+                                <li><a href="member.html">會員中心</a></li>
+                                <li><a href="order_cart.html">購物車</a></li>
+                                <li><a href="privacy.html">隱私權政策</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_op1__title">公司資訊</div>
+                        <div class="footer_op1__info">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:07-2232891" class="phone">07-7654321</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80%E6%B0%91%E7%94%9F%E4%B8%80%E8%B7%AF56%E8%99%9F/@22.6278051,120.3080952,17z/data=!3m1!4b1!4m5!3m4!1s0x346e0491b7febacd:0x565953a1f13590bf!8m2!3d22.6278051!4d120.3102839?hl=zh-TW&amp;authuser=0" target="_blank">800高雄市新興區民生一路56號24F-5</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="bondlinktest@gmail.com" class="email">bondlinktest@gmail.com</a>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_op1__footer-bottom">
+                <div class="container">
+                    <div class="row align-items-baseline">
+                        <div class="col-lg-12">
+                            <p class="footer_op1__copyright">Copyright © 2023 邦立小館 All Right Reserved.Designed by <a target="_blank" href="https://www.bondlink.com.tw">Bondlink.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="fixdownload_op1__inner">
+            <a href="tel:+07-7654321" class="fixdownload_op1 fixdownload_phone"><img src="assets/img/demo/phone-call.png" alt=""></a>
+            <a href="#" class="fixdownload_op1 fixdownload_fb"><img src="assets/img/demo/facebook.png" alt=""></a>
+            <a href="#" class="fixdownload_op1 fixdownload_line" class="fixdownload_op1 fixdownload_line"><img src="assets/img/demo/line.png" alt=""></a>
+            <a href="#" class="fixdownload_op1 fixdownload_ig">
+                <img src="assets/img/demo/instagram.png" alt="">
+            </a>
+        </div>
+        <div id="scroll-to-top" class="footer_op1__scroll-to-top"><span class="fas fa-angle-up"></span></div>
+        <!-- cookie先隱藏 -->
+        <div class="cookie_op1" style="display:none;">
+            <div class="cookie_op1-inner__wrapper">
+                <div class="container">
+                    <div class="cookie_op1-content__wrapper">
+                        <!-- ↓↓ 開編輯器 ↓↓ -->
+                        <div class="cookie-content">
+                            <div class="cookie-title">Cookies政策</div>
+                            <p>本網站使用瀏覽器紀錄 (Cookies) 來提供您最好的使用體驗，我們使用的 Cookies 也包括了第三方 Cookies。</p>
+                            <p>相關資訊請瀏覽我們的<a href="privacy" target="_blank">隱私權政策</a>。如果您選擇繼續瀏覽或關閉這個提示，便表示您已接受我們的網站使用條款。</p>
+                        </div>
+                        <!-- ↑↑ 開編輯器 ↑↑ -->
+                        <div class="btn_op1 btn-cookie bl_agree_cookie">
+                            <a class="btn btn-1" id="cookie_op1__btn">我同意 <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- #wrapper end -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <script src="assets/js/main1.js"></script>
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,900&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+</body>
+
+</html>

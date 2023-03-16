@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>購物車 | 商務客製一頁式</title>
+    <meta property="og:title" content="" />
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Stylesheets
+  ============================================= -->
+    <link rel="canonical" href="" />
+    <!-- Css -->
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <link href="assets/css/main1.css" rel="stylesheet">
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/cart-all-op.css" rel="stylesheet">
+    <link href="assets/css/member.css" rel="stylesheet" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/demo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/demo/favicon.ico">
+</head>
+
+<body>
+    <header class="cart__header">
+        <div class="container">
+            <div class="container-header align-center">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/demo/header-logo.png" alt="商務客製一頁式" title="商務客製一頁式" class="img-fluid">
+                    </a>
+                </div>
+                <div class="cart__step-list">
+                    <ul>
+                        <li class="active"><span>1</span>購物車</li>
+                        <li class="align-center ">
+                            <div class="line"></div><span>2</span>結帳確認
+                        </li>
+                        <li class="align-center ">
+                            <div class="line"></div><span>3</span>完成
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopping-btn">
+                    <span class="user-name"><span>
+                            <img src="assets/img/demo/member/user.png" alt="">
+                            未登入 </span></span>
+                    <a href="index.html#product">
+                        <i class="fa fa-angle-left"></i>繼續購物
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-cart__step-list">
+        <div class="container">
+            <div class="cart__step-list">
+                <ul>
+                    <li class="active"><span>1</span>購物車</li>
+                    <li class="align-center">
+                        <div class="line"></div><span>2</span>結帳確認
+                    </li>
+                    <li class="align-center">
+                        <div class="line"></div><span>3</span>完成
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main id="cart__main">
+        <div class="container full-container">
+            <div class="row bl_cart_list">
+                <!-- 基本功能購物車如無商品則顯示無商品區塊、熱門推薦，購物清單、其他選項隱藏 -->
+            </div>
+            <div class="row bl_cart_clear">
+                <!-- 購物車無商品區塊 -->
+                <div id="img__area" class="cart__no">
+                    <div class="container full-container">
+                        <div class="row bl_cart_list">
+                            <!-- 基本功能購物車如無商品則顯示無商品區塊、熱門推薦，購物清單、其他選項隱藏 -->
+                            <!-- copyright區塊 cart__copyright 需改成 cart__copyright-2 -->
+                            <div class="col-lg-8">
+                                <div class="cart-table-container">
+                                    <div class="title">購物清單</div>
+                                    <div class="cart-table">
+                                        <div class="warp-1 bl_product_item">
+                                            <div class="warp-2">
+                                                <div class="product-pic">
+                                                    <a href="product_info.html">
+                                                        <img src="assets/img/demo/product/800X800-1.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="warp-3">
+                                                    <div class="product-info">
+                                                        <a href="/lyvv/product_info?id=172" class="product-name bl_p_title">香煎嫩雞起司堡</a>
+                                                        <div class="product-price">單價：
+                                                            <span class="sale bl_price">$90</span><span class="original">$120</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="warp-4">
+                                                        <div class="product-quantity">
+                                                            <!--     -->
+                                                            <div class="notice-select">
+                                                                <select name="amount" class="bl_amount">
+                                                                    <option value="0">請選擇數量</option>
+                                                                    <option value="1" selected="">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                </select>
+                                                                <i class="fa fa-exclamation-circle"></i>
+                                                            </div>
+                                                            <font class="bl_no_stock" style="display:none;">已無庫存</font>
+                                                        </div>
+                                                        <div class="total-price">
+                                                            <div class="price bl_sum">$90</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-btn">
+                                                <div class="btn-item">
+                                                    <div><a href="#0" class="add-favorite bl_addWish bl_cartWish"><i class="fa fa-heart"></i>移至收藏</a></div>
+                                                </div>
+                                                <div class="btn-item">
+                                                    <div><a href="#172" class="add-favorite bl_addCart_remove"><i class="fas fa-trash"></i>刪除</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="cart-detail-container">
+                                    <div class="cart-detail">
+                                        <div class="item-list">
+                                            <div class="title">配送方式
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="notice-select">
+                                                    <select name="order_trans" id="bl_trans">
+                                                        <option value="">請選擇配送方式</option>
+                                                        <option value="宅配(本島),80">宅配(本島)(運費$80)</option>
+                                                        <option value="宅配(離島),150">宅配(離島)(運費$150)</option>
+                                                        <option value="7-11取貨付款,60">7-11取貨付款(運費$60)</option>
+                                                        <option value="全家取貨付款,60">全家取貨付款(運費$60)</option>
+                                                    </select>
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                </div>
+                                                <div class="tx">
+                                                    <ul>
+                                                        <li>非臺灣地區的訂單,不適用貨到付款。<br>
+                                                            選擇宅配方式將以事局配送,預計3-5日內配送,而 送達時間會因部份情況而有變動的可能性。<br>
+                                                            系統將於下一步頁面中,填寫配送與付款方式。</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="title">優惠折抵</div>
+                                            <div class="item-content bl_coupon_use">
+                                                <select id="coupon" class="bl_coupon_use3">
+                                                    <option selected="">請選擇折價券</option>
+                                                    <option value="">C-010101</option>
+                                                </select>
+                                                <div class="coupon">
+                                                    <input type="text" name="coupon" placeholder="請輸入折扣碼" class="bl_coupon_use2">
+                                                    <button type="button" class="bl_check_coupon">使用</button>
+                                                </div>
+                                                <!-- ↓ 要開編輯器,以非會員的方式購買時顯示 -->
+                                                <span class="coupon-register-note">
+                                                    <p>[會員輸入專屬優惠碼享回饋。]</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="title">結帳金額
+                                                <span id="bl_short_by">差 $ <font id="bl_no_carry">520</font> 即享免運！</span>
+                                            </div>
+                                            <div class="item-content">
+                                                <div class="checkout" id="bl_product_sum_div">
+                                                    <div>商品小計</div>
+                                                    <div>$ <font id="bl_product_sum">90</font>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout">
+                                                    <div>優惠折扣</div>
+                                                    <div>- $ <font id="bl_carry">10</font>
+                                                    </div>
+                                                </div>
+                                                <div class="checkout">
+                                                    <div>運費</div>
+                                                    <div>$ <font id="bl_carry">80</font>
+                                                    </div>
+                                                </div>
+                                                <div class="total">
+                                                    <div><span>總計</span>$ <font class="bl_product_tot">160</font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" value="submit" class="lezada-button lezada-button--medium w-100 total-checkout bl_go_confirm">
+                                            <a href="order_confirm.html">前往結帳 <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-6">
+                                <div class="w-100">
+                                    <img src="assets/img/demo/cart-no.png">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 align-center">
+                                <div class="tx">
+                                    <div class="big">購物車沒有商品哦！</div>
+                                    <button type="button" class="lezada-button lezada-button--medium back">
+                                        <a href="index.html#product">
+                                            <div>趕緊去逛逛</div>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 購物車無商品區塊 END -->
+            </div>
+            <!-- 熱門推薦 -->
+            <div class="row">
+                <div class="plus-purchase-area">
+                    <div class="col-12 text-center">
+                        <div class="title">熱門推薦</div>
+                        <p class="title-en">Hot Items</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="item-warp row">
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                <div class="single-product">
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info" class="product-img">
+                                        <img class="product-img__loaded-pic" src="assets/img/demo/product/800X800-2.jpg">
+                                    </a>
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info">
+                                        <span class="two-row hot-item__product-name">北非香料豬排起司堡/1份</span>
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="original">$180</div>$150
+                                    </div>
+                                </div>
+                                <div class="product-info-modal">
+                                    <div class="modal fade" id="product-info" tabindex="-1" role="dialog" aria-labelledby="productLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-5">
+                                                            <div class="swiper product_op1_main-img">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-1.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/NoPicture.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-2.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-3.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-4.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-5.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-button-next"></div>
+                                                                <div class="swiper-button-prev"></div>
+                                                            </div>
+                                                            <div thumbsSlider="" class="swiper product_op1_sm-img" id="product-modal-slide">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-1.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/NoPicture.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-2.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-3.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-4.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <img src="assets/img/demo/product/800X800-5.jpg" alt="size_800x800/min-size_200x200">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="product_op1__sale-flash">
+                                                                <span class="tag-sale">特價</span>
+                                                                <span class="tag-new">新品</span>
+                                                                <span class="tag-sold-out">售完</span>
+                                                            </div>
+                                                            <h3 class="modal-title" id="productLabel">香煎嫩雞起司堡/1份</h3>
+                                                            <div class="modal-product_intro">
+                                                                <p>香煎嫩雞起司堡簡述香煎嫩雞起司堡簡述，香煎嫩雞起司堡簡述香煎嫩雞起司堡簡述香煎嫩雞起司堡簡述。</p>
+                                                                <ul>
+                                                                    <li>123</li>
+                                                                </ul>
+                                                                <ol>
+                                                                    <li>456</li>
+                                                                </ol>
+                                                            </div>
+                                                            <div class="modal-price_wrap">
+                                                                <div class="product_op1__price_title">售價：</div>
+                                                                <div class="product_op1__price">
+                                                                    <ins>$90</ins>
+                                                                    <del>$120</del>
+                                                                </div>
+                                                                <div class="no-stock">無庫存</div>
+                                                            </div>
+                                                            <div class="modal-select_wrap">
+                                                                <div class="modal-num_select">
+                                                                    <select name="product-amount" class="sm-form-control">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                    </select>
+                                                                    <i class="fa fa-chevron-down select-icon" aria-hidden="true"></i>
+                                                                </div>
+                                                                <div class="modal-shop-btn_wrap">
+                                                                    <a href="#" class="modal-shop_btn go-buy bl_iAddCart"><i class="fas fa-credit-card"></i><span> 直接購買</span></a>
+                                                                    <a href="#" class="modal-shop_btn add-to-cart bl_addCart"><i class="fas fa-shopping-cart"></i><span> 放入購物車</span></a>
+                                                                    <a href="#" class="modal-shop_btn list-add-like bl_addWish "><i class="far fa-heart"></i><span> 加入收藏</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="modal-info_wrap">
+                                                                <div class="modal-info_title">產品介紹：</div>
+                                                                <p>香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹，香煎嫩雞起司堡介紹。</p>
+                                                                <ul>
+                                                                    <li>香煎嫩雞起司堡/1份</li>
+                                                                </ul>
+                                                                <ol>
+                                                                    <li>香煎嫩雞起司堡/1份</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 以下為設計呈現, 故目前點擊時都是開啟第一個產品的彈窗 -->
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                <div class="single-product">
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info" class="product-img">
+                                        <img class="product-img__loaded-pic" src="assets/img/demo/product/800X800-2.jpg">
+                                    </a>
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info">
+                                        <span class="two-row hot-item__product-name">北非香料豬排起司堡/1份</span>
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="original">$180</div>$150
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                <div class="single-product">
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info" class="product-img">
+                                        <img class="product-img__loaded-pic" src="assets/img/demo/product/800X800-2.jpg">
+                                    </a>
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info">
+                                        <span class="two-row hot-item__product-name">北非香料豬排起司堡/1份</span>
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="original">$180</div>$150
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                <div class="single-product">
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info" class="product-img">
+                                        <img class="product-img__loaded-pic" src="assets/img/demo/product/800X800-2.jpg">
+                                    </a>
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info">
+                                        <span class="two-row hot-item__product-name">北非香料豬排起司堡/1份</span>
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="original">$180</div>$150
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                <div class="single-product">
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info" class="product-img">
+                                        <img class="product-img__loaded-pic" src="assets/img/demo/product/800X800-2.jpg">
+                                    </a>
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info">
+                                        <span class="two-row hot-item__product-name">北非香料豬排起司堡/1份</span>
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="original">$180</div>$150
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                <div class="single-product">
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info" class="product-img">
+                                        <img class="product-img__loaded-pic" src="assets/img/demo/product/NoPicture.jpg">
+                                    </a>
+                                    <a data-bs-toggle="modal" data-bs-target="#product-info">
+                                        <span class="two-row hot-item__product-name">墨魚牛排起司堡/1份</span>
+                                    </a>
+                                    <div class="product-price">
+                                        <div class="original">$180</div>$150
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 手機板 footer -->
+    <div class="cart__footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="total">
+                    <div><span>總計</span>$ <font class="bl_product_tot">160</font>
+                    </div>
+                </div>
+                <button type="button" value="submit" class="lezada-button lezada-button--medium total-checkout bl_go_confirm">
+                    <a href="order_confirm.html">前往結帳 <i class="fas fa-long-arrow-alt-right"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cart__copyright-2">
+        <div class="container">
+            <p>Copyright © 2023 商務客製一頁式 All Right Reserved.Designed by <a target="_blank" href="https://www.bondlink.com.tw">Bondlink.</a></p>
+        </div>
+    </div>
+    <div id="scroll-to-top" class="footer_op1__scroll-to-top"><span class="fas fa-angle-up"></span></div>
+    <!-- ↓↓↓基底檔案↓↓↓↓ -->
+    <script src="assets/js/main1.js"></script>
+    <!-- ↓↓↓區塊化檔案↓↓↓↓ -->
+    <script src="assets/js/cart-all.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    //思源黑體非同步載入
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,900&display=swap';;
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a, z);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
+
+</html>

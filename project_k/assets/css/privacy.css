@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*
+-----------------------------------------------------------------------
+  privacy_op1
+-----------------------------------------------------------------------
+*/
+
+
+.privacy_op1__content {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.privacy_op1__content:last-child {
+  margin-bottom: 0;
+}
+
+.privacy_op1__list-warp {
+  margin-bottom: 30px;
+}
+
+.privacy_op1__list-warp:last-child {
+  margin-bottom: 0;
+}
+
+.privacy_op1__list {
+  font-size: 19px;
+  color: #3E3A39;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.privacy_op1__list-warp p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width:480px) {
+
+  .privacy_op1__list-warp {
+    margin-bottom: 25px;
+  }
+
+  .privacy_op1__list {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .privacy_op1__list-warp p {
+    font-size: var(--font-text);
+    margin-bottom: 15px;
+  }
+
+}
