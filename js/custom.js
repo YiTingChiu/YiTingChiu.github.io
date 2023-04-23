@@ -148,7 +148,13 @@
         });
     }
 
-
+    // wow
+    if ($('.wow').length) {
+        var wow = new WOW({
+            mobile: false
+        });
+        wow.init();
+    }
 
 })(window.jQuery);
 

@@ -207,6 +207,18 @@ button.close:hover span {
     text-rendering: optimizeLegibility;
 }
 
+.brand img {
+    width: 200px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transition: 0.3s;
+}
+
+.brand img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .header {
     position: fixed;
     display: block;
@@ -448,7 +460,7 @@ button.close:hover span {
 
 .header-item-right a:hover,
 .header .menu>ul>li:hover>a {
-    color: var(--color-secondary);
+    color: var(--color-third);
 }
 
 @media only screen and (min-width: 992px) {
