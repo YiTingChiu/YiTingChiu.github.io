@@ -214,7 +214,7 @@ button.close:hover span {
     transition: 0.3s;
 }
 
-.brand img:hover{
+.brand img:hover {
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -1275,6 +1275,16 @@ button.close:hover span {
     padding-bottom: 30px;
 }
 
+.portfolio .swiper-slide {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.portfolio .swiper-slide-active {
+    opacity: 1;
+    transition: 0.5s;
+}
+
 .portfolio .swiper-slide-active .portfolio-box:hover .portfolio-box__img-layout {
     background-position: left bottom;
     opacity: 1;
@@ -1293,7 +1303,7 @@ button.close:hover span {
 
 .portfolio .swiper-3d .swiper-slide-shadow-left,
 .portfolio .swiper-3d .swiper-slide-shadow-right {
-    height: 95%;
+    height: 0%;
 }
 
 .portfolio .swiper-pagination {
@@ -1345,14 +1355,14 @@ button.close:hover span {
 
     .contact-box a {
         padding: 15px;
-    }    
+    }
 }
 
 @media (max-width: 767px) {
 
     .contact-box a {
         font-size: 28px;
-    }    
+    }
 }
 
 @media (max-width: 480px) {

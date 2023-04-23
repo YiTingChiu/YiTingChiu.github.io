@@ -120,6 +120,7 @@
     if ($('.portfolio').length) {
         var swiper = new Swiper(".portfolioSwiper", {
             slidesPerView: 1.8,
+            speed: 1000,
             effect: "coverflow",
             grabCursor: true,
             loop: true,
