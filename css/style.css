@@ -876,7 +876,7 @@ button.close:hover span {
 }
 
 .banner-subtitle p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.1em;
 }
@@ -911,7 +911,7 @@ button.close:hover span {
     }
 
     .banner-subtitle p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -928,7 +928,7 @@ button.close:hover span {
     }
 
     .banner-subtitle p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
