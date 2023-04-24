@@ -1427,3 +1427,33 @@ button.close:hover span {
 .footer-copyright p {
     color: var(--color-white);
 }
+
+.gototop {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    background: var(--color-third);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gototop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gototop i {
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.gototop:hover i {
+    transition: 0.3s;
+    color: var(--color-white);
+}
