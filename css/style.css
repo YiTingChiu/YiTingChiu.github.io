@@ -42,7 +42,7 @@
 body {
     color: var(--color-text);
     font-size: 16px;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker','Noto Sans TC', sans-serif;
     font-weight: 400;
     line-height: 1.8;
     margin: 0;
@@ -771,6 +771,12 @@ button.close:hover span {
     }
 }
 
+@media (max-width: 375px) {
+    .brand img {
+        width: 150px;
+    }
+}
+
 
 /* ==================================== 
     componenet
@@ -931,6 +937,13 @@ button.close:hover span {
     about
    ==================================== */
 
+#about{
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
+
 .about {
     background: var(--color-fourth);
     position: relative;
@@ -987,6 +1000,13 @@ button.close:hover span {
 /* ==================================== 
     experience
    ==================================== */
+
+#experience{
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
 
 .experience .section-title {
     text-align: center;
@@ -1144,6 +1164,13 @@ button.close:hover span {
     skill
    ==================================== */
 
+#skill{
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
+
 .block-bg {
     background-size: cover;
     width: 100%;
@@ -1235,6 +1262,13 @@ button.close:hover span {
     Portfolio
    ==================================== */
 
+#portfolio{
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
+
 .portfolio-box {
     margin-bottom: 30px
 }
@@ -1320,6 +1354,13 @@ button.close:hover span {
 /* ==================================== 
     Contact
    ==================================== */
+
+#contact{
+    display: block;
+    position: relative;
+    top: -85px;
+    visibility: hidden;
+}
 
 .contact {
     position: relative;
