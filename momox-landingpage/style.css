@@ -154,12 +154,6 @@ section {
     }
 }
 
-@media (max-width: 375px) {
-    .payment-icons {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .delivery-option {
     display: grid;
     grid-template-rows: 1fr;
