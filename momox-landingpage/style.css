@@ -40,24 +40,6 @@ div[class^="col"] {
 }
 
 
-@media only screen and (min-width: 320px) {
-    .container {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    .container {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .container {
-        width: 100% !important;
-    }
-}
-
 @media only screen and (min-width: 992px) {
     .container {
         width: 100% !important;
@@ -92,7 +74,6 @@ section {
     section {
         padding: 20px 0;
     }
-
 }
 
 .box {
@@ -117,6 +98,14 @@ section {
     align-items: center;
     position: relative;
     text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 16px;
+    text-underline-offset: -11px;
+    text-decoration-color: rgba(35, 92, 246, 0.15);
+    text-decoration-skip-ink: none;
+    text-decoration-skip: none;
+
 }
 
 .title img {
