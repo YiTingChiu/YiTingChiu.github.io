@@ -88,6 +88,13 @@ section {
     padding: 30px 0;
 }
 
+@media (max-width: 575px) {
+    section {
+        padding: 20px 0;
+    }
+
+}
+
 .box {
     padding-left: 96px;
     padding-right: 96px;
@@ -101,7 +108,7 @@ section {
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: calc(1em + 0.4vw);
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 1px;
@@ -109,6 +116,7 @@ section {
     display: flex;
     align-items: center;
     position: relative;
+    text-transform: uppercase;
 }
 
 .title img {
@@ -133,6 +141,12 @@ section {
     margin-bottom: 0;
 }
 
+@media (max-width: 575px) {
+    .description {
+        font-size: 1em;
+    }
+}
+
 .payment-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -146,7 +160,7 @@ section {
 @media (max-width: 575px) {
     .payment-icons {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 15px;
+        gap: 30px;
     }
 
     .payment-icons img {
