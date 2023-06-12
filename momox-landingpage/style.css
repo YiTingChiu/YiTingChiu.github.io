@@ -129,7 +129,7 @@ section {
     line-height: 1.5;
 }
 
-.description p:last-of-type:not(:only-of-type){
+.description p:last-of-type:not(:only-of-type) {
     margin-bottom: 0;
 }
 
@@ -140,13 +140,17 @@ section {
 }
 
 .payment-icons img {
-    width: 50%;
+    width: 92px;
 }
 
 @media (max-width: 575px) {
     .payment-icons {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
+    }
+
+    .payment-icons img {
+        width: 65px;
     }
 }
 
