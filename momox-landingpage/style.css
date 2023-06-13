@@ -9,11 +9,11 @@ body {
     line-height: 1;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     body {
         font-size: 15px;
     }
-}
+} */
 
 *,
 ::after,
@@ -101,7 +101,7 @@ section {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 16px;
-    text-underline-offset: -11px;
+    text-underline-offset: -8px;
     text-decoration-color: rgba(35, 92, 246, 0.15);
     text-decoration-skip-ink: none;
     text-decoration-skip: none;
@@ -115,7 +115,7 @@ section {
 }
 
 .description {
-    font-size: 1.1em;
+    font-size: 18px;
     font-weight: 400;
     color: #000;
 }
@@ -130,11 +130,11 @@ section {
     margin-bottom: 0;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .description {
         font-size: 1em;
     }
-}
+} */
 
 .payment-icons {
     display: grid;
