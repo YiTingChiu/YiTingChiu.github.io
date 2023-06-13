@@ -105,13 +105,19 @@ section {
     text-decoration-color: rgba(35, 92, 246, 0.15);
     text-decoration-skip-ink: none;
     text-decoration-skip: none;
-
 }
 
 .title img {
     display: inline-block;
     width: 32px;
     margin-right: 10px;
+}
+
+@media (max-width: 575px) {
+    .title {
+        text-decoration-thickness: 10px;
+        text-underline-offset: -6px;
+    }
 }
 
 .description {
